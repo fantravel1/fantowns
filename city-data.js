@@ -617,6 +617,212 @@ const CITY_DATA = {
       subtitle: "Enter a world where football isn't just a game - it's the very soul of a nation.",
       buttonText: "Plan Your Buenos Aires Football Journey"
     }
+  },
+  
+  dortmund: {
+    meta: {
+      title: "Dortmund Fan Guide - Borussia Dortmund, Yellow Wall & BVB Culture | FANTOWNS",
+      description: "Ultimate Dortmund BVB fan travel guide. Experience the Yellow Wall at Signal Iduna Park, best hotels near the stadium, legendary beer gardens, and insider tips for Borussia Dortmund culture.",
+      keywords: "Borussia Dortmund travel, BVB fan guide, Yellow Wall, Signal Iduna Park, Dortmund beer gardens, German football culture, Ruhr area travel"
+    },
+    theme: {
+      primary: "#fde047",
+      secondary: "#000000",
+      tagBg: "#fef3c7",
+      tagColor: "#92400e",
+      heroBg: "linear-gradient(rgba(253, 224, 71, 0.9), rgba(0, 0, 0, 0.8)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23fde047\" width=\"1200\" height=\"600\"/><path fill=\"%23000000\" opacity=\"0.3\" d=\"M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z\"/></svg>')"
+    },
+    hero: {
+      title: "Dortmund 🇩🇪",
+      subtitle: "Where the Yellow Wall Creates the Most Intimidating Atmosphere in Football",
+      stats: [
+        { number: "25,000", label: "Yellow Wall Fans" },
+        { number: "81,365", label: "Signal Iduna Park" },
+        { number: "1909", label: "Founded" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay where the BVB faithful gather, from modern hotels near Signal Iduna Park to traditional guesthouses in the heart of the Ruhr area.",
+        items: [
+          {
+            name: "GHOTEL hotel & living Dortmund",
+            type: "Modern Business",
+            location: "City Center",
+            description: "Sleek modern hotel popular with visiting teams and officials. Walking distance to the city center and easy transport to Signal Iduna Park. Many BVB players' families stay here.",
+            tags: ["Modern Design", "Player Families", "City Center"],
+            rating: "4.6",
+            distance: "15 min to Signal Iduna Park",
+            icon: "🏨"
+          },
+          {
+            name: "Hotel An der Konzerthalle",
+            type: "Fan Favorite",
+            location: "Near Stadium",
+            description: "Family-run hotel that's been hosting BVB fans for decades. The breakfast room turns into a pre-match gathering spot with yellow and black decorations everywhere.",
+            tags: ["Fan Gathering", "Family Run", "BVB Decorated"],
+            rating: "4.4",
+            distance: "10 min to Signal Iduna Park",
+            icon: "🏨"
+          },
+          {
+            name: "Pension Dortmund",
+            type: "Budget Authentic",
+            location: "Westfalenhallen",
+            description: "No-frills pension where hardcore ultras and traveling fans stay. Basic but clean, and the owners are lifelong BVB supporters who share match day stories.",
+            tags: ["Ultra Favorite", "Budget Friendly", "Local Stories"],
+            rating: "4.2",
+            distance: "5 min walk to stadium",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience the legendary German beer culture in these iconic establishments where BVB fans have sung their hearts out for generations.",
+        items: [
+          {
+            name: "Wenkers Köln",
+            type: "Historic Brewery",
+            location: "Westfalendamm",
+            description: "Traditional brewery that's been the unofficial BVB headquarters since the 1960s. The entire pub erupts in Yellow Wall chants before every home match. Cash only!",
+            tags: ["Historic Brewery", "BVB Headquarters", "Traditional Atmosphere"],
+            rating: "4.9",
+            distance: "2 min walk to stadium",
+            icon: "🍺"
+          },
+          {
+            name: "Bierhaus Stade",
+            type: "Beer Garden",
+            location: "Strobelallee",
+            description: "Massive beer garden that opens 4 hours before kickoff. Thousands of fans gather here for traditional German beer and bratwurst while building match atmosphere.",
+            tags: ["Beer Garden", "Pre-Match Central", "Traditional Food"],
+            rating: "4.7",
+            distance: "Walking distance to stadium",
+            icon: "🍺"
+          },
+          {
+            name: "Tremonia",
+            type: "Ultra Bar",
+            location: "Innenstadt",
+            description: "Where the hardcore ultras plan their choreography and practice their chants. Walls covered in scarves and banners. Visitors welcome but respect the passion.",
+            tags: ["Ultra Culture", "Choreography Planning", "Hardcore Fans"],
+            rating: "4.5",
+            distance: "City Center",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From traditional German fare to modern cuisine, fuel your BVB passion with hearty Ruhr area food and international options.",
+        items: [
+          {
+            name: "Zum Strammen Max",
+            type: "Traditional German",
+            location: "Hombruch",
+            description: "Traditional German restaurant serving massive portions of schnitzel, bratwurst, and local specialties. BVB legends like Nobby Dickel used to eat here regularly.",
+            tags: ["Traditional German", "Huge Portions", "BVB Legends"],
+            rating: "4.8",
+            distance: "15 min to stadium",
+            icon: "🍽️"
+          },
+          {
+            name: "Pfefferkorn",
+            type: "Fine Dining",
+            location: "Innenstadt",
+            description: "Upscale restaurant where BVB executives and visiting dignitaries dine. Modern German cuisine with a view of the city. Perfect for celebration dinners after victories.",
+            tags: ["Fine Dining", "Executive Dining", "Modern German"],
+            rating: "4.7",
+            distance: "City Center",
+            icon: "🍽️"
+          },
+          {
+            name: "Curry 61",
+            type: "Local Institution",
+            location: "Near Stadium",
+            description: "Legendary currywurst stand that's been feeding hungry BVB fans since 1961. The secret curry sauce recipe is guarded like BVB's tactical playbook.",
+            tags: ["Currywurst Legend", "Since 1961", "Secret Recipe"],
+            rating: "4.6",
+            distance: "5 min to Signal Iduna Park",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience BVB history and Ruhr area culture through these essential destinations that capture the soul of Dortmund football.",
+        items: [
+          {
+            name: "Signal Iduna Park Tour",
+            type: "Stadium Experience",
+            location: "Signal Iduna Park",
+            description: "Stand on the Yellow Wall, visit the players' tunnel, and experience the most intimidating stadium in world football. The echo of 25,000 fans will give you chills.",
+            tags: ["Yellow Wall Experience", "Players' Tunnel", "Stadium Tour"],
+            rating: "4.9",
+            distance: "At Signal Iduna Park",
+            icon: "⚽"
+          },
+          {
+            name: "BVB Museum",
+            type: "Interactive Museum",
+            location: "Signal Iduna Park",
+            description: "State-of-the-art museum showcasing BVB's incredible history, including the 1997 Champions League triumph and the club's role in German football culture.",
+            tags: ["Interactive Exhibits", "Champions League Trophy", "Club History"],
+            rating: "4.8",
+            distance: "Inside Signal Iduna Park",
+            icon: "🏆"
+          },
+          {
+            name: "German Football Museum",
+            type: "National Museum",
+            location: "Dortmund City",
+            description: "Germany's national football museum located in Dortmund. Features World Cup trophies, interactive exhibits, and the story of German football dominance.",
+            tags: ["National Museum", "World Cup History", "Interactive Technology"],
+            rating: "4.7",
+            distance: "City Center",
+            icon: "🏆"
+          }
+        ]
+      },
+      tips: {
+        description: "Master these local customs and you'll be singing along with the Yellow Wall like a true BVB supporter.",
+        items: [
+          {
+            icon: "🟡",
+            title: "Yellow Wall Protocol",
+            content: "The Südtribüne (Yellow Wall) is sacred. Stand for 90 minutes, learn the chants, and never sit during matches. Bring earplugs - it's genuinely the loudest stadium experience in football."
+          },
+          {
+            icon: "🍺",
+            title: "Beer Garden Etiquette",
+            content: "German beer gardens have rules: order at the counter, share tables with strangers, bring exact change. 'Prost!' is the universal greeting. One liter 'Maß' is standard."
+          },
+          {
+            icon: "🎵",
+            title: "Learn the Chants",
+            content: "Master 'Heja BVB,' 'Oh wie ist das schön,' and 'You'll Never Walk Alone' (yes, Dortmund sings it too). The ultras lead - follow their rhythm and energy."
+          },
+          {
+            icon: "🚇",
+            title: "Match Day Transport",
+            content: "Take the U-Bahn Line U45/U49 to 'Westfalenhallen' station. It's packed with singing fans and part of the experience. Walking from city center takes 45 minutes."
+          },
+          {
+            icon: "🧣",
+            title: "Scarf Traditions",
+            content: "Always hold your BVB scarf above your head during team entrances and goals. Trading scarves with visiting fans is respected tradition - especially in European matches."
+          },
+          {
+            icon: "⚫",
+            title: "Rivalry Respect",
+            content: "The Schalke rivalry (Revierderby) is intense but respectful. Never wear blue in Dortmund on derby day. Bayern Munich is also a major rival - expect passionate debates."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Experience the Yellow Wall Like a True BVB Fan?",
+      subtitle: "Join the most intimidating and passionate stadium atmosphere in world football.",
+      buttonText: "Plan Your Dortmund Pilgrimage"
+    }
   }
 };
 
