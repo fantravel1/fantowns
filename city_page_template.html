@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">City Guide | FANTOWNS</title>
+    <meta name="description" id="page-description" content="">
+    <meta name="keywords" id="page-keywords" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: var(--primary-color, #3b82f6);
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .hero-city {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), var(--hero-bg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .city-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .city-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .quick-stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .quick-stat {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .quick-stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .quick-stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color, #3b82f6), var(--secondary-color, #1d4ed8));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+
+        .card-subtitle {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-description {
+            color: #475569;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: var(--tag-bg, #fee2e2);
+            color: var(--tag-color, #dc2626);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color, #3b82f6);
+            font-weight: 600;
+        }
+
+        .distance {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .insider-tips {
+            background: linear-gradient(135deg, var(--primary-color, #3b82f6), var(--secondary-color, #1d4ed8));
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tip-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .tip-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tip-content {
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background: #0f172a;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .quick-stats {
+                gap: 1rem;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .floating-nav {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 1rem;
+            z-index: 50;
+            border: 1px solid #e2e8f0;
+        }
+
+        .floating-nav a {
+            display: block;
+            padding: 0.5rem;
+            color: #64748b;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .floating-nav a:hover {
+            color: var(--primary-color, #3b82f6);
+        }
+
+        @media (max-width: 1024px) {
+            .floating-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">FANTOWNS</a>
+            <nav class="nav-links">
+                <a href="#hotels">Hotels</a>
+                <a href="#pubs">Pubs & Bars</a>
+                <a href="#restaurants">Restaurants</a>
+                <a href="#attractions">Attractions</a>
+                <a href="#tips">Insider Tips</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="floating-nav">
+        <a href="#hotels">🏨 Hotels</a>
+        <a href="#pubs">🍺 Pubs</a>
+        <a href="#restaurants">🍽️ Food</a>
+        <a href="#attractions">⚽ Attractions</a>
+        <a href="#tips">💡 Tips</a>
+    </div>
+
+    <section class="hero-city">
+        <div class="hero-content">
+            <h1 class="city-title" id="hero-title"></h1>
+            <p class="city-subtitle" id="hero-subtitle"></p>
+            
+            <div class="quick-stats" id="quick-stats">
+                <!-- Stats populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="hotels" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🏨 Fan-Approved Hotels</h2>
+                <p class="section-description" id="hotels-description"></p>
+            </div>
+            
+            <div class="cards-grid" id="hotels-grid">
+                <!-- Hotels populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="pubs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🍺 Legendary Pubs & Bars</h2>
+                <p class="section-description" id="pubs-description"></p>
+            </div>
+            
+            <div class="cards-grid" id="pubs-grid">
+                <!-- Pubs populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="restaurants" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🍽️ Fan-Favorite Restaurants</h2>
+                <p class="section-description" id="restaurants-description"></p>
+            </div>
+            
+            <div class="cards-grid" id="restaurants-grid">
+                <!-- Restaurants populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="attractions" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">⚽ Must-See Fan Attractions</h2>
+                <p class="section-description" id="attractions-description"></p>
+            </div>
+            
+            <div class="cards-grid" id="attractions-grid">
+                <!-- Attractions populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="insider-tips">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" style="color: white;">💡 Insider Tips to Blend In Like a Local</h2>
+                <p class="section-description" style="color: rgba(255,255,255,0.9);" id="tips-description"></p>
+            </div>
+            
+            <div class="tips-grid" id="tips-grid">
+                <!-- Tips populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;" id="cta-title"></h2>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem;" id="cta-subtitle"></p>
+            <button class="cta-button" id="cta-button"></button>
+        </div>
+    </section>
+
+    <!-- City Data Files -->
+    <script src="city-data.js"></script>
+    
+    <script>
+        // Get city from URL parameter or default to liverpool
+        const urlParams = new URLSearchParams(window.location.search);
+        const cityName = urlParams.get('city') || 'liverpool';
+        
+        // Load city data
+        const cityData = CITY_DATA[cityName];
+        
+        if (!cityData) {
+            console.error('City data not found for:', cityName);
+            // Redirect to main page or show error
+            window.location.href = '/';
+        }
+
+        // Function to set CSS custom properties for theming
+        function applyTheme(colors) {
+            const root = document.documentElement;
+            root.style.setProperty('--primary-color', colors.primary);
+            root.style.setProperty('--secondary-color', colors.secondary);
+            root.style.setProperty('--tag-bg', colors.tagBg);
+            root.style.setProperty('--tag-color', colors.tagColor);
+            root.style.setProperty('--hero-bg', colors.heroBg);
+        }
+
+        // Function to create a card
+        function createCard(item, type) {
+            return `
+                <div class="card">
+                    <div class="card-image">${item.icon}</div>
+                    <div class="card-content">
+                        <h3 class="card-title">${item.name}</h3>
+                        <p class="card-subtitle">${item.type} • ${item.location}</p>
+                        <p class="card-description">${item.description}</p>
+                        <div class="card-tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="card-footer">
+                            <div class="rating">⭐ ${item.rating} Fan Rating</div>
+                            <div class="distance">${item.distance}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Function to create a tip card
+        function createTipCard(tip) {
+            return `
+                <div class="tip-card">
+                    <h3 class="tip-title">${tip.icon} ${tip.title}</h3>
+                    <div class="tip-content">${tip.content}</div>
+                </div>
+            `;
+        }
+
+        // Function to populate page content
+        function populatePage(data) {
+            // Meta tags
+            document.getElementById('page-title').textContent = data.meta.title;
+            document.getElementById('page-description').setAttribute('content', data.meta.description);
+            document.getElementById('page-keywords').setAttribute('content', data.meta.keywords);
+
+            // Hero section
+            document.getElementById('hero-title').textContent = data.hero.title;
+            document.getElementById('hero-subtitle').textContent = data.hero.subtitle;
+            
+            // Quick stats
+            const statsHtml = data.hero.stats.map(stat => `
+                <div class="quick-stat">
+                    <span class="quick-stat-number">${stat.number}</span>
+                    <span class="quick-stat-label">${stat.label}</span>
+                </div>
+            `).join('');
+            document.getElementById('quick-stats').innerHTML = statsHtml;
+
+            // Section descriptions
+            document.getElementById('hotels-description').textContent = data.sections.hotels.description;
+            document.getElementById('pubs-description').textContent = data.sections.pubs.description;
+            document.getElementById('restaurants-description').textContent = data.sections.restaurants.description;
+            document.getElementById('attractions-description').textContent = data.sections.attractions.description;
+            document.getElementById('tips-description').textContent = data.sections.tips.description;
+
+            // Populate content grids
+            document.getElementById('hotels-grid').innerHTML = data.sections.hotels.items.map(item => createCard(item, 'hotel')).join('');
+            document.getElementById('pubs-grid').innerHTML = data.sections.pubs.items.map(item => createCard(item, 'pub')).join('');
+            document.getElementById('restaurants-grid').innerHTML = data.sections.restaurants.items.map(item => createCard(item, 'restaurant')).join('');
+            document.getElementById('attractions-grid').innerHTML = data.sections.attractions.items.map(item => createCard(item, 'attraction')).join('');
+            document.getElementById('tips-grid').innerHTML = data.sections.tips.items.map(tip => createTipCard(tip)).join('');
+
+            // CTA section
+            document.getElementById('cta-title').textContent = data.cta.title;
+            document.getElementById('cta-subtitle').textContent = data.cta.subtitle;
+            document.getElementById('cta-button').textContent = data.cta.buttonText;
+
+            // Apply theme
+            applyTheme(data.theme);
+        }
+
+        // Initialize page
+        populatePage(cityData);
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        setTimeout(() => {
+            document.querySelectorAll('.card, .tip-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+        }, 100);
+
+        // Enhanced hover effects
+        document.addEventListener('mouseover', function(e) {
+            if (e.target.closest('.card')) {
+                const card = e.target.closest('.card');
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+            }
+        });
+
+        document.addEventListener('mouseout', function(e) {
+            if (e.target.closest('.card')) {
+                const card = e.target.closest('.card');
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.05)';
+            }
+        });
+
+        // Update active navigation
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.floating-nav a, .nav-links a');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.color = '';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.color = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
+                    link.style.fontWeight = '600';
+                } else {
+                    link.style.fontWeight = '500';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+    </script>
+</body>
+</html>
