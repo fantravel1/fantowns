@@ -624,8 +624,8 @@
             });
         }
 
-        // Enhanced hover effects
-        document.querySelectorAll('.city-card').forEach(card => {
+        // Enhanced hover effects for clickable cities only
+        document.querySelectorAll('.city-link .city-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-8px)';
                 this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.1)';
