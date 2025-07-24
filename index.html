@@ -158,6 +158,12 @@
             margin: 0 auto;
         }
 
+        .city-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
         .city-card {
             background: white;
             border-radius: 16px;
@@ -174,6 +180,39 @@
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             border-color: #cbd5e0;
+        }
+
+        .city-card.coming-soon {
+            position: relative;
+            opacity: 0.7;
+            cursor: default;
+        }
+
+        .coming-soon-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(59, 130, 246, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+        }
+
+        .coming-soon-text {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .city-card.coming-soon:hover {
+            transform: none;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border-color: #e2e8f0;
         }
 
         .city-name {
@@ -429,46 +468,52 @@
         <h2 class="section-title">The World's Most Passionate Fan Cities</h2>
         
         <div class="cities-grid">
-            <div class="city-card">
-                <h3 class="city-name">Liverpool</h3>
-                <p class="city-country">England 🇬🇧</p>
-                <p class="city-description">
-                    Home to the legendary "You'll Never Walk Alone" anthem, Liverpool's Anfield stadium creates an atmosphere that literally moves the earth. The Kop end delivers pure magic on match days.
-                </p>
-                <div class="city-highlights">
-                    <span class="highlight-tag">Anfield Stadium</span>
-                    <span class="highlight-tag">The Cavern Club</span>
-                    <span class="highlight-tag">Albert Dock</span>
+            <a href="city.html?city=liverpool" class="city-link">
+                <div class="city-card">
+                    <h3 class="city-name">Liverpool</h3>
+                    <p class="city-country">England 🇬🇧</p>
+                    <p class="city-description">
+                        Home to the legendary "You'll Never Walk Alone" anthem, Liverpool's Anfield stadium creates an atmosphere that literally moves the earth. The Kop end delivers pure magic on match days.
+                    </p>
+                    <div class="city-highlights">
+                        <span class="highlight-tag">Anfield Stadium</span>
+                        <span class="highlight-tag">The Cavern Club</span>
+                        <span class="highlight-tag">Albert Dock</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="city-card">
-                <h3 class="city-name">Green Bay</h3>
-                <p class="city-country">Wisconsin, USA 🇺🇸</p>
-                <p class="city-description">
-                    The frozen tundra of Lambeau Field hosts the NFL's most devoted fanbase. Cheeseheads brave subzero temperatures and create an atmosphere of pure Wisconsin pride and tradition.
-                </p>
-                <div class="city-highlights">
-                    <span class="highlight-tag">Lambeau Field</span>
-                    <span class="highlight-tag">Titletown District</span>
-                    <span class="highlight-tag">Local Breweries</span>
+            <a href="city.html?city=greenbay" class="city-link">
+                <div class="city-card">
+                    <h3 class="city-name">Green Bay</h3>
+                    <p class="city-country">Wisconsin, USA 🇺🇸</p>
+                    <p class="city-description">
+                        The frozen tundra of Lambeau Field hosts the NFL's most devoted fanbase. Cheeseheads brave subzero temperatures and create an atmosphere of pure Wisconsin pride and tradition.
+                    </p>
+                    <div class="city-highlights">
+                        <span class="highlight-tag">Lambeau Field</span>
+                        <span class="highlight-tag">Titletown District</span>
+                        <span class="highlight-tag">Local Breweries</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="city-card">
-                <h3 class="city-name">Buenos Aires</h3>
-                <p class="city-country">Argentina 🇦🇷</p>
-                <p class="city-description">
-                    La Bombonera stadium and the eternal Boca vs River rivalry create the most intense football atmosphere on Earth. This city lives and breathes football passion every single day.
-                </p>
-                <div class="city-highlights">
-                    <span class="highlight-tag">La Bombonera</span>
-                    <span class="highlight-tag">El Superclásico</span>
-                    <span class="highlight-tag">San Telmo</span>
+            <a href="city.html?city=buenosaires" class="city-link">
+                <div class="city-card">
+                    <h3 class="city-name">Buenos Aires</h3>
+                    <p class="city-country">Argentina 🇦🇷</p>
+                    <p class="city-description">
+                        La Bombonera stadium and the eternal Boca vs River rivalry create the most intense football atmosphere on Earth. This city lives and breathes football passion every single day.
+                    </p>
+                    <div class="city-highlights">
+                        <span class="highlight-tag">La Bombonera</span>
+                        <span class="highlight-tag">El Superclásico</span>
+                        <span class="highlight-tag">San Telmo</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="city-card">
+            <div class="city-card coming-soon">
                 <h3 class="city-name">Dortmund</h3>
                 <p class="city-country">Germany 🇩🇪</p>
                 <p class="city-description">
@@ -479,9 +524,12 @@
                     <span class="highlight-tag">Phoenix Lake</span>
                     <span class="highlight-tag">Industrial Culture</span>
                 </div>
+                <div class="coming-soon-overlay">
+                    <span class="coming-soon-text">Coming Soon</span>
+                </div>
             </div>
 
-            <div class="city-card">
+            <div class="city-card coming-soon">
                 <h3 class="city-name">Istanbul</h3>
                 <p class="city-country">Turkey 🇹🇷</p>
                 <p class="city-description">
@@ -492,9 +540,12 @@
                     <span class="highlight-tag">Bosphorus</span>
                     <span class="highlight-tag">Historic Quarter</span>
                 </div>
+                <div class="coming-soon-overlay">
+                    <span class="coming-soon-text">Coming Soon</span>
+                </div>
             </div>
 
-            <div class="city-card">
+            <div class="city-card coming-soon">
                 <h3 class="city-name">Nashville</h3>
                 <p class="city-country">Tennessee, USA 🇺🇸</p>
                 <p class="city-description">
@@ -504,6 +555,9 @@
                     <span class="highlight-tag">Grand Ole Opry</span>
                     <span class="highlight-tag">Broadway District</span>
                     <span class="highlight-tag">Music Row</span>
+                </div>
+                <div class="coming-soon-overlay">
+                    <span class="coming-soon-text">Coming Soon</span>
                 </div>
             </div>
         </div>
