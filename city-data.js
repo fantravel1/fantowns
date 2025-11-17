@@ -2265,6 +2265,2006 @@ const CITY_DATA = {
       subtitle: "Join 750,000 otaku in the ultimate test of anime fan dedication and endurance.",
       buttonText: "Plan Your Otaku Pilgrimage"
     }
+  },
+
+  seattle: {
+    meta: {
+      title: "Seattle Seahawks 12th Man Fan Guide - Hotels, Bars & Experience | FANTOWNS",
+      description: "Ultimate Seattle Seahawks fan travel guide. Experience the 12th Man at Lumen Field, discover fan hotels, legendary bars, and insider tips for the loudest stadium in sports.",
+      keywords: "Seattle Seahawks travel, Lumen Field, 12th Man, Seattle fan bars, Beast Quake, NFL tourism, Seahawks experience"
+    },
+    theme: {
+      primary: "#002244",
+      secondary: "#69BE28",
+      tagBg: "#e6f4ea",
+      tagColor: "#1e7e34",
+      heroBg: "linear-gradient(rgba(0, 34, 68, 0.9), rgba(0, 34, 68, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23002244\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Seattle 🇺🇸",
+      subtitle: "Where the 12th Man Causes Earthquakes",
+      stats: [
+        { number: "137.6 dB", label: "Record Noise" },
+        { number: "69,000", label: "Lumen Capacity" },
+        { number: "2011", label: "Beast Quake" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay near Lumen Field where the 12th Man energy pulses through Seattle's SoDo district.",
+        items: [
+          {
+            name: "Hotel Interurban",
+            type: "Modern Boutique",
+            location: "SoDo District",
+            description: "Opened 2021, this Hilton Tapestry hotel sits one block from Lumen Field. Rooftop bar overlooks the stadium. Filled with Seahawks fans pre-game. Modern Pacific Northwest design with local craft beers on tap.",
+            tags: ["Walking Distance", "Rooftop Bar", "Modern"],
+            rating: "4.6",
+            distance: "2 min walk to Lumen",
+            icon: "🏨"
+          },
+          {
+            name: "Silver Cloud Hotel Stadium",
+            type: "Fan Favorite",
+            location: "Stadium District",
+            description: "The unofficial Seahawks fan headquarters. Parking lot tailgates start 6 hours before kickoff. Complimentary shuttle to stadium. Rooms book out months ahead for big games. This is where visiting fans stay to experience real 12th Man culture.",
+            tags: ["Fan Central", "Tailgate Parking", "Shuttle"],
+            rating: "4.4",
+            distance: "5 min to Lumen",
+            icon: "🏨"
+          },
+          {
+            name: "The Edgewater Hotel",
+            type: "Luxury Waterfront",
+            location: "Downtown Seattle",
+            description: "Pike Place Market hotel where The Beatles stayed in 1964. Rooms over Elliott Bay with views of ferries and mountains. Seahawks players' families stay here. Premium dining and Seattle sophistication 15 minutes from stadium chaos.",
+            tags: ["Historic", "Waterfront", "Luxury"],
+            rating: "4.7",
+            distance: "15 min to Lumen",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Seattle's football culture in bars where the 12th Man was born.",
+        items: [
+          {
+            name: "Pyramid Alehouse",
+            type: "Brewery",
+            location: "SoDo",
+            description: "Two blocks from Lumen Field, this massive brewery becomes Seahawks central on game days. The beer garden holds 1,000+ fans in navy and green, chanting and drinking local IPAs. The pale ale flows, wings disappear, and by kickoff the march to the stadium is a roaring river of 12s.",
+            tags: ["Brewery", "Beer Garden", "Pre-Game Hub"],
+            rating: "4.5",
+            distance: "2 blocks from Lumen",
+            icon: "🍺"
+          },
+          {
+            name: "Fuel Sports Eats & Beats",
+            type: "Sports Bar",
+            location: "SoDo",
+            description: "The official 12th Man pre-game bar. Opened specifically to serve Seahawks fans. DJs, dancers, 100+ TVs, and energy that builds to fever pitch by kickoff. This is where the noise starts before it moves to the stadium.",
+            tags: ["Official Spot", "DJ & Dancing", "High Energy"],
+            rating: "4.6",
+            distance: "3 blocks from Lumen",
+            icon: "🍺"
+          },
+          {
+            name: "Flatstick Pub Pioneer Square",
+            type: "Unique Bar",
+            location: "Pioneer Square",
+            description: "Mini-golf bar that transforms into Seahawks headquarters on game days. Indoor mini-golf + craft beer + football creates uniquely Seattle experience. Players occasionally visit off-season. The PNW in bar form.",
+            tags: ["Mini Golf", "Craft Beer", "Unique"],
+            rating: "4.7",
+            distance: "Downtown",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From seafood to craft coffee, fuel your 12th Man experience with Seattle's legendary food scene.",
+        items: [
+          {
+            name: "Ivar's Acres of Clams",
+            type: "Seattle Institution",
+            location: "Waterfront",
+            description: "Since 1938, this waterfront institution serves the city's best clam chowder and fish & chips. Seahawks players post-victory photos here. The bread bowl chowder is Washington State comfort in edible form. Order at the window, eat by the water, watch ferries, discuss the game.",
+            tags: ["Seafood", "Historic", "Waterfront"],
+            rating: "4.5",
+            distance: "Downtown",
+            icon: "🍽️"
+          },
+          {
+            name: "Elysian Brewing",
+            type: "Brewery Restaurant",
+            location: "Capitol Hill",
+            description: "Seattle's beloved craft brewery serves exceptional beer and elevated pub food. Their seasonal Seahawks IPA sells out in hours. The pumpkin ale is fall tradition. Capitol Hill location fills with younger fans, Capitol Hill becomes a party after victories.",
+            tags: ["Craft Beer", "Burgers", "Local Favorite"],
+            rating: "4.6",
+            distance: "Capitol Hill",
+            icon: "🍽️"
+          },
+          {
+            name: "Pike Place Chowder",
+            type: "Award-Winning",
+            location: "Pike Place Market",
+            description: "Voted America's best clam chowder multiple times. The New England and Seafood chowders are rich, creamy perfection. Lines wrap around the Market, but move fast. This is required eating before afternoon games. Pure Seattle in a sourdough bowl.",
+            tags: ["Award-Winning", "Pike Place", "Chowder"],
+            rating: "4.8",
+            distance: "Downtown",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Seattle's 12th Man culture and Pacific Northwest beauty beyond the stadium.",
+        items: [
+          {
+            name: "Lumen Field Tour",
+            type: "Stadium Experience",
+            description: "Walk the sidelines where Beast Quake happened. Touch the 12th Man flag. See the visiting locker room that intimidates opponents. Stand where Russell Wilson led the Legion of Boom. The tour guides are die-hard 12s with incredible stories.",
+            tags: ["Stadium Tour", "Must-Do", "12th Man History"],
+            rating: "4.9",
+            icon: "🏟️"
+          },
+          {
+            name: "Museum of Pop Culture (MoPOP)",
+            type: "Seattle Culture",
+            description: "Frank Gehry-designed museum celebrating Pacific Northwest music and culture. Nirvana, Jimi Hendrix, Pearl Jam exhibits. Also features sci-fi and horror displays. This is Seattle's creative spirit on display. Next to Space Needle.",
+            tags: ["Music History", "Architecture", "Culture"],
+            rating: "4.6",
+            icon: "🎸"
+          },
+          {
+            name: "Pike Place Market",
+            type: "Historic Market",
+            description: "Since 1907, this waterfront market pulses with fish-throwers, flower vendors, and the original Starbucks. On game days, the market empties as everyone heads to Lumen. But morning before kickoff, grab coffee and flowers, soak in old Seattle before new Seattle screams.",
+            tags: ["Historic", "Food", "Coffee"],
+            rating: "4.7",
+            icon: "🌸"
+          }
+        ]
+      },
+      tips: {
+        description: "Master these Seattle fan customs and you'll earn respect from the loudest fans in football.",
+        items: [
+          {
+            icon: "🔊",
+            title: "Bring Earplugs (Seriously)",
+            content: "Lumen Field hit 137.6 decibels—louder than a jet engine. The stadium was designed to trap and amplify noise. Your ears will ring for days without protection. But don't use them—the 12th Man noise is the point."
+          },
+          {
+            icon: "💚",
+            title: "Wear Navy or Action Green",
+            content: "Navy blue is traditional. Action green (neon) is modern 12s. Wolf grey is acceptable. White is rare. Never red (49ers) or green-and-gold (Packers). Violations get beer thrown at you. Probably."
+          },
+          {
+            icon: "🌧️",
+            title: "Embrace the Rain",
+            content: "Seattle rain is constant but gentle. Locals don't use umbrellas—that's tourist behavior. Wear a jacket, embrace the wetness, and never complain. The 12th Man doesn't let weather determine attitude."
+          },
+          {
+            icon: "🚆",
+            title: "Link Light Rail to Stadium",
+            content: "Take the Light Rail to Stadium Station—exits right at Lumen Field. Driving and parking is nightmare fuel. The train fills with singing fans, becoming mobile party. $3.25 beats $40 parking and traffic hell."
+          },
+          {
+            icon: "☕",
+            title: "Coffee is Religion",
+            content: "Seattle coffee culture is serious. Order a pour-over at Stumptown or Espresso Vivace. Saying 'Starbucks is fine' marks you as outsider. The city runs on caffeine and football. Usually in that order."
+          },
+          {
+            icon: "🏔️",
+            title: "Respect the Pacific Northwest",
+            content: "Seahawks fans are also hikers, kayakers, and outdoor enthusiasts. Post-game conversations cover Mount Rainier conditions as much as game stats. This is football in the most beautiful place on Earth."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Join the 12th Man and Cause an Earthquake?",
+      subtitle: "Experience the loudest stadium in sports and Pacific Northwest football passion.",
+      buttonText: "Plan Your Seattle Journey"
+    }
+  },
+
+  munich: {
+    meta: {
+      title: "Munich Bayern Fan Guide - Allianz Arena, Beer Gardens & Bavarian Football | FANTOWNS",
+      description: "Ultimate Bayern Munich fan travel guide. Experience the Allianz Arena, discover beer gardens, authentic Bavarian culture, and insider tips for Germany's football powerhouse.",
+      keywords: "Bayern Munich travel, Allianz Arena, beer gardens, Munich fan culture, Oktoberfest, Bundesliga tourism, FCB experience"
+    },
+    theme: {
+      primary: "#DC052D",
+      secondary: "#0066B2",
+      tagBg: "#fee",
+      tagColor: "#c00",
+      heroBg: "linear-gradient(rgba(220, 5, 45, 0.9), rgba(220, 5, 45, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23DC052D\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Munich 🇩🇪",
+      subtitle: "Where Football Meets Bavarian Tradition",
+      stats: [
+        { number: "32", label: "Bundesliga Titles" },
+        { number: "75,000", label: "Allianz Capacity" },
+        { number: "1900", label: "Founded" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay near the Allianz Arena or in Munich's historic center where Bavarian hospitality meets football excellence.",
+        items: [
+          {
+            name: "Hotel Residenz München",
+            type: "Luxury Boutique",
+            location: "Schwabing-Freimann",
+            description: "Five minutes from Allianz Arena, this elegant hotel caters to Bayern fans with stadium-view suites. The breakfast buffet features traditional Bavarian Weisswurst and pretzels. Staff speak fluent 'football'—they'll reserve your beer garden table and arrange match tickets. Post-game, the bar fills with celebrating fans.",
+            tags: ["Near Stadium", "Bavarian Breakfast", "Football Focus"],
+            rating: "4.7",
+            distance: "5 min to Allianz",
+            icon: "🏨"
+          },
+          {
+            name: "Mercure München Altstadt",
+            type: "Central Location",
+            location: "Old Town",
+            description: "In Munich's historic heart, walking distance to Marienplatz and Hofbräuhaus. Take the U6 directly to Fröttmaning station for matches. Perfect base for combining Bayern pilgrimage with Munich exploration. Rooms overlook copper rooftops and church spires—this is Bavaria beyond football.",
+            tags: ["Historic Center", "U-Bahn Access", "Classic Munich"],
+            rating: "4.5",
+            distance: "25 min U-Bahn to stadium",
+            icon: "🏨"
+          },
+          {
+            name: "Holiday Inn Munich - Unterhaching",
+            type: "Training Ground Hotel",
+            location: "Unterhaching",
+            description: "Where Bayern's training ground meets fan accommodation. Players occasionally spotted at breakfast during training camp. Affordable, modern, and filled with fans making the pilgrimage. The reception desk has seen more Bayern jerseys than a laundromat.",
+            tags: ["Budget-Friendly", "Training Ground", "Fan Favorite"],
+            rating: "4.3",
+            distance: "20 min to Allianz",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Munich's legendary beer culture where football and foam collide in perfect Bavarian harmony.",
+        items: [
+          {
+            name: "Hofbräuhaus München",
+            type: "Beer Hall Institution",
+            location: "Old Town",
+            description: "Since 1589, this cathedral of beer serves liters in dimpled glass mugs to oompah bands and roaring football songs. On match days, the hall transforms—1,000+ Bayern fans singing 'Stern des Südens' (Star of the South) while bratwurst and pretzels fly. This isn't just a bar. This is Bavaria.",
+            tags: ["Historic", "Beer Hall", "Essential Experience"],
+            rating: "4.6",
+            distance: "Old Town",
+            icon: "🍺"
+          },
+          {
+            name: "Paulaner am Nockherberg",
+            type: "Brewery & Beer Garden",
+            location: "Au-Haidhausen",
+            description: "Where Munich's football elite drink. Paulaner's historic brewery with vast beer garden hosts Bayern players, coaches, and die-hard fans. The märzen flows direct from copper tanks. After victories, the garden erupts in song. This is where championships taste like liquid bread.",
+            tags: ["Brewery", "Beer Garden", "Players' Spot"],
+            rating: "4.7",
+            distance: "South Munich",
+            icon: "🍺"
+          },
+          {
+            name: "Kennedy's Bar & Restaurant",
+            type: "Sports Bar",
+            location: "Sendlinger Tor",
+            description: "Munich's premier sports bar shows every Bayern match on massive screens with Irish hospitality and Bavarian beer. Expat fans gather here—English commentary available. The Guinness-and-weissbier combo shouldn't work but does. International football meets local passion.",
+            tags: ["Sports Bar", "International Crowd", "Big Screens"],
+            rating: "4.5",
+            distance: "City Center",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From traditional Bavarian cuisine to modern Munich gastronomy—fuel your football pilgrimage properly.",
+        items: [
+          {
+            name: "Augustiner-Bräu",
+            type: "Traditional Bavarian",
+            location: "Old Town",
+            description: "Munich's oldest independent brewery (1328) serves the city's best beer and most authentic Bavarian food. Schweinebraten (roast pork) with potato dumplings and dark beer gravy is transcendent. Bayern legends eat here. Wooden tables, copper brewing tanks, zero pretension. This is Munich's soul on a plate.",
+            tags: ["Historic Brewery", "Authentic", "Beer & Food"],
+            rating: "4.7",
+            distance: "City Center",
+            icon: "🍽️"
+          },
+          {
+            name: "Viktualienmarkt",
+            type: "Food Market",
+            location: "Marienplatz",
+            description: "Since 1807, Munich's food market pulses with cheese vendors, butchers, and beer gardens. Grab Leberkäse (Bavarian meatloaf), potato salad, and Augustiner from the market beer garden. Eat standing among locals. On match days, fans flood here pre-game for authentic fuel.",
+            tags: ["Market", "Street Food", "Local Experience"],
+            rating: "4.8",
+            distance: "City Center",
+            icon: "🍽️"
+          },
+          {
+            name: "Schneider Bräuhaus",
+            type: "Wheat Beer Specialist",
+            location: "Old Town",
+            description: "The original Weissbier (wheat beer) brewery serves traditional Bavarian dishes perfected over 150 years. Their Schneider Weisse TAP 7 pairs with schnitzel larger than your head. Vaulted ceilings echo with football discussions. This is where beer became art and food became religion.",
+            tags: ["Wheat Beer", "Schnitzel", "Bavarian Classic"],
+            rating: "4.6",
+            distance: "Marienplatz",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Bayern's dominance and Munich's beauty beyond the Allianz Arena's glowing facade.",
+        items: [
+          {
+            name: "Allianz Arena Tour",
+            type: "Stadium Experience",
+            description: "Walk through the tunnel where Lewandowski, Müller, and Neuer emerged. See the trophy room—32 Bundesliga shields gleaming. Touch the pitch where Bayern won the Champions League. The arena's illuminated facade changes color—red for Bayern, white for Germany. This spaceship landed in Munich and brought glory.",
+            tags: ["Stadium Tour", "Trophy Room", "Must-Do"],
+            rating: "4.9",
+            icon: "🏟️"
+          },
+          {
+            name: "FC Bayern Museum",
+            type: "Football History",
+            description: "Six Champions League trophies. Every Bundesliga title. Beckenbauer's legacy. Interactive exhibits let you take virtual penalties against legendary keepers. The 2013 Treble season room gives chills. This museum proves Bayern isn't just a club—it's German football royalty.",
+            tags: ["Museum", "Trophies", "Interactive"],
+            rating: "4.8",
+            icon: "🏆"
+          },
+          {
+            name: "Marienplatz & Glockenspiel",
+            type: "Munich Icon",
+            description: "Munich's central square where the Glockenspiel performs daily at 11am and noon. After Bayern victories, thousands gather here celebrating—beer, flags, songs echoing off Gothic architecture. This is where medieval Munich meets modern football glory. The city's beating heart.",
+            tags: ["Historic", "City Center", "Photo Spot"],
+            rating: "4.7",
+            icon: "🏛️"
+          }
+        ]
+      },
+      tips: {
+        description: "Master Bavarian football culture and you'll drink beer with locals like you've lived here forever.",
+        items: [
+          {
+            icon: "🍺",
+            title: "Order Beer Correctly",
+            content: "Say 'Eine Mass, bitte' (a liter, please) at beer gardens. Never order 'ein Bier'—that's tourist talk. A Mass (1 liter) is standard. Drink it. Germans will judge your commitment. Half-liters mark you as weak."
+          },
+          {
+            icon: "🥨",
+            title: "Respect the Weisswurst Time",
+            content: "Traditional rule: eat Weisswurst (white sausage) only before noon. Served with sweet mustard and pretzels. Remove the skin before eating or locals will mock you. This is breakfast, Munich-style, before match-day beer begins."
+          },
+          {
+            icon: "🎵",
+            title: "Learn 'Stern des Südens'",
+            content: "Bayern's anthem 'Stern des Südens' (Star of the South) is mandatory. Learn the chorus. Sing it in beer halls. Locals will buy you beer. Not knowing the words marks you as outsider. YouTube it before arrival."
+          },
+          {
+            icon: "🚇",
+            title: "U-Bahn to Fröttmaning",
+            content: "Take U6 subway to Fröttmaning station for Allianz Arena. Exits directly at the stadium. Trains packed with singing fans create mobile beer hall atmosphere. Far superior to driving. Match tickets often include public transport."
+          },
+          {
+            icon: "👔",
+            title: "Dress Code: Lederhosen Optional",
+            content: "Wear Bayern red. Lederhosen acceptable during Oktoberfest but not required for matches. Locals appreciate effort but not costume. Authentic jerseys earn respect. Wearing Dortmund yellow results in beer 'accidents.'"
+          },
+          {
+            icon: "⚽",
+            title: "Respect the Dortmund Rivalry",
+            content: "Der Klassiker (Bayern vs Dortmund) is Germany's biggest match. Never praise Dortmund in Munich. This rivalry runs deeper than beer. Joking about it requires local status you don't have. Stay neutral or bleed Bayern red."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Experience Bavarian Football Royalty?",
+      subtitle: "Join the champions at the Allianz Arena and discover where tradition meets dominance.",
+      buttonText: "Plan Your Munich Journey"
+    }
+  },
+
+  cairo: {
+    meta: {
+      title: "Cairo Al Ahly Fan Guide - Egyptian Football Passion & Ultras Culture | FANTOWNS",
+      description: "Ultimate Cairo football fan guide. Experience Al Ahly's Ultras Ahlawy, discover the passion of Egyptian football, and insider tips for Africa's most decorated club.",
+      keywords: "Al Ahly Cairo, Ultras Ahlawy, Egyptian football, Cairo Stadium, African football culture, Egypt soccer travel"
+    },
+    theme: {
+      primary: "#DC0714",
+      secondary: "#FFD700",
+      tagBg: "#ffeeee",
+      tagColor: "#c00",
+      heroBg: "linear-gradient(rgba(220, 7, 20, 0.9), rgba(220, 7, 20, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23DC0714\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Cairo 🇪🇬",
+      subtitle: "Where Football Ignites Revolution",
+      stats: [
+        { number: "42", label: "African Titles" },
+        { number: "75,000", label: "Stadium Capacity" },
+        { number: "1907", label: "Founded" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in Cairo where ancient pyramids meet modern football passion and the Nile flows eternal.",
+        items: [
+          {
+            name: "Fairmont Nile City",
+            type: "Luxury Riverfront",
+            location: "Nile Corniche",
+            description: "Glass towers overlooking the Nile with views of Cairo's chaos and beauty. Al Ahly's wealthiest supporters stay here before big matches. The pool deck at night—Nile lit up, city roaring, call to prayer echoing—captures Egypt's contrasts. Modern luxury in ancient land.",
+            tags: ["Nile Views", "Luxury", "Rooftop Pool"],
+            rating: "4.6",
+            distance: "30 min to Cairo Stadium",
+            icon: "🏨"
+          },
+          {
+            name: "Steigenberger El Tahrir",
+            type: "Central Cairo",
+            location: "Tahrir Square",
+            description: "In the heart of revolutionary Tahrir Square where Egypt's future was decided. Walking distance to Egyptian Museum. Al Ahly fans gather in the lobby before matches, red jerseys and drums. This hotel witnessed history and football passion intersecting. Egypt condensed into one building.",
+            tags: ["Tahrir Square", "Historic Location", "Fan Meeting Point"],
+            rating: "4.4",
+            distance: "20 min to stadium",
+            icon: "🏨"
+          },
+          {
+            name: "Pyramids View Inn",
+            type: "Budget Heritage",
+            location: "Giza Pyramids",
+            description: "Wake up to pyramids outside your window. Budget accommodation with million-dollar views. Al Ahly fans on pilgrimage stay here—ancient wonders by day, modern football by night. The rooftop café serves mint tea and football philosophy. Egypt's past and present collision.",
+            tags: ["Pyramid Views", "Budget", "Authentic"],
+            rating: "4.2",
+            distance: "45 min to stadium",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Cairo's ahwas (coffee houses) and modern bars where football passion flows stronger than Nile currents.",
+        items: [
+          {
+            name: "El-Fishawy Café",
+            type: "Historic Ahwa",
+            location: "Khan el-Khalili",
+            description: "Since 1773, this legendary café has served mint tea, shisha, and endless football debate. Mirrors and antiques cover every surface. On match days, the TV comes on and 200 years of tradition pauses for Al Ahly. Naguib Mahfouz wrote here. Ultras Ahlawy plan here. History happens here.",
+            tags: ["Historic Café", "Shisha", "Cultural Icon"],
+            rating: "4.5",
+            distance: "Islamic Cairo",
+            icon: "☕"
+          },
+          {
+            name: "Pub 28",
+            type: "Sports Bar",
+            location: "Zamalek",
+            description: "Cairo's premier sports bar in upscale Zamalek island. Multiple screens show African Champions League matches. Egyptian expats and visitors mix, united by Al Ahly red. The only place in Cairo serving proper pints during matches. Western bar meets Egyptian passion.",
+            tags: ["Sports Bar", "International", "Alcohol Served"],
+            rating: "4.3",
+            distance: "Zamalek Island",
+            icon: "🍺"
+          },
+          {
+            name: "Ahwa Downtown",
+            type: "Modern Ahwa",
+            location: "Downtown Cairo",
+            description: "Traditional ahwa reimagined for young Cairo. Mint tea, Turkish coffee, and Al Ahly scarves on every wall. The WiFi password changes to player names after big signings. This is where young Ultras Ahlawy gather, plotting choreographies and discussing tactics until sunrise.",
+            tags: ["Modern Traditional", "Young Crowd", "Football Hub"],
+            rating: "4.4",
+            distance: "Downtown",
+            icon: "☕"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From street koshari to Nile-side feasts—fuel your Egyptian football pilgrimage with legendary cuisine.",
+        items: [
+          {
+            name: "Abou Tarek",
+            type: "Koshari Institution",
+            location: "Downtown Cairo",
+            description: "Since 1950, Cairo's most famous koshari restaurant serves Egypt's national dish—lentils, rice, pasta, chickpeas, fried onions, spicy tomato sauce. Al Ahly fans eat here before matches. LE 20 fills you for 8 hours. Three floors, always packed, zero English. Perfect.",
+            tags: ["Egyptian Classic", "Street Food", "Legendary"],
+            rating: "4.7",
+            distance: "Downtown",
+            icon: "🍽️"
+          },
+          {
+            name: "Sequoia",
+            type: "Nile Dining",
+            location: "Zamalek",
+            description: "Upscale Nile-side restaurant where Cairo's elite watch matches on big screens over grilled meats and mezze. The terrace overlooks the river and city lights. After Al Ahly victories, champagne flows and fireworks reflect in the Nile. Modern Egypt celebrating.",
+            tags: ["Upscale", "Nile Views", "Celebration Spot"],
+            rating: "4.5",
+            distance: "Zamalek",
+            icon: "🍽️"
+          },
+          {
+            name: "Felfela",
+            type: "Traditional Egyptian",
+            location: "Downtown Cairo",
+            description: "Since 1959, this family restaurant serves authentic Egyptian cuisine—molokhia (green soup), stuffed pigeon, grilled kofta. Walls covered in folk art and Al Ahly photos. Tourists and locals mix. The mango juice is religion. This is Egypt's kitchen.",
+            tags: ["Traditional", "Family-Run", "Authentic"],
+            rating: "4.6",
+            distance: "Downtown",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Egyptian football culture and 5,000 years of history colliding in glorious chaos.",
+        items: [
+          {
+            name: "Al Ahly Club Complex",
+            type: "Football Institution",
+            description: "Africa's most successful club's headquarters in Zamalek. The museum displays 42 African titles—more than any club on Earth. Training grounds where Salah developed. The red fortress of Egyptian football. Visit outside match days for photos and reverence.",
+            tags: ["Club Museum", "Historic Grounds", "Trophy Display"],
+            rating: "4.7",
+            icon: "🏟️"
+          },
+          {
+            name: "Pyramids of Giza",
+            type: "Ancient Wonder",
+            description: "4,500 years old, visible from space, utterly surreal in person. After watching Al Ahly, visit Khufu, Khafre, and Menkaure—pharaohs who would've been Ultras Ahlawy. Sunset over pyramids puts football in perspective. Some things transcend sport. This is one.",
+            tags: ["World Wonder", "Ancient History", "Essential Visit"],
+            rating: "4.9",
+            icon: "🏛️"
+          },
+          {
+            name: "Egyptian Museum",
+            type: "Archaeological Treasure",
+            description: "120,000 artifacts including Tutankhamun's golden mask in Tahrir Square. The building is chaotic, dusty, perfect—like Cairo itself. On match days, museum empties as everyone heads to the stadium. But visit—Ultras Ahlawy's passion has historical precedent. Egyptians invented devotion.",
+            tags: ["Museum", "Tutankhamun", "History"],
+            rating: "4.6",
+            icon: "🏺"
+          }
+        ]
+      },
+      tips: {
+        description: "Navigate Cairo's beautiful chaos and earn respect from the most passionate football supporters on Earth.",
+        items: [
+          {
+            icon: "🔴",
+            title: "Understand Ultras Ahlawy",
+            content: "Egypt's most organized fan group, born in 2007. They helped topple Mubarak in 2011. 72 members died in Port Said Stadium massacre 2012. This isn't fandom—it's identity, resistance, brotherhood. Respect their history. Their chants carry revolution."
+          },
+          {
+            icon: "🎫",
+            title: "Tickets and Security",
+            content: "Egyptian stadium security is intense post-2012 tragedy. Bring ID, arrive early, expect thorough searches. Tickets often sold same-day only. Women's sections exist. Follow local fans' lead. Security isn't inconvenience—it's protection of sacred space."
+          },
+          {
+            icon: "💷",
+            title: "Cash is King",
+            content: "Bring Egyptian pounds cash. Cards rarely work outside luxury hotels. ATMs exist but unreliable. Koshari costs LE 20. Stadium tickets LE 50-200. Tipping (baksheesh) expected everywhere. Budget LE 500/day for food, transport, tips."
+          },
+          {
+            icon: "🕌",
+            title: "Respect Prayer Times",
+            content: "When the call to prayer sounds five times daily, some shops close briefly. Al Ahly fans pray before matches. Respect the pause. Egypt's rhythm follows faith and football equally. Both are sacred."
+          },
+          {
+            icon: "🚗",
+            title: "Traffic is Performance Art",
+            content: "Cairo traffic has no rules—only suggestions. Crossing streets is Frogger IRL. Use Uber or Careem apps. Agree on taxi prices before riding. The chaos has rhythm. Match days make it worse. Plan 90 minutes for any journey."
+          },
+          {
+            icon: "🤝",
+            title: "Learn Basic Arabic",
+            content: "'Ahlan' (hello), 'Shukran' (thank you), 'Yalla Ahly!' (Let's go Ahly!) opens doors. Egyptians appreciate effort. Smiling transcends language. Football is universal. Wearing Al Ahly red makes you family."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Experience African Football's Greatest Power?",
+      subtitle: "Join Ultras Ahlawy and discover where passion ignites revolution.",
+      buttonText: "Plan Your Cairo Journey"
+    }
+  },
+
+  madrid: {
+    meta: {
+      title: "Madrid Real Madrid Fan Guide - Bernabéu, Tapas & Galáctico Glory | FANTOWNS",
+      description: "Ultimate Real Madrid fan travel guide. Experience the legendary Bernabéu, discover Madrid's tapas culture, and insider tips for the world's most successful club.",
+      keywords: "Real Madrid travel, Santiago Bernabéu, Madrid tapas bars, Galácticos, La Liga tourism, Champions League experience"
+    },
+    theme: {
+      primary: "#FFFFFF",
+      secondary: "#00529F",
+      tagBg: "#f0f0f0",
+      tagColor: "#00529F",
+      heroBg: "linear-gradient(rgba(0, 82, 159, 0.9), rgba(0, 82, 159, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%2300529F\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Madrid 🇪🇸",
+      subtitle: "Where Galácticos Become Legends",
+      stats: [
+        { number: "14", label: "Champions League" },
+        { number: "81,000", label: "Bernabéu Capacity" },
+        { number: "1902", label: "Founded" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in Madrid's elegant neighborhoods where football royalty and Spanish grandeur collide.",
+        items: [
+          {
+            name: "Hotel Fénix Gran Meliá",
+            type: "Luxury Icon",
+            location: "Colón",
+            description: "Where Real Madrid celebrates championships at Cibeles fountain steps away. Post-victory, players parade here in open-top buses. Art Deco elegance meets football history. Balcony rooms overlook the celebration epicenter. When Madrid wins, you're in the middle of it all.",
+            tags: ["Championship Spot", "Luxury", "Prime Location"],
+            rating: "4.7",
+            distance: "15 min walk to Bernabéu",
+            icon: "🏨"
+          },
+          {
+            name: "Hotel Princesa Plaza Madrid",
+            type: "Stadium District",
+            location: "Chamartín",
+            description: "Modern hotel 500 meters from Bernabéu. Rooftop pool with stadium views. Breakfast buffed filled with excited fans on match days. Staff arrange tickets and reserve tapas bars. This is base camp for your Galáctico pilgrimage.",
+            tags: ["Near Stadium", "Modern", "Fan Friendly"],
+            rating: "4.5",
+            distance: "5 min walk to Bernabéu",
+            icon: "🏨"
+          },
+          {
+            name: "Room007 Chueca Hostel",
+            type: "Budget Hip",
+            location: "Chueca",
+            description: "Young traveling fans fill this stylish hostel in Madrid's trendiest neighborhood. Rooftop terrace for pre-game drinks. Walking distance to Gran Vía nightlife. Metro to stadium takes 10 minutes. Budget accommodation with championship atmosphere.",
+            tags: ["Budget", "Social", "Central Location"],
+            rating: "4.3",
+            distance: "10 min metro to Bernabéu",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Madrid's tapas culture and football passion in bars where legends drink.",
+        items: [
+          {
+            name: "Puerta 57",
+            type: "Stadium Bar",
+            location: "Bernabéu District",
+            description: "Directly across from the Bernabéu, this official Real Madrid bar pulses with white jerseys and champagne after victories. Massive screens show classic matches. Trophy replicas line the walls. Former players occasionally appear. This is Real Madrid distilled into a bar.",
+            tags: ["Official Bar", "Stadium Location", "Essential"],
+            rating: "4.6",
+            distance: "Across from Bernabéu",
+            icon: "🍺"
+          },
+          {
+            name: "Casa Labra",
+            type: "Historic Tapas",
+            location: "Sol",
+            description: "Since 1860, this tiny bar serves the best bacalao (cod) croquettes in Madrid. Stand-only, loud, authentic. Madridistas gather here before heading to matches. The vermouth flows, the croquetas disappear, and football philosophy echoes off marble counters.",
+            tags: ["Historic", "Tapas", "Authentic"],
+            rating: "4.7",
+            distance: "City Center",
+            icon: "🍺"
+          },
+          {
+            name: "Museo Chicote",
+            type: "Cocktail Legend",
+            location: "Gran Vía",
+            description: "Since 1931, Madrid's most famous cocktail bar hosted Hemingway, Ava Gardner, and now Real Madrid's glitterati. Art Deco glamour and martinis. After Champions League victories, players and celebrities celebrate here. This is where Galácticos become legends over cocktails.",
+            tags: ["Cocktail Bar", "Historic", "Celebrity Spot"],
+            rating: "4.5",
+            distance: "Gran Vía",
+            icon: "🍸"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From traditional cocido to Michelin stars—fuel your Madrid football journey with legendary cuisine.",
+        items: [
+          {
+            name: "Mercado de San Miguel",
+            type: "Gourmet Market",
+            location: "Plaza Mayor",
+            description: "Glass-and-iron market from 1916 transformed into tapas paradise. Sample jamón ibérico, oysters, croquetas, vermouth—all under one roof. On match days, it's packed with fans grazing before heading to Bernabéu. Madrid's flavors in elegant chaos.",
+            tags: ["Market", "Tapas", "Essential Experience"],
+            rating: "4.6",
+            distance: "City Center",
+            icon: "🍽️"
+          },
+          {
+            name: "Sobrino de Botín",
+            type: "World's Oldest Restaurant",
+            location: "La Latina",
+            description: "Guinness Record: world's oldest restaurant (1725). Hemingway mentioned it in 'The Sun Also Rises.' Wood-fired oven cooking cochinillo (roast suckling pig) since before Real Madrid existed. After matches, celebrate like Madridistas have for centuries. History you can eat.",
+            tags: ["Historic", "Traditional", "Iconic"],
+            rating: "4.7",
+            distance: "Old Madrid",
+            icon: "🍽️"
+          },
+          {
+            name: "StreetXO",
+            type: "Michelin Innovation",
+            location: "Serrano",
+            description: "Chef Dabiz Muñoz's rebellious Michelin-star street food. Asian-Spanish fusion that breaks rules like Cristiano breaks records. The clubsteak bao and Peking duck are legendary. Young Madridistas celebrate victories here. Traditional Madrid meets global swagger.",
+            tags: ["Michelin Star", "Innovative", "Trendy"],
+            rating: "4.8",
+            distance: "Salamanca District",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Real Madrid's glory and the art, culture, and beauty that make the capital legendary.",
+        items: [
+          {
+            name: "Bernabéu Stadium Tour",
+            type: "Football Cathedral",
+            description: "Walk the tunnel where Ronaldo, Zidane, and Di Stéfano emerged. Touch the pitch. See the presidential box. The trophy room displays 14 European Cups—more than any club in history. The panoramic view from the top tier is breathtaking. This is football heaven.",
+            tags: ["Stadium Tour", "Trophy Room", "Must-Do"],
+            rating: "4.9",
+            icon: "🏟️"
+          },
+          {
+            name: "Cibeles Fountain",
+            type: "Championship Monument",
+            description: "Where Real Madrid celebrates every title. Players drape white flags over the goddess Cibeles. Thousands gather, singing, champagne spraying. Even without victory, this fountain in Plaza de Cibeles represents Madrid's beating heart. The city's most beautiful roundabout.",
+            tags: ["Historic", "Photo Spot", "Celebration Site"],
+            rating: "4.8",
+            icon: "⛲"
+          },
+          {
+            name: "Prado Museum",
+            type: "Art Masterpiece",
+            description: "One of the world's finest art museums. Velázquez, Goya, Bosch masterpieces. After football passion, experience Spain's artistic soul. The museum empties on match days—visit then for solitude with genius. Madrid is more than football. This is proof.",
+            tags: ["Museum", "World-Class Art", "Culture"],
+            rating: "4.9",
+            icon: "🖼️"
+          }
+        ]
+      },
+      tips: {
+        description: "Master Madrid's culture and you'll celebrate like a local when Los Blancos lift another trophy.",
+        items: [
+          {
+            icon: "🥘",
+            title: "Master Tapas Timing",
+            content: "Lunch 2-4pm, dinner after 9pm. Spaniards eat late. Tapas bars serve small plates to share—don't order individual meals. Say 'una caña' for small beer, 'jamón ibérico' for the best ham on Earth. Standing at the bar is authentic."
+          },
+          {
+            icon: "⚪",
+            title: "Hala Madrid Y Nada Más",
+            content: "Real Madrid's battle cry means 'Go Madrid and nothing else.' Learn it. Shout it. The Bernabéu roars it before kickoff. Not knowing this phrase marks you as outsider. Pronounce it: 'AH-la mah-DREED ee NAH-dah MAHS.'"
+          },
+          {
+            icon: "🚇",
+            title: "Metro to Santiago Bernabéu",
+            content: "Take Line 10 to Santiago Bernabéu station—exits directly at the stadium. Madrid metro is fast, clean, efficient. Far better than driving. Match tickets often include transport. The metro fills with white jerseys like a mobile celebration."
+          },
+          {
+            icon: "💃",
+            title: "Siesta is Real",
+            content: "Many shops close 2-5pm for siesta. Plan around it. Madridistas nap before night matches. The city runs late—nightlife starts after midnight. Embrace the schedule or fight it miserably. When in Madrid, sleep like Madrileños."
+          },
+          {
+            icon: "🔵🔴",
+            title: "The Barça Rivalry is Sacred",
+            content: "El Clásico (Madrid vs Barcelona) transcends sport. Never praise Barcelona in Madrid. This isn't banter—it's identity. Catalonia vs Castilla, Franco's legacy, centuries of competition. Respect the depth. Stay neutral or bleed white."
+          },
+          {
+            icon: "👔",
+            title: "Dress Well, Always",
+            content: "Madrileños dress elegantly. Even casual is polished. Match days see stylish white jerseys, not sloppy tourism. Dinner requires real pants and shoes. Madrid is sophisticated. Your appearance shows respect for the city and club."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Join the Kings of Europe?",
+      subtitle: "Experience the Bernabéu and discover why Real Madrid is football royalty.",
+      buttonText: "Plan Your Madrid Journey"
+    }
+  },
+
+  marseille: {
+    meta: {
+      title: "Marseille OM Fan Guide - Vélodrome, Mediterranean Passion & Ultras Culture | FANTOWNS",
+      description: "Ultimate Marseille OM fan travel guide. Experience the Vélodrome, discover Mediterranean culture, and insider tips for France's most passionate football city.",
+      keywords: "Marseille OM travel, Stade Vélodrome, Ultras culture, French football, Provence tourism, Ligue 1 experience"
+    },
+    theme: {
+      primary: "#2FAEE0",
+      secondary: "#FFFFFF",
+      tagBg: "#e6f7ff",
+      tagColor: "#0080c0",
+      heroBg: "linear-gradient(rgba(47, 174, 224, 0.9), rgba(47, 174, 224, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%232FAEE0\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Marseille 🇫🇷",
+      subtitle: "Where Mediterranean Fire Meets Football Fury",
+      stats: [
+        { number: "10", label: "Ligue 1 Titles" },
+        { number: "67,000", label: "Vélodrome Capacity" },
+        { number: "1899", label: "Founded" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in Marseille where the Mediterranean meets football passion and Provençal culture pulses.",
+        items: [
+          {
+            name: "InterContinental Marseille - Hotel Dieu",
+            type: "Luxury Historic",
+            location: "Vieux-Port",
+            description: "18th-century hospital transformed into five-star luxury overlooking the Old Port. Rooftop pool with cathedral views. OM's wealthiest supporters stay here before derbies. The spa is perfect for post-match recovery. Marseille's elegance meets Mediterranean beauty.",
+            tags: ["Luxury", "Historic Building", "Port Views"],
+            rating: "4.7",
+            distance: "4km to Vélodrome",
+            icon: "🏨"
+          },
+          {
+            name: "AC Hotel Marseille Prado Vélodrome",
+            type: "Stadium Hotel",
+            location: "Prado",
+            description: "Modern hotel 5 minutes walk from Vélodrome. Rooms fill with blue-and-white jerseys on match days. Rooftop terrace serves pastis overlooking the stadium. Staff know every bar and restaurant for pre-game rituals. This is OM fan headquarters.",
+            tags: ["Near Stadium", "Modern", "Fan Central"],
+            rating: "4.5",
+            distance: "5 min walk to Vélodrome",
+            icon: "🏨"
+          },
+          {
+            name: "Vertigo Vieux-Port",
+            type: "Budget Hostel",
+            location: "Vieux-Port",
+            description: "Stylish hostel in Marseille's beating heart. Rooftop terrace overlooks the harbor and Notre-Dame de la Garde. Young OM fans gather here before matches. Metro to stadium takes 10 minutes. Budget beds with million-euro views.",
+            tags: ["Budget", "Harbor Views", "Social"],
+            rating: "4.3",
+            distance: "10 min metro to Vélodrome",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Marseille's bars where pastis flows, bouillabaisse simmers, and OM passion ignites.",
+        items: [
+          {
+            name: "Le Virage",
+            type: "OM Temple",
+            location: "Vélodrome District",
+            description: "The official OM supporters' bar steps from the stadium. Blue-and-white scarves cover every surface. Pastis and beer flow. Ultras gather here before matches, drums echoing. Former players occasionally visit. This isn't a bar—it's a pilgrimage site.",
+            tags: ["Official Bar", "Ultras Spot", "Essential"],
+            rating: "4.7",
+            distance: "Next to Vélodrome",
+            icon: "🍺"
+          },
+          {
+            name: "Bar de la Marine",
+            type: "Vieux-Port Icon",
+            location: "Vieux-Port",
+            description: "Featured in films, beloved by locals, packed with OM fans. This harborfront bar serves pastis, rosé, and endless football debate. Watch boats bob while discussing tactics. On match days, fans gather here before marching to the stadium.",
+            tags: ["Harbor Views", "Film Location", "Authentic"],
+            rating: "4.6",
+            distance: "Vieux-Port",
+            icon: "🍺"
+          },
+          {
+            name: "La Caravelle",
+            type: "Historic Brasserie",
+            location: "Vieux-Port",
+            description: "Art Deco brasserie since 1943 on the Old Port. Models of ships hang from ceilings. Fresh seafood and cold beer. After OM victories, the terrace erupts in celebration. Marseille's maritime heritage meets modern football passion.",
+            tags: ["Brasserie", "Seafood", "Historic"],
+            rating: "4.5",
+            distance: "Vieux-Port",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From bouillabaisse to North African flavors—Marseille's cuisine is Mediterranean fusion perfected.",
+        items: [
+          {
+            name: "Chez Fonfon",
+            type: "Bouillabaisse Legend",
+            location: "Vallon des Auffes",
+            description: "Since 1952, this waterfront restaurant serves Marseille's most famous bouillabaisse—fish stew that defines the city. OM legends eat here. The tiny fishing port Vallon des Auffes is postcard Marseille. Reserve ahead or weep with regret.",
+            tags: ["Bouillabaisse", "Waterfront", "Legendary"],
+            rating: "4.8",
+            distance: "Vallon des Auffes",
+            icon: "🍽️"
+          },
+          {
+            name: "Le Panier",
+            type: "North African",
+            location: "Le Panier District",
+            description: "Marseille's oldest neighborhood pulses with Algerian, Moroccan, and Tunisian restaurants. Couscous, tagines, mint tea. This is France's most multicultural city—and the food proves it. After matches, OM fans of all backgrounds gather here.",
+            tags: ["North African", "Historic District", "Couscous"],
+            rating: "4.6",
+            distance: "Le Panier",
+            icon: "🍽️"
+          },
+          {
+            name: "Péron",
+            type: "Mediterranean Seafood",
+            location: "Corniche",
+            description: "Clifftop restaurant overlooking the Mediterranean. Fresh fish grilled to perfection, rosé flowing, sunset over the sea. After big OM victories, this is where players and wealthy fans celebrate. Expensive, worth it, unforgettable.",
+            tags: ["Seafood", "Sea Views", "Upscale"],
+            rating: "4.7",
+            distance: "Corniche",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience OM's passion and Marseille's gritty beauty beyond the Vélodrome's roar.",
+        items: [
+          {
+            name: "Stade Vélodrome Tour",
+            type: "Stadium Experience",
+            description: "France's second-largest stadium, renovated for Euro 2016. Walk the tunnel where Payet and Mandanda emerged. See the Virage Sud—home of the Ultras. The trophy room displays the 1993 Champions League—France's only winner. Feel the Mediterranean passion.",
+            tags: ["Stadium Tour", "Ultras Culture", "Must-Do"],
+            rating: "4.8",
+            icon: "🏟️"
+          },
+          {
+            name: "Notre-Dame de la Garde",
+            type: "Marseille Icon",
+            description: "Basilica on Marseille's highest point with 360° views of city, port, and sea. The golden Madonna watches over the city and OM. After victories, fans gather here celebrating. Climb the hill or take the tourist train. The views are divine.",
+            tags: ["Basilica", "Panoramic Views", "Photo Spot"],
+            rating: "4.9",
+            icon: "⛪"
+          },
+          {
+            name: "Vieux-Port",
+            type: "Historic Harbor",
+            description: "Marseille's 2,600-year-old port is the city's heart. Fish market mornings, boats bobbing, street performers, and endless cafés. On match days, OM fans gather here before marching to the Vélodrome. This is where Marseille lives.",
+            tags: ["Harbor", "Historic", "City Center"],
+            rating: "4.7",
+            icon: "⚓"
+          }
+        ]
+      },
+      tips: {
+        description: "Navigate Marseille's edge and passion, and you'll understand France's most unique city.",
+        items: [
+          {
+            icon: "🔵⚪",
+            title: "Droit au But",
+            content: "'Droit au But' (Straight to the Goal) is OM's anthem. Learn it. Sing it. The Vélodrome roars it before kickoff. It's Marseille's soul in song. YouTube it before arrival. Not knowing it marks you as tourist."
+          },
+          {
+            icon: "🥃",
+            title: "Pastis is Religion",
+            content: "Order pastis (anise liqueur) before matches. Mix 1 part pastis, 5 parts water—it turns cloudy yellow. This is Marseille's drink. Refusing it insults local culture. Drink it slowly. Locals judge your commitment to the city."
+          },
+          {
+            icon: "🚇",
+            title: "Metro to Rond-Point du Prado",
+            content: "Take Metro Line 2 to Rond-Point du Prado station for Vélodrome. Exits 10 minutes walk from stadium. Trains packed with blue-and-white create mobile celebration. Driving is nightmare. Match tickets include transport."
+          },
+          {
+            icon: "⚠️",
+            title: "Marseille Has Edge",
+            content: "France's grittiest city. Not dangerous if you're smart—avoid empty streets late, watch belongings in crowds. The edge is part of the charm. OM fans are passionate, not violent. Respect the city's roughness."
+          },
+          {
+            icon: "🇩🇿",
+            title: "Embrace Multiculturalism",
+            content: "Marseille is France's most diverse city—North African culture everywhere. This diversity defines OM's fanbase. Arabic mixed with French. Couscous alongside bouillabaisse. This fusion is Marseille's strength and beauty."
+          },
+          {
+            icon: "🟢",
+            title: "The PSG Rivalry Burns",
+            content: "OM vs PSG is France's Classique—working-class Marseille vs wealthy Paris. This rivalry is class warfare. Never praise PSG in Marseille. The hatred is real, deep, generational. Stay neutral or bleed blue-and-white."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Experience France's Most Passionate Football City?",
+      subtitle: "Join the Ultras at the Vélodrome and discover Mediterranean fire.",
+      buttonText: "Plan Your Marseille Journey"
+    }
+  },
+
+  mexicocity: {
+    meta: {
+      title: "Mexico City Football Fan Guide - Azteca Stadium, Altitude & Mariachi Passion | FANTOWNS",
+      description: "Ultimate Mexico City football fan travel guide. Experience the legendary Azteca Stadium, discover altitude football, and insider tips for Latin America's most passionate sports city.",
+      keywords: "Mexico City football, Estadio Azteca, Club América, Pumas UNAM, altitude football, Liga MX travel"
+    },
+    theme: {
+      primary: "#FFD700",
+      secondary: "#003DA5",
+      tagBg: "#fff8e1",
+      tagColor: "#c68400",
+      heroBg: "linear-gradient(rgba(0, 61, 165, 0.9), rgba(0, 61, 165, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23003DA5\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Mexico City 🇲🇽",
+      subtitle: "Where Altitude Meets Attitude",
+      stats: [
+        { number: "7,200 ft", label: "Altitude" },
+        { number: "87,000", label: "Azteca Capacity" },
+        { number: "1966", label: "Azteca Opened" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in CDMX where ancient Aztec heritage meets modern football passion at dizzying altitude.",
+        items: [
+          {
+            name: "Four Seasons México DF",
+            type: "Luxury Colonial",
+            location: "Paseo de la Reforma",
+            description: "Elegant hotel in a Spanish colonial mansion with inner courtyard. Club América's elite supporters stay here before Clásicos. The spa helps with altitude adjustment. Located on Reforma avenue—CDMX's Champs-Élysées. Mexican luxury meets football passion.",
+            tags: ["Luxury", "Historic Building", "Central Location"],
+            rating: "4.8",
+            distance: "30 min to Azteca",
+            icon: "🏨"
+          },
+          {
+            name: "Fiesta Americana Viaducto Aeropuerto",
+            type: "Stadium Area",
+            location: "Near Azteca",
+            description: "Modern hotel 10 minutes from Azteca Stadium. Rooms fill with América, Cruz Azul, and Pumas fans on match days. The restaurant serves chilaquiles and tacos for proper pre-game fuel. Staff help arrange tickets and warn about altitude effects.",
+            tags: ["Near Stadium", "Modern", "Fan Friendly"],
+            rating: "4.5",
+            distance: "10 min to Azteca",
+            icon: "🏨"
+          },
+          {
+            name: "Hostel Mundo Joven Catedral",
+            type: "Budget Centro",
+            location: "Historic Center",
+            description: "Colorful hostel in the Zócalo area where young fans gather. Rooftop bar with cathedral views. Walking distance to Bellas Artes and Templo Mayor. Metro to Azteca takes 40 minutes. Budget beds in CDMX's beating heart.",
+            tags: ["Budget", "Social", "Historic Center"],
+            rating: "4.4",
+            distance: "40 min metro to Azteca",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience CDMX's cantinas and pulquerías where tequila flows and football passion burns at altitude.",
+        items: [
+          {
+            name: "Estadio Azteca Sports Bar",
+            type: "Stadium Bar",
+            location: "Azteca Complex",
+            description: "Inside the Azteca complex, this massive sports bar fills with 1,000+ fans before matches. Corona and Modelo flow. Mariachi bands play between games. Tacos al pastor disappear by the hundreds. This is Mexican football culture concentrated.",
+            tags: ["Stadium Location", "Huge", "Pre-Game Hub"],
+            rating: "4.6",
+            distance: "Inside Azteca",
+            icon: "🍺"
+          },
+          {
+            name: "La Mascota",
+            type: "Historic Cantina",
+            location: "Coyoacán",
+            description: "Since 1940, this traditional cantina serves pulque, tequila, and Mexican folklore. Frida Kahlo drank here. Football fans gather on match days. The micheladas (beer with lime and spices) are legendary. This is Mexico City's soul in liquid form.",
+            tags: ["Historic", "Traditional", "Micheladas"],
+            rating: "4.7",
+            distance: "Coyoacán",
+            icon: "🍺"
+          },
+          {
+            name: "Pata Negra",
+            type: "Modern Sports Bar",
+            location: "Polanco",
+            description: "Upscale sports bar in wealthy Polanco with 50+ screens showing Liga MX, Champions League, and Premier League. Young CDMX professionals watch matches over craft beer and gourmet tacos. Modern Mexico celebrating global football.",
+            tags: ["Upscale", "Multiple Screens", "Polanco"],
+            rating: "4.5",
+            distance: "Polanco",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From street tacos to mole masterpieces—CDMX's cuisine is 500 years of fusion perfected.",
+        items: [
+          {
+            name: "Pujol",
+            type: "Michelin-Level Mexican",
+            location: "Polanco",
+            description: "Chef Enrique Olvera's world-famous restaurant (Top 50 in the world). Modern Mexican cuisine built on ancient techniques. The mole madre aged 1,000+ days is transcendent. After big victories, CDMX's elite celebrate here. Expensive, worth it, unforgettable.",
+            tags: ["World-Class", "Modern Mexican", "Reservation Required"],
+            rating: "4.9",
+            distance: "Polanco",
+            icon: "🍽️"
+          },
+          {
+            name: "El Cardenal",
+            type: "Traditional Mexican",
+            location: "Historic Center",
+            description: "Since 1969, this institution serves traditional Mexican breakfast and lunch. Hot chocolate made from scratch. Tamales, enchiladas, mole poblano. Before afternoon matches, fans fuel up here. This is Mexican grandmothers' cooking elevated to art.",
+            tags: ["Traditional", "Breakfast", "Historic"],
+            rating: "4.7",
+            distance: "Centro Histórico",
+            icon: "🍽️"
+          },
+          {
+            name: "Tacos El Güero",
+            type: "Street Tacos",
+            location: "Everywhere",
+            description: "CDMX has 10,000+ taco stands. Al pastor (spit-roasted pork) is king. Order '4 al pastor con todo' (with everything). Add salsa, cilantro, onion, lime. Cost: 10 pesos each. This is Mexico's fast food—and it's glorious. Eat standing. No tourists, only locals.",
+            tags: ["Street Food", "Tacos", "Authentic"],
+            rating: "5.0",
+            distance: "Every street corner",
+            icon: "🌮"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Mexican football glory and the ancient-meets-modern chaos that is CDMX.",
+        items: [
+          {
+            name: "Estadio Azteca Tour",
+            type: "Historic Stadium",
+            description: "Where Pelé and Maradona won World Cups. Where the 'Hand of God' happened. Two World Cup finals in the same stadium. Walk the tunnel, see the pitch, touch history. The Azteca is football sacred ground. Altitude makes you breathless—history makes you speechless.",
+            tags: ["Stadium Tour", "World Cup History", "Must-Do"],
+            rating: "4.9",
+            icon: "🏟️"
+          },
+          {
+            name: "Templo Mayor & Zócalo",
+            type: "Aztec Ruins",
+            description: "Aztec temple ruins in the heart of modern CDMX. The cathedral and palace surround the Zócalo—world's third-largest plaza. This is where ancient Tenochtitlán meets colonial Mexico meets modern chaos. On national team match days, 100,000 gather here celebrating.",
+            tags: ["Ancient Ruins", "Historic Plaza", "Cultural Heart"],
+            rating: "4.8",
+            icon: "🏛️"
+          },
+          {
+            name: "Teotihuacán Pyramids",
+            type: "Ancient Wonder",
+            description: "Massive pyramids built 2,000 years ago, 30 miles from CDMX. Climb the Pyramid of the Sun—bigger than Egypt's. The altitude kills. The views thrill. After watching modern football, experience ancient Mexican glory. Some empires built pyramids. Others build stadiums.",
+            tags: ["Ancient Pyramids", "Day Trip", "Iconic"],
+            rating: "4.9",
+            icon: "🗿"
+          }
+        ]
+      },
+      tips: {
+        description: "Master CDMX's altitude and culture, and you'll chant 'Olé Olé Olé' like a true chilango.",
+        items: [
+          {
+            icon: "🏔️",
+            title: "Respect the Altitude",
+            content: "CDMX sits at 7,200 feet. You'll tire faster, breathe harder, get drunk quicker. Hydrate constantly. Arrive 1-2 days before matches to adjust. The altitude is why Mexican teams dominate at home. It's real. It's brutal."
+          },
+          {
+            icon: "🌮",
+            title: "Taco Protocol is Sacred",
+            content: "Order tacos in multiples of 3-4. Use fingers, never forks. Add salsa to taste—'roja' (red) or 'verde' (green). Cilantro and onion are mandatory. Lime squeezes over everything. Eat standing at street stands. This is the way."
+          },
+          {
+            icon: "🚇",
+            title: "Metro to Tasqueña",
+            content: "Take Metro Line 2 to Tasqueña, then transfer to Tren Ligero (light rail) to Estadio Azteca. Total journey 40+ minutes from Centro. Trains packed with singing fans create mobile fiesta. Tickets cost 5 pesos. Cheapest football pilgrimage ever."
+          },
+          {
+            icon: "💰",
+            title: "Cash Culture Dominates",
+            content: "Bring pesos cash. Many places don't accept cards. Tacos cost 10-20 pesos. Beer 30-50 pesos. Stadium tickets 200-1,000 pesos. Budget 500-1,000 pesos/day. ATMs exist but charge fees. Come prepared."
+          },
+          {
+            icon: "⚽",
+            title: "Learn the Clásico Rivalries",
+            content: "América vs Guadalajara (Chivas) is Mexico's biggest rivalry. Rich vs working class. CDMX vs Guadalajara. Also: América vs Cruz Azul. Pumas vs América. These aren't games—they're battles. Choose sides carefully or stay neutral."
+          },
+          {
+            icon: "🎺",
+            title: "Embrace Mariachi and Luchadores",
+            content: "Mariachi bands play at matches. Lucha libre (wrestling) masks appear in crowds. This is Mexican football culture—music, masks, and passion. Don't question it. Join it. This beautiful chaos is what makes CDMX special."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Experience Football at Altitude?",
+      subtitle: "Discover the Azteca and the passion that makes Mexico City legendary.",
+      buttonText: "Plan Your CDMX Journey"
+    }
+  },
+
+  neworleans: {
+    meta: {
+      title: "New Orleans Saints Fan Guide - Superdome, Who Dat Nation & NOLA Spirit | FANTOWNS",
+      description: "Ultimate New Orleans Saints fan travel guide. Experience the Superdome, discover Who Dat culture, and insider tips for America's most resilient football city.",
+      keywords: "New Orleans Saints travel, Superdome, Who Dat Nation, NOLA football culture, French Quarter, NFL tourism"
+    },
+    theme: {
+      primary: "#D3BC8D",
+      secondary: "#101820",
+      tagBg: "#f5f0e6",
+      tagColor: "#8b7355",
+      heroBg: "linear-gradient(rgba(16, 24, 32, 0.9), rgba(16, 24, 32, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23101820\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "New Orleans 🇺🇸",
+      subtitle: "Where Who Dat Nation Rises from the Storm",
+      stats: [
+        { number: "2010", label: "Super Bowl Win" },
+        { number: "73,000", label: "Superdome Capacity" },
+        { number: "1967", label: "Founded" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in NOLA where jazz, gumbo, and Saints passion create the most unique football culture in America.",
+        items: [
+          {
+            name: "The Roosevelt New Orleans",
+            type: "Historic Luxury",
+            location: "CBD",
+            description: "Waldorf Astoria elegance in the Central Business District. The Sazerac Bar invented the Sazerac cocktail—sip it before Saints games. Walking distance to Superdome. Drew Brees and Saints legends spotted here. NOLA sophistication meets football royalty.",
+            tags: ["Luxury", "Historic", "Walking to Superdome"],
+            rating: "4.7",
+            distance: "10 min walk to Superdome",
+            icon: "🏨"
+          },
+          {
+            name: "Hyatt Regency New Orleans",
+            type: "Superdome Adjacent",
+            location: "CBD",
+            description: "Connected to Superdome via sky bridge. Literally walk from your room to kickoff. Lobby fills with black-and-gold jerseys on game days. The ultimate Saints fan convenience. Post-game, you're in bed while others fight traffic.",
+            tags: ["Connected to Stadium", "Convenient", "Modern"],
+            rating: "4.5",
+            distance: "Connected to Superdome",
+            icon: "🏨"
+          },
+          {
+            name: "Auld Sweet Olive Bed & Breakfast",
+            type: "French Quarter B&B",
+            location: "Faubourg Marigny",
+            description: "Charming Creole cottage in the Marigny neighborhood. Jazz clubs walking distance. Streetcar to Superdome. The breakfast includes beignets and chicory coffee. This is NOLA living—not tourist hotels. Stay here, experience real New Orleans.",
+            tags: ["B&B", "Authentic", "French Quarter Adjacent"],
+            rating: "4.6",
+            distance: "15 min streetcar to Superdome",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience NOLA's bars where hurricanes flow, second lines parade, and Who Dat chants echo.",
+        items: [
+          {
+            name: "Walk-On's Sports Bistreaux",
+            type: "Saints Central",
+            location: "Multiple Locations",
+            description: "Founded by LSU players, now Louisiana's official sports bar chain. Every Saints game shown on massive screens with sound. Cajun food—gumbo, jambalaya, po'boys—and beer. After victories, the entire bar erupts in Who Dat chants. This is Saints nation headquarters.",
+            tags: ["Sports Bar", "Cajun Food", "Who Dat Central"],
+            rating: "4.6",
+            distance: "Multiple locations",
+            icon: "🍺"
+          },
+          {
+            name: "Pat O'Brien's",
+            type: "French Quarter Icon",
+            location: "French Quarter",
+            description: "Since 1933, home of the Hurricane cocktail. Dueling pianos, flaming fountain courtyard, endless party. On Saints Sundays, the patio fills with black-and-gold. The Hurricanes are strong—pace yourself. This is NOLA in a bar.",
+            tags: ["Hurricane Drinks", "Piano Bar", "Tourist Classic"],
+            rating: "4.5",
+            distance: "French Quarter",
+            icon: "🍺"
+          },
+          {
+            name: "The Bulldog Mid-City",
+            type: "Craft Beer",
+            location: "Mid-City",
+            description: "100+ beers on tap in converted gas station with massive patio. Local and craft beers flow. Saints fans gather here before games. Dog-friendly (hence the name). Casual, chill, quintessentially NOLA. This is where locals drink.",
+            tags: ["Craft Beer", "Dog-Friendly", "Local Favorite"],
+            rating: "4.7",
+            distance: "Mid-City",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From beignets to gumbo—NOLA's cuisine is French, African, and Creole magic on a plate.",
+        items: [
+          {
+            name: "Commander's Palace",
+            type: "Creole Institution",
+            location: "Garden District",
+            description: "Since 1893, this turquoise Victorian mansion serves the finest Creole cuisine. 25-cent martinis at lunch (seriously). Turtle soup, pecan-crusted Gulf fish, bread pudding soufflé. After Saints victories, wealthy fans celebrate here. This is New Orleans royalty.",
+            tags: ["Creole Fine Dining", "Historic", "Dress Code"],
+            rating: "4.8",
+            distance: "Garden District",
+            icon: "🍽️"
+          },
+          {
+            name: "Café du Monde",
+            type: "Beignet Heaven",
+            location: "French Quarter",
+            description: "Since 1862, this 24/7 café serves beignets (fried dough with powdered sugar) and chicory coffee. That's it. Nothing else needed. After night games, fans flood here at 2am. Powdered sugar covers everything. This is NOLA tradition.",
+            tags: ["Beignets", "24/7", "Essential NOLA"],
+            rating: "4.6",
+            distance: "French Quarter",
+            icon: "🍽️"
+          },
+          {
+            name: "Dooky Chase's",
+            type: "Soul Food Legend",
+            location: "Tremé",
+            description: "Leah Chase's legendary restaurant served presidents, musicians, and civil rights leaders. The gumbo is religion. Fried chicken transcendent. This is African-American New Orleans cooking at its finest. Saints fans know—come here for real NOLA soul.",
+            tags: ["Soul Food", "Historic", "Legendary"],
+            rating: "4.7",
+            distance: "Tremé",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Saints resilience and the music, culture, and spirit that make New Orleans eternal.",
+        items: [
+          {
+            name: "Superdome Tour",
+            type: "Stadium Experience",
+            description: "The dome that sheltered Katrina survivors. Where the Saints won the Super Bowl in 2010, healing a broken city. Walk the tunnel where Drew Brees emerged. See the locker room. Understand—this isn't just football. This is resurrection. This is Who Dat.",
+            tags: ["Stadium Tour", "Katrina History", "Must-Do"],
+            rating: "4.8",
+            icon: "🏟️"
+          },
+          {
+            name: "Preservation Hall",
+            type: "Jazz Temple",
+            description: "Since 1961, this tiny venue preserves traditional New Orleans jazz. No drinks, no food, just pure music. Shows at 8pm and 10pm. Saints and jazz—both are NOLA's soul. After football, experience the other art form that defines this city.",
+            tags: ["Jazz Music", "Historic Venue", "Intimate"],
+            rating: "4.9",
+            icon: "🎺"
+          },
+          {
+            name: "French Quarter & Bourbon Street",
+            type: "Historic District",
+            description: "300-year-old neighborhood of wrought-iron balconies, jazz clubs, and endless parties. Bourbon Street gets wild. Frenchmen Street has better music. Royal Street for art galleries. On Saints Sundays, the Quarter drapes in black-and-gold. This is NOLA's beating heart.",
+            tags: ["Historic District", "Nightlife", "Essential NOLA"],
+            rating: "4.7",
+            icon: "🎭"
+          }
+        ]
+      },
+      tips: {
+        description: "Master NOLA's rhythm and you'll chant Who Dat like you survived Katrina with them.",
+        items: [
+          {
+            icon: "⚜️",
+            title: "Who Dat Means Everything",
+            content: "'Who Dat? Who Dat? Who Dat say dey gonna beat dem Saints?' is NOLA's chant. Born in the 1980s, it became the city's heartbeat. Learn it. Shout it. The Superdome roars it. Not knowing marks you as outsider."
+          },
+          {
+            icon: "🎺",
+            title: "Second Lines are Sacred",
+            content: "Brass band parades through neighborhoods—that's a second line. Join them. Dance behind. Handkerchiefs wave. This tradition predates the Saints but now celebrates them too. Football and jazz are NOLA's twin souls."
+          },
+          {
+            icon: "🚃",
+            title: "Streetcar to the Dome",
+            content: "Take the St. Charles streetcar from the Garden District or Rampart/Canal from French Quarter. Historic, charming, cheap ($1.25). Driving in NOLA is nightmare—parking worse. Streetcars filled with fans create mobile celebrations."
+          },
+          {
+            icon: "🌀",
+            title: "Understand Katrina's Shadow",
+            content: "The 2005 hurricane devastated NOLA. The Superdome sheltered thousands. The 2010 Super Bowl win healed the city. Saints football carries that weight. This isn't just sports—it's survival, resilience, rebirth. Respect that history."
+          },
+          {
+            icon: "🍹",
+            title: "Drink Responsibly (Good Luck)",
+            content: "Open container laws don't exist in French Quarter. Hurricanes, Hand Grenades, Sazeracs flow freely. Pace yourself—NOLA is marathon, not sprint. Hydrate. Eat beignets. The party never stops but you can."
+          },
+          {
+            icon: "🏈",
+            title: "The Falcons Rivalry is Personal",
+            content: "Saints vs Falcons transcends football. Post-Katrina, Falcons fans mocked NOLA's pain. New Orleans remembers. Never praise Atlanta in NOLA. This hatred is real, earned, eternal. Who Dat forever."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Join Who Dat Nation?",
+      subtitle: "Experience the Superdome and discover the resilience that makes NOLA eternal.",
+      buttonText: "Plan Your New Orleans Journey"
+    }
+  },
+
+  portland: {
+    meta: {
+      title: "Portland Timbers Fan Guide - Timbers Army, Timber Joey & Craft Beer Culture | FANTOWNS",
+      description: "Ultimate Portland Timbers fan travel guide. Experience the Timbers Army, discover craft beer culture, and insider tips for America's greenest football city.",
+      keywords: "Portland Timbers travel, Timbers Army, Providence Park, MLS tourism, Portland craft beer, Pacific Northwest soccer"
+    },
+    theme: {
+      primary: "#00482B",
+      secondary: "#D69A2D",
+      tagBg: "#e8f5e9",
+      tagColor: "#2e7d32",
+      heroBg: "linear-gradient(rgba(0, 72, 43, 0.9), rgba(0, 72, 43, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%2300482B\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Portland 🇺🇸",
+      subtitle: "Where Timber Joey's Chainsaw Roars",
+      stats: [
+        { number: "2015", label: "MLS Cup Win" },
+        { number: "25,000", label: "Providence Capacity" },
+        { number: "1975", label: "Founded (NASL)" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in Portland where craft beer, sustainability, and Timbers passion create soccer's greenest culture.",
+        items: [
+          {
+            name: "The Nines Hotel",
+            type: "Downtown Luxury",
+            location: "Downtown Portland",
+            description: "Luxury hotel in Macy's building with rooftop terrace overlooking downtown. Walking distance to Providence Park. The bar serves Oregon craft beers—proper pre-match fuel. Timbers Army members stay here when splurging. Portland sophistication meets soccer passion.",
+            tags: ["Luxury", "Downtown", "Walking Distance"],
+            rating: "4.6",
+            distance: "15 min walk to Providence Park",
+            icon: "🏨"
+          },
+          {
+            name: "Hotel Eastlund",
+            type: "Eastside Modern",
+            location: "Lloyd District",
+            description: "Modern hotel near Moda Center with rooftop bar. Complimentary bikes to ride to matches—very Portland. The restaurant focuses on local, sustainable ingredients. Close to MAX light rail. This is Portland values in hotel form.",
+            tags: ["Modern", "Bikes Included", "Sustainable"],
+            rating: "4.5",
+            distance: "10 min MAX to Providence Park",
+            icon: "🏨"
+          },
+          {
+            name: "Northwest Portland Hostel",
+            type: "Budget Hip",
+            location: "Pearl District",
+            description: "Eco-friendly hostel in trendy Pearl District. Young Timbers Army members gather here before matches. Communal kitchen, bike storage, sustainability focus. Walking distance to Powell's Books and breweries. Budget beds with Portland values.",
+            tags: ["Budget", "Eco-Friendly", "Social"],
+            rating: "4.4",
+            distance: "20 min walk to Providence Park",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Portland's legendary craft beer scene where hops and soccer passion flow in perfect harmony.",
+        items: [
+          {
+            name: "The Fields Bar & Grill",
+            type: "Soccer Central",
+            location: "Pearl District",
+            description: "Portland's premier soccer bar showing every MLS, Premier League, and Champions League match. Timbers scarves cover the walls. 20+ Oregon craft beers on tap. The scotch eggs are legendary. This is where Timbers Army gathers year-round.",
+            tags: ["Soccer Bar", "Craft Beer", "Timbers HQ"],
+            rating: "4.7",
+            distance: "Pearl District",
+            icon: "🍺"
+          },
+          {
+            name: "Deschutes Brewery Portland",
+            type: "Brewery Institution",
+            location: "Pearl District",
+            description: "Bend's legendary brewery's Portland outpost. Fresh Squeezed IPA, Mirror Pond Pale, and seasonal releases flow from 20+ taps. The pub food is elevated comfort. On match days, green-and-gold jerseys pack the bar. Oregon craft beer royalty.",
+            tags: ["Brewery", "Oregon Beer", "Food"],
+            rating: "4.6",
+            distance: "Pearl District",
+            icon: "🍺"
+          },
+          {
+            name: "Prost Marketplace",
+            type: "German Beer Garden",
+            location: "Mississippi District",
+            description: "Authentic German beer hall with Portland twist. Liters of German beer, pretzels, sausages, and communal tables. After Timbers wins, the hall erupts in song. The weird German-Portland fusion works perfectly. Only in Portland.",
+            tags: ["German Beer", "Beer Garden", "Unique"],
+            rating: "4.5",
+            distance: "North Portland",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From food carts to farm-to-table—Portland's obsessively local cuisine fuels sustainable soccer passion.",
+        items: [
+          {
+            name: "Pok Pok",
+            type: "Thai Street Food",
+            location: "Division Street",
+            description: "Andy Ricker's James Beard-winning Thai restaurant. The fish sauce wings are legendary—people fly to Portland for them. Drinking vinegars, craft cocktails, authentic flavors. After matches, Timbers fans feast here. Portland's most famous restaurant.",
+            tags: ["Thai Food", "James Beard", "Wings"],
+            rating: "4.7",
+            distance: "SE Portland",
+            icon: "🍽️"
+          },
+          {
+            name: "Portland Food Cart Pods",
+            type: "Street Food",
+            location: "Everywhere",
+            description: "600+ food carts serving everything—Korean tacos, Ethiopian stews, vegan donuts, lobster rolls. Alder Street pod is largest. Grab lunch from carts before afternoon matches. $5-10 gets incredible food. This is Portland's democratic dining.",
+            tags: ["Food Carts", "Diverse", "Budget-Friendly"],
+            rating: "4.8",
+            distance: "Downtown pods",
+            icon: "🍽️"
+          },
+          {
+            name: "Le Pigeon",
+            type: "Adventurous Fine Dining",
+            location: "East Burnside",
+            description: "Chef Gabriel Rucker's adventurous restaurant. Foie gras profiteroles, beef cheek bourguignon, experimental seasonal dishes. After big Timbers victories, players and wealthy fans celebrate here. Expensive, creative, quintessentially Portland.",
+            tags: ["Fine Dining", "Creative", "Reservation Required"],
+            rating: "4.7",
+            distance: "East Burnside",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Timbers Army culture and the green, weird, wonderful city that makes Portland unique.",
+        items: [
+          {
+            name: "Providence Park Match Experience",
+            type: "Stadium Culture",
+            description: "Intimate 25,000-seat stadium in downtown Portland. The North End houses Timbers Army—2,000 standing supporters singing 90 minutes. Timber Joey chainsaws a slab after every goal. The atmosphere is MLS's loudest. This is American soccer culture at its finest.",
+            tags: ["Stadium Experience", "Timbers Army", "Must-Do"],
+            rating: "4.9",
+            icon: "🏟️"
+          },
+          {
+            name: "Powell's City of Books",
+            type: "Bookstore Icon",
+            description: "World's largest independent bookstore occupying entire city block. New and used books in color-coded rooms. You'll get lost. You'll love it. On match days, browse before kickoff. Very Portland—reading and soccer both matter here.",
+            tags: ["Bookstore", "Icon", "Downtown"],
+            rating: "4.8",
+            icon: "📚"
+          },
+          {
+            name: "Washington Park & Japanese Garden",
+            type: "Nature & Culture",
+            description: "Forest park overlooking downtown with rose gardens, Japanese garden, and trails. Portland's green soul on display. After intense Timbers matches, decompress in nature. The juxtaposition of urban soccer and forest tranquility is peak Portland.",
+            tags: ["Park", "Japanese Garden", "Views"],
+            rating: "4.9",
+            icon: "🌲"
+          }
+        ]
+      },
+      tips: {
+        description: "Master Portland's quirks and you'll chant 'PTFC!' like you've been riding bikes here forever.",
+        items: [
+          {
+            icon: "🪵",
+            title: "Timber Joey is Religion",
+            content: "After every Timbers goal, Timber Joey chainsaws a slab from a log and presents it to a player. This tradition is sacred. The chainsaw roar signals ecstasy. The slab smells like fresh-cut pine. Only in Portland."
+          },
+          {
+            icon: "🚴",
+            title: "Bike Everywhere",
+            content: "Portland has 350+ miles of bike lanes. Locals bike to matches—bike parking at Providence Park is huge. Rent a Biketown bike-share. Don't drive. Biking is faster, cheaper, more Portland. Embrace it or fight traffic miserably."
+          },
+          {
+            icon: "🚈",
+            title: "MAX Light Rail to Matches",
+            content: "Take MAX light rail Blue or Red lines to Providence Park station—exits right at the stadium. Trains fill with Timbers Army creating mobile celebrations. TriMet day pass is $5. Driving is nightmare. Public transit is the way."
+          },
+          {
+            icon: "☕",
+            title: "Coffee is Serious Business",
+            content: "Portland coffee rivals Seattle. Stumptown, Coava, Heart roasters are world-class. Order single-origin pour-over. Never say 'Starbucks is fine.' Coffee culture here is sophisticated, obsessive, delicious. Respect it."
+          },
+          {
+            icon: "♻️",
+            title: "Sustainability Isn't Optional",
+            content: "Portland recycles/composts everything. Bring reusable cup/bag. Timbers are the greenest team in MLS. The stadium composts 85% of waste. This isn't virtue signaling—it's culture. Participate or expect judgment."
+          },
+          {
+            icon: "⚽",
+            title: "The Sounders Rivalry is War",
+            content: "Portland vs Seattle is Cascadia's fiercest rivalry. Geography, culture, history collide. Sounders fans mock Portland's weirdness. Timbers fans mock Seattle's tech bro-ness. Never praise Seattle in Portland. This hatred is real, fun, eternal."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Join the Timbers Army?",
+      subtitle: "Experience Providence Park and discover where green means passion.",
+      buttonText: "Plan Your Portland Journey"
+    }
+  },
+
+  melbourne: {
+    meta: {
+      title: "Melbourne AFL Fan Guide - MCG, Footy Culture & 9 Teams | FANTOWNS",
+      description: "Ultimate Melbourne AFL fan travel guide. Experience the MCG, discover Australian Rules Football culture, and insider tips for the world's most sports-obsessed city.",
+      keywords: "Melbourne AFL travel, MCG, Australian Rules Football, Melbourne footy culture, Collingwood, Richmond, sports capital"
+    },
+    theme: {
+      primary: "#000000",
+      secondary: "#FFFFFF",
+      tagBg: "#f5f5f5",
+      tagColor: "#333",
+      heroBg: "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23000000\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Melbourne 🇦🇺",
+      subtitle: "Where 9 Teams Battle for Footy Glory",
+      stats: [
+        { number: "9", label: "AFL Teams" },
+        { number: "100,000", label: "MCG Capacity" },
+        { number: "1853", label: "First Match" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in Melbourne where coffee, culture, and Australian Rules Football create the world's most liveable sports city.",
+        items: [
+          {
+            name: "The Langham Melbourne",
+            type: "Luxury Southbank",
+            location: "Southbank",
+            description: "Five-star elegance on the Yarra River with MCG views. AFL executives and players' families stay here during Grand Final week. The spa is perfect for post-match recovery. Walking distance to MCG across the river. Melbourne sophistication meets footy royalty.",
+            tags: ["Luxury", "River Views", "Walking to MCG"],
+            rating: "4.7",
+            distance: "15 min walk to MCG",
+            icon: "🏨"
+          },
+          {
+            name: "Pullman Melbourne on the Park",
+            type: "MCG Adjacent",
+            location: "East Melbourne",
+            description: "Modern hotel overlooking MCG and Melbourne Park. Balcony rooms watch 100,000 fans flood into the 'G on match days. The rooftop pool has stadium views. This is the closest hotel to footy heaven. Walk to matches in minutes.",
+            tags: ["MCG Views", "Modern", "Stadium Adjacent"],
+            rating: "4.5",
+            distance: "5 min walk to MCG",
+            icon: "🏨"
+          },
+          {
+            name: "Space Hotel",
+            type: "Budget CBD",
+            location: "CBD",
+            description: "Pod hotel in Melbourne's central business district. Young footy fans stay here cheap. Rooftop bar, communal vibe, walking distance to everything. Tram to MCG takes 10 minutes. Budget beds in Australia's coolest city.",
+            tags: ["Budget", "Central", "Social"],
+            rating: "4.3",
+            distance: "10 min tram to MCG",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Melbourne's pub culture where VB flows, meat pies disappear, and footy debates rage eternal.",
+        items: [
+          {
+            name: "The Colonial Hotel",
+            type: "Footy Temple",
+            location: "Fitzroy",
+            description: "Since 1854, this iconic pub has hosted AFL fans through 170 seasons. Multiple levels, dozens of screens, every AFL match shown. Collingwood fans' unofficial headquarters. The parmas (chicken parmigiana) are legendary. This is Melbourne footy culture concentrated.",
+            tags: ["Historic Pub", "Footy Central", "Parmas"],
+            rating: "4.6",
+            distance: "Fitzroy",
+            icon: "🍺"
+          },
+          {
+            name: "Young & Jackson",
+            type: "Melbourne Icon",
+            location: "CBD",
+            description: "Since 1861, this corner pub overlooks Flinders Street Station. Chloe's Bar features the famous nude painting. On AFL match days, the pub erupts in team colors. Richmond, Carlton, Collingwood fans mix and argue. This is Melbourne's beating heart.",
+            tags: ["Historic", "CBD Location", "Icon"],
+            rating: "4.5",
+            distance: "City Center",
+            icon: "🍺"
+          },
+          {
+            name: "The Sporting Globe Bar & Grill",
+            type: "Sports Bar Chain",
+            location: "Multiple Locations",
+            description: "Melbourne's premier sports bar chain with massive screens showing every AFL, NRL, and cricket match. American-style wings meet Australian parmas. After big footy wins, the bars erupt. This is where Melbourne watches sports obsessively.",
+            tags: ["Sports Bar", "Multiple Locations", "Big Screens"],
+            rating: "4.4",
+            distance: "Multiple locations",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From flat whites to modern Australian cuisine—Melbourne's food scene rivals its footy obsession.",
+        items: [
+          {
+            name: "Attica",
+            type: "World-Class Fine Dining",
+            location: "Ripponlea",
+            description: "Ben Shewry's restaurant ranked in World's 50 Best. Native Australian ingredients transformed into art. Kangaroo, emu, wattleseed in innovative dishes. After Grand Final victories, AFL's elite celebrate here. Expensive, unforgettable, uniquely Australian.",
+            tags: ["Fine Dining", "World-Class", "Native Ingredients"],
+            rating: "4.9",
+            distance: "Ripponlea",
+            icon: "🍽️"
+          },
+          {
+            name: "Hardware Société",
+            type: "Breakfast Institution",
+            location: "CBD",
+            description: "Melbourne's most famous breakfast spot serves French-Australian fusion. The ricotta hotcakes are religion. Flat whites are perfection. Before Sunday afternoon footy matches, fuel up here. Lines wrap around the block. Worth the wait.",
+            tags: ["Breakfast", "French-Australian", "Famous"],
+            rating: "4.7",
+            distance: "CBD",
+            icon: "🍽️"
+          },
+          {
+            name: "Footy Match Pie Stand",
+            type: "Stadium Food",
+            location: "MCG",
+            description: "Meat pies at the MCG are mandatory. Four'n'Twenty pies with tomato sauce—Australia's fast food. Grab one before the first bounce. This isn't gourmet. This is tradition. Eating pies while watching footy is peak Melbourne.",
+            tags: ["Meat Pies", "Stadium Food", "Tradition"],
+            rating: "4.5",
+            distance: "MCG",
+            icon: "🥧"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience AFL culture and the art, coffee, and sport that make Melbourne the world's most liveable city.",
+        items: [
+          {
+            name: "MCG Tour & Australian Sports Museum",
+            type: "Sports Cathedral",
+            description: "The Melbourne Cricket Ground hosted the 1956 Olympics and 170+ AFL Grand Finals. Walk the hallowed turf. See the Long Room. The Sports Museum displays footy legends. This isn't just a stadium—it's Australia's sporting soul. The 'G is sacred ground.",
+            tags: ["Stadium Tour", "Sports Museum", "Must-Do"],
+            rating: "4.9",
+            icon: "🏟️"
+          },
+          {
+            name: "Federation Square & Laneway Cafés",
+            type: "Melbourne Culture",
+            description: "Fed Square is Melbourne's meeting point. ACMI museum, restaurants, big screens show footy on match days. The surrounding laneways hide world-class coffee shops. Degraves Street, Centre Place—this is where Melbourne lives. Coffee, art, sport, repeat.",
+            tags: ["Cultural Hub", "Coffee Culture", "Laneways"],
+            rating: "4.7",
+            icon: "☕"
+          },
+          {
+            name: "Great Ocean Road",
+            type: "Coastal Drive",
+            description: "World's most scenic coastal drive, 90 minutes from Melbourne. Twelve Apostles rock formations rise from the Southern Ocean. After intense footy weekends, escape to nature. The juxtaposition of urban sport and coastal beauty is peak Melbourne living.",
+            tags: ["Day Trip", "Scenic Drive", "Natural Wonder"],
+            rating: "4.9",
+            icon: "🌊"
+          }
+        ]
+      },
+      tips: {
+        description: "Master Melbourne's footy culture and you'll barrack like you've been born at the MCG.",
+        items: [
+          {
+            icon: "🏈",
+            title: "It's Footy, Not Football",
+            content: "Australian Rules Football is 'footy' or 'AFL.' Never call it soccer (that's a different sport). The oval ball, high marks, and 18-a-side chaos is uniquely Australian. Learn the rules or you'll be lost. This sport is religion here."
+          },
+          {
+            icon: "🎨",
+            title: "Choose Your Team Carefully",
+            content: "Melbourne has 9 AFL teams—Collingwood, Richmond, Carlton, Essendon, Melbourne, Western Bulldogs, North Melbourne, Hawthorn, St Kilda. Choosing one is serious. Ask locals. Rivalries run deep, generational, passionate. Pick wisely."
+          },
+          {
+            icon: "🚊",
+            title: "Tram to the MCG",
+            content: "Take tram routes 48, 75, or 70 to Jolimont Station stop—right at MCG gates. Melbourne's tram network is free in CBD. Trams fill with fans in team colors creating mobile celebrations. Driving is nightmare. Trams are the way."
+          },
+          {
+            icon: "☕",
+            title: "Coffee Culture is Obsessive",
+            content: "Melbourne coffee is world-class. Order a flat white (strong espresso, microfoam milk). Never ask for 'large, medium, small'—that's Starbucks talk. Baristas are artists. Respect the craft. This city runs on coffee and footy."
+          },
+          {
+            icon: "🥧",
+            title: "Meat Pies are Sacred",
+            content: "Four'n'Twenty meat pies with tomato sauce at the footy is tradition. Eat it standing. The pie will be scalding. The pastry will flake everywhere. This is Australia. Embrace the chaos."
+          },
+          {
+            icon: "🏆",
+            title: "Grand Final is Religion",
+            content: "AFL Grand Final (last Saturday in September) is Melbourne's biggest day. 100,000 at MCG, millions watching nationwide. If you're here then, tickets are impossible. Watch in pubs. The entire city stops. This is Australia's Super Bowl times ten."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Experience Australian Footy Obsession?",
+      subtitle: "Discover the MCG and the unique sport that makes Melbourne legendary.",
+      buttonText: "Plan Your Melbourne Journey"
+    }
+  },
+
+  athens: {
+    meta: {
+      title: "Athens Football Fan Guide - Derby of Eternal Enemies, Gate 7 & Greek Passion | FANTOWNS",
+      description: "Ultimate Athens football fan travel guide. Experience the Derby of Eternal Enemies, discover Olympiacos and Panathinaikos passion, and insider tips for Greece's football capital.",
+      keywords: "Athens football travel, Olympiacos, Panathinaikos, Gate 7, Greek football culture, Derby of Eternal Enemies, Super League Greece"
+    },
+    theme: {
+      primary: "#DC0714",
+      secondary: "#009A44",
+      tagBg: "#ffebee",
+      tagColor: "#c62828",
+      heroBg: "linear-gradient(rgba(220, 7, 20, 0.9), rgba(220, 7, 20, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23DC0714\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Athens 🇬🇷",
+      subtitle: "Where Ancient Gods Meet Modern Ultras",
+      stats: [
+        { number: "47", label: "Olympiacos Titles" },
+        { number: "33,000", label: "Karaiskakis Capacity" },
+        { number: "1925", label: "Founded" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay in Athens where ancient history meets modern football passion and Mediterranean culture burns.",
+        items: [
+          {
+            name: "Hotel Grande Bretagne",
+            type: "Luxury Historic",
+            location: "Syntagma Square",
+            description: "Since 1874, this palatial hotel overlooks the Greek Parliament and Acropolis. Football executives and wealthy supporters stay here before derbies. The rooftop restaurant serves views of the Parthenon. Greek elegance meets football passion.",
+            tags: ["Luxury", "Historic", "Acropolis Views"],
+            rating: "4.8",
+            distance: "20 min to Karaiskakis",
+            icon: "🏨"
+          },
+          {
+            name: "Athenaeum InterContinental",
+            type: "Modern Comfort",
+            location: "Near Olympic Stadium",
+            description: "Business hotel near Athens Olympic Stadium with rooftop pool. During big matches, the bar fills with both Olympiacos and Panathinaikos fans—tense but civilized. Metro access to both stadiums. Modern Athens meeting football tradition.",
+            tags: ["Modern", "Pool", "Metro Access"],
+            rating: "4.6",
+            distance: "Metro to stadiums",
+            icon: "🏨"
+          },
+          {
+            name: "Athens Backpackers",
+            type: "Budget Plaka",
+            location: "Plaka",
+            description: "Hostel in ancient Plaka neighborhood below the Acropolis. Young football fans gather on the rooftop terrace. Walking distance to Monastiraki nightlife. Metro to Piraeus for Olympiacos matches. Budget beds with Parthenon views.",
+            tags: ["Budget", "Plaka", "Social"],
+            rating: "4.4",
+            distance: "Metro to Karaiskakis",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Athens' tavernas and bars where ouzo flows, souvlaki grills, and football passion ignites.",
+        items: [
+          {
+            name: "Gate 7 Café Bar",
+            type: "Olympiacos Temple",
+            location: "Piraeus",
+            description: "Named after Olympiacos' famous ultras group Gate 7. Red-and-white scarves cover every surface. Before home matches, thousands of Olympiacos fans gather here. Ouzo, beer, and football songs. This isn't a bar—it's a pilgrimage site. Panathinaikos fans enter at own risk.",
+            tags: ["Olympiacos Bar", "Ultras Spot", "Pre-Game Hub"],
+            rating: "4.7",
+            distance: "Piraeus",
+            icon: "🍺"
+          },
+          {
+            name: "Brettos Bar",
+            type: "Historic Distillery",
+            location: "Plaka",
+            description: "Since 1909, this distillery-bar serves homemade ouzo and colorful liqueurs in historic Plaka. Walls lined with bottles glowing like stained glass. On derby nights, fans gather before heading to stadiums. Traditional Greece meets modern football passion.",
+            tags: ["Historic", "Ouzo", "Plaka"],
+            rating: "4.6",
+            distance: "Plaka",
+            icon: "🍺"
+          },
+          {
+            name: "Baba Au Rum",
+            type: "Cocktail Bar",
+            location: "Psyrri",
+            description: "Athens' best cocktail bar in hip Psyrri neighborhood. After big victories, young Athenians celebrate here with creative drinks. The rum collection is world-class. Modern Athens celebrating football success with global sophistication.",
+            tags: ["Cocktails", "Modern", "Psyrri"],
+            rating: "4.7",
+            distance: "Psyrri",
+            icon: "🍸"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From souvlaki to seafood—Greek cuisine fuels the Mediterranean passion that defines Athens football.",
+        items: [
+          {
+            name: "Varoulko Seaside",
+            type: "Michelin Seafood",
+            location: "Piraeus",
+            description: "Michelin-starred seafood restaurant in Piraeus overlooking the harbor. Chef Lefteris Lazarou transforms Greek fish into art. After Olympiacos victories, wealthy fans celebrate here. Fresh octopus, sea bass, and champagne. This is Greek football royalty dining.",
+            tags: ["Michelin Star", "Seafood", "Piraeus"],
+            rating: "4.8",
+            distance: "Piraeus",
+            icon: "🍽️"
+          },
+          {
+            name: "O Thanasis",
+            type: "Souvlaki Institution",
+            location: "Monastiraki",
+            description: "Since 1964, this grill house serves Athens' best souvlaki and kebabs. Monastiraki Square location is always packed. Before matches, fans fuel up on grilled meats and pita. LE 5 fills you completely. This is Greek fast food perfection.",
+            tags: ["Souvlaki", "Budget", "Monastiraki"],
+            rating: "4.6",
+            distance: "Monastiraki",
+            icon: "🍽️"
+          },
+          {
+            name: "Taverna Klimataria",
+            type: "Traditional Greek",
+            location: "Psyrri",
+            description: "Family taverna since 1927 serving classic Greek cuisine. Moussaka, lamb kleftiko, Greek salad with real feta. Live music some nights. After derby matches, fans gather here celebrating or commiserating. This is Athens' soul on a plate.",
+            tags: ["Traditional", "Family Taverna", "Live Music"],
+            rating: "4.7",
+            distance: "Psyrri",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Greek football passion and the ancient wonders that make Athens the cradle of civilization.",
+        items: [
+          {
+            name: "Karaiskakis Stadium Experience",
+            type: "Football Theatre",
+            description: "Olympiacos' fortress in Piraeus. Gate 7 ultras create inferno of red flares, drums, and choreography. The atmosphere is intense, Mediterranean, deafening. This is Greek football passion at its peak. Arrive early, absorb the chaos, understand why this rivalry burns.",
+            tags: ["Stadium Experience", "Gate 7", "Ultras Culture"],
+            rating: "4.8",
+            icon: "🏟️"
+          },
+          {
+            name: "Acropolis & Parthenon",
+            type: "Ancient Wonder",
+            description: "2,500-year-old citadel overlooking Athens. The Parthenon represents Western civilization's birth. After experiencing modern Greek football passion, visit ancient Greek glory. Some things transcend sport. This is one. The view at sunset is divine.",
+            tags: ["Ancient Wonder", "UNESCO Site", "Essential"],
+            rating: "4.9",
+            icon: "🏛️"
+          },
+          {
+            name: "Plaka & Monastiraki",
+            type: "Historic Neighborhoods",
+            description: "Ancient neighborhoods below the Acropolis with tavernas, shops, and street life. On derby days, fans flood Monastiraki Square before splitting—red to Piraeus, green to northern suburbs. This is where ancient Athens meets modern football chaos.",
+            tags: ["Historic District", "Nightlife", "Markets"],
+            rating: "4.7",
+            icon: "🏺"
+          }
+        ]
+      },
+      tips: {
+        description: "Navigate Athens' football passion and ancient chaos, and you'll chant like you were born in Piraeus.",
+        items: [
+          {
+            icon: "🔴🟢",
+            title: "The Derby of Eternal Enemies",
+            content: "Olympiacos (red, working-class Piraeus) vs Panathinaikos (green, wealthy Athens) is Greece's most intense rivalry. Class warfare, geography, history collide. This isn't banter—it's identity. Choose sides carefully. Never praise the enemy. This hatred is ancient."
+          },
+          {
+            icon: "🔥",
+            title: "Gate 7 is Legendary",
+            content: "Olympiacos' Gate 7 ultras are among Europe's most intense. Red flares, coordinated chants, massive choreographies. They're passionate, not violent, but respect the intensity. Never sit in their section wearing green. This is serious football culture."
+          },
+          {
+            icon: "🚇",
+            title: "Metro to Piraeus",
+            content: "Take Metro Line 1 (green line) to Piraeus for Olympiacos matches at Karaiskakis. For Panathinaikos, take Line 3 to Neratziotissa for OAKA stadium. Trains fill with fans creating mobile celebrations. Athens metro is clean, efficient, safe."
+          },
+          {
+            icon: "🍺",
+            title: "Ouzo Protocol",
+            content: "Order ouzo (anise liquor) with mezze (small plates). Add water—it turns cloudy white. Sip slowly with grilled octopus or feta. Greeks drink ouzo for hours before matches. Rushing it marks you as tourist. Savor it like locals."
+          },
+          {
+            icon: "🏺",
+            title: "Respect Ancient and Modern",
+            content: "Athens balances 2,500 years of history with modern passion. Visit the Acropolis before the match. The same intensity that built the Parthenon fuels Gate 7. Greeks invented democracy and ultras culture. Both are sacred here."
+          },
+          {
+            icon: "💶",
+            title: "Cash for Everything",
+            content: "Bring euros cash. Many tavernas don't take cards. Souvlaki costs €2-3. Beer €3-5. Stadium tickets €15-50. Budget €50/day for food, transport, entertainment. ATMs exist but charge fees. Greeks love cash."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Experience Greek Football Passion?",
+      subtitle: "Witness the Derby of Eternal Enemies where ancient meets ultras.",
+      buttonText: "Plan Your Athens Journey"
+    }
   }
 };
 
