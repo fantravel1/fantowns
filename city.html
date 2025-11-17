@@ -363,13 +363,12 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <a href="/" class="logo">FANTOWNS</a>
+            <a href="index.html" class="logo">🏙️ FANTOWNS</a>
             <nav class="nav-links">
-                <a href="#hotels">Hotels</a>
-                <a href="#pubs">Pubs & Bars</a>
-                <a href="#restaurants">Restaurants</a>
-                <a href="#attractions">Attractions</a>
-                <a href="#tips">Insider Tips</a>
+                <a href="index.html">Home</a>
+                <a href="blog.html">📖 Blog</a>
+                <a href="videos.html">🎥 Videos</a>
+                <a href="index.html#cities">Cities</a>
             </nav>
         </div>
     </header>
@@ -483,6 +482,27 @@
         </div>
     </section>
 
+    <!-- Videos Section -->
+    <section id="videos-section" style="display: none; padding: 4rem 2rem; background: linear-gradient(135deg, #1e293b 0%, #334155 100%);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: white;">🎥 Watch the Experience</h2>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem;">See what makes this city special through the eyes of fans</p>
+            </div>
+
+            <!-- Videos Grid -->
+            <div id="city-videos-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;"></div>
+
+            <!-- No Videos Message -->
+            <div id="no-videos" style="display: none; text-align: center; padding: 3rem; background: rgba(255,255,255,0.05); border-radius: 12px; backdrop-filter: blur(10px);">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🎬</div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">More Videos Coming Soon</h3>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">We're curating the best fan experience videos for this city.</p>
+                <a href="videos.html" style="display: inline-block; background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%); color: white; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">Browse All Videos</a>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <div class="container">
             <h2 style="font-size: 2rem; margin-bottom: 1rem;" id="cta-title"></h2>
@@ -494,6 +514,7 @@
     <!-- City Data Files -->
     <script src="city-data.js"></script>
     <script src="review-data.js"></script>
+    <script src="video-data.js"></script>
     
     <script>
         // Get city from URL parameter or default to liverpool
@@ -817,8 +838,76 @@
             alert('Thanks for your feedback! This helps other fans find useful reviews.');
         }
 
-        // Load reviews after city data is loaded
+        // ========== VIDEOS SYSTEM ==========
+        function loadVideos() {
+            // Check if VIDEOS exists (from video-data.js)
+            if (typeof VIDEOS === 'undefined') {
+                console.log('Videos data not loaded');
+                return;
+            }
+
+            const cityVideos = getVideosByCity(cityName);
+
+            if (cityVideos.length === 0) {
+                // Show "no videos" message
+                document.getElementById('no-videos').style.display = 'block';
+                document.getElementById('videos-section').style.display = 'block';
+                return;
+            }
+
+            // Show videos section
+            document.getElementById('videos-section').style.display = 'block';
+
+            // Display videos
+            const videosGrid = document.getElementById('city-videos-grid');
+            videosGrid.innerHTML = cityVideos.map(video => `
+                <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.3)';"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+                     onclick="window.open('videos.html?video=${video.id}', '_blank')">
+                    <div style="position: relative; padding-top: 56.25%; background: #000;">
+                        <img src="https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg"
+                             alt="${video.title}"
+                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+                             loading="lazy">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white;">
+                            ▶
+                        </div>
+                        <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.8); color: white; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600;">
+                            ${video.duration}
+                        </div>
+                    </div>
+                    <div style="padding: 1rem;">
+                        <span style="display: inline-block; background: rgba(96, 165, 250, 0.2); color: #60a5fa; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.5rem;">
+                            ${getCategoryLabel(video.category)}
+                        </span>
+                        <h3 style="color: white; font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; line-height: 1.4;">${video.title}</h3>
+                        <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.5; margin-bottom: 0.8rem;">${video.description.substring(0, 100)}${video.description.length > 100 ? '...' : ''}</p>
+                        <div style="color: rgba(255,255,255,0.5); font-size: 0.85rem;">
+                            ${video.views}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function getCategoryLabel(category) {
+            const labels = {
+                'stadium-tours': '🏟️ Stadium Tour',
+                'atmosphere': '🔥 Match Atmosphere',
+                'fan-reactions': '😱 Fan Reaction',
+                'city-guides': '🗺️ City Guide',
+                'chants': '🎵 Chants & Songs',
+                'food-drink': '🍺 Food & Drink',
+                'culture': '🎭 Fan Culture',
+                'highlights': '⚡ Highlights'
+            };
+            return labels[category] || category;
+        }
+
+        // Load reviews and videos after city data is loaded
         loadReviews();
+        loadVideos();
     </script>
 </body>
 </html>
