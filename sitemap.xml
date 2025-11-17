@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.fantowns.com/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- City Pages -->
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=liverpool</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/Go-jJlGd1so/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>You'll Never Walk Alone - Liverpool Anfield</video:title>
+      <video:description>54,000 Liverpool fans singing You'll Never Walk Alone at Anfield</video:description>
+      <video:player_loc>https://www.youtube.com/embed/Go-jJlGd1so</video:player_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=greenbay</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=buenosaires</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/xRBZGd73SkE/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>La Bombonera Atmosphere - Boca Juniors</video:title>
+      <video:description>La Bombonera stadium shaking with Boca Juniors passion</video:description>
+      <video:player_loc>https://www.youtube.com/embed/xRBZGd73SkE</video:player_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=dortmund</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/ZLoyFdBIVJw/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Yellow Wall - Borussia Dortmund</video:title>
+      <video:description>25,000 standing fans bouncing at Dortmund's Yellow Wall</video:description>
+      <video:player_loc>https://www.youtube.com/embed/ZLoyFdBIVJw</video:player_loc>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=istanbul</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=barcelona</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=manchester</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=glasgow</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=saopaulo</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=nashville</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=tokyo</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=seattle</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=munich</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=cairo</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=madrid</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=marseille</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=mexicocity</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=neworleans</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=portland</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=melbourne</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.fantowns.com/city.html?city=athens</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
