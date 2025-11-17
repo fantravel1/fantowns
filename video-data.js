@@ -366,6 +366,314 @@ const VIDEOS = [
     duration: '20:15',
     views: '2.2M views',
     tags: ['New Orleans', 'Food', 'French Quarter', 'Creole']
+  },
+
+  // LIVERPOOL (Additional)
+  {
+    id: 'liv-city-guide',
+    youtubeId: 'yVDc94Pw0Tk',
+    title: "Liverpool City Guide - Beyond Anfield",
+    description: "Explore Liverpool's Beatles history, Albert Dock, Cavern Club, and the waterfront. See why this UNESCO World Heritage city is about more than just football - it's music, culture, and Scouse pride.",
+    city: "Liverpool",
+    relatedCity: "liverpool",
+    category: 'city-guides',
+    duration: '21:40',
+    views: '1.4M views',
+    tags: ['Liverpool', 'Beatles', 'City Guide', 'Tourism']
+  },
+
+  // TOKYO (Additional)
+  {
+    id: 'tok-shibuya',
+    youtubeId: 'Mw2W4smKDCU',
+    title: "Tokyo Shibuya Scramble - Organized Chaos",
+    description: "Watch the world's busiest intersection where 3,000 people cross at once. Experience Shibuya 109, arcades, and the controlled madness that defines Tokyo street culture.",
+    city: "Tokyo",
+    relatedCity: "tokyo",
+    category: 'city-guides',
+    duration: '10:25',
+    views: '4.2M views',
+    tags: ['Tokyo', 'Shibuya', 'Street Culture', 'Urban']
+  },
+
+  // SÃO PAULO (Additional)
+  {
+    id: 'sp-food',
+    youtubeId: 'Y8KxNb4NiXI',
+    title: "São Paulo Street Food Tour - Brazilian Flavors",
+    description: "Taste São Paulo's incredible food scene from pastel to coxinha to feijoada. Visit the markets and street stalls where Corinthians and Palmeiras fans fuel up before derbies.",
+    city: "São Paulo",
+    relatedCity: "saopaulo",
+    category: 'food-drink',
+    duration: '17:30',
+    views: '1.3M views',
+    tags: ['São Paulo', 'Food', 'Brazilian Cuisine', 'Street Food']
+  },
+  {
+    id: 'sp-culture',
+    youtubeId: 'h3vZDXt0KMk',
+    title: "São Paulo Torcidas Organizadas - Fan Groups Explained",
+    description: "Deep dive into Brazil's torcidas organizadas - the organized fan groups that run Brazilian football. See the choreography, the flags, and the passion that makes Brazilian football unique.",
+    city: "São Paulo",
+    relatedCity: "saopaulo",
+    category: 'culture',
+    duration: '13:52',
+    views: '890K views',
+    tags: ['São Paulo', 'Ultras', 'Fan Culture', 'Torcidas']
+  },
+
+  // SEATTLE (Additional)
+  {
+    id: 'sea-sounders',
+    youtubeId: 'NrjMwvhCbJY',
+    title: "Seattle Sounders - MLS Fan Culture",
+    description: "Experience Lumen Field for a Sounders match where 40,000 MLS fans create European-style atmosphere. See the Emerald City Supporters and why Seattle is America's soccer city.",
+    city: "Seattle",
+    relatedCity: "seattle",
+    category: 'atmosphere',
+    duration: '9:14',
+    views: '720K views',
+    tags: ['Seattle', 'Sounders', 'MLS', 'Soccer']
+  },
+  {
+    id: 'sea-pike-place',
+    youtubeId: 'kTVKjukzqAI',
+    title: "Seattle Pike Place Market & Food Tour",
+    description: "Tour Pike Place Market, the original Starbucks, and Seattle's coffee culture. Visit the restaurants and bars where Seahawks and Sounders fans gather. This is Seattle food and culture.",
+    city: "Seattle",
+    relatedCity: "seattle",
+    category: 'food-drink',
+    duration: '15:08',
+    views: '2.4M views',
+    tags: ['Seattle', 'Pike Place', 'Food', 'Coffee']
+  },
+
+  // MARSEILLE
+  {
+    id: 'mar-velodrome',
+    youtubeId: 'cNR5sLvKEZw',
+    title: "Orange Vélodrome - Marseille's Football Cathedral",
+    description: "Experience the Stade Vélodrome where OM (Olympique de Marseille) fans create the most intense atmosphere in French football. 67,000 passionate supporters, non-stop chanting, and Mediterranean fire.",
+    city: "Marseille",
+    relatedCity: "marseille",
+    category: 'atmosphere',
+    duration: '10:37',
+    views: '3.1M views',
+    tags: ['Marseille', 'OM', 'Vélodrome', 'Ligue 1']
+  },
+  {
+    id: 'mar-calanques',
+    youtubeId: '3vZ_nY2PnJU',
+    title: "Marseille City Guide - Mediterranean Port Culture",
+    description: "Explore Marseille's Vieux Port, fish markets, and Calanques. See why this gritty Mediterranean port city has such fierce local pride. From bouillabaisse to OM, this is Marseille.",
+    city: "Marseille",
+    relatedCity: "marseille",
+    category: 'city-guides',
+    duration: '18:22',
+    views: '1.7M views',
+    tags: ['Marseille', 'Mediterranean', 'Port', 'Culture']
+  },
+  {
+    id: 'mar-ultras',
+    youtubeId: 'uJqB3LJdXGE',
+    title: "Marseille Ultras - South Winners & Fan Culture",
+    description: "Inside the world of Marseille's ultras - the South Winners, Yankees, and Fanatics. See the tifos, flares, and organized chaos that makes OM matches unforgettable.",
+    city: "Marseille",
+    relatedCity: "marseille",
+    category: 'culture',
+    duration: '14:15',
+    views: '920K views',
+    tags: ['Marseille', 'Ultras', 'Fan Culture', 'OM']
+  },
+
+  // MEXICO CITY
+  {
+    id: 'mex-azteca',
+    youtubeId: 'vqbKiLMGLVs',
+    title: "Estadio Azteca - Football's Historic Temple",
+    description: "Tour the legendary Azteca Stadium where Maradona scored the Hand of God and Pelé won the World Cup. This 87,000-seat cathedral has hosted two World Cup finals. Mexican football history lives here.",
+    city: "Mexico City",
+    relatedCity: "mexicocity",
+    category: 'stadium-tours',
+    duration: '16:30',
+    views: '2.8M views',
+    tags: ['Mexico City', 'Azteca', 'World Cup', 'History']
+  },
+  {
+    id: 'mex-clasico',
+    youtubeId: 'tZoP4hDCdAo',
+    title: "Club América vs Chivas - El Súper Clásico",
+    description: "Experience Mexico's biggest rivalry - Club América (the rich, cosmopolitan capital) vs Chivas (working-class pride of Guadalajara). Passion, politics, and 90 minutes of Mexican football intensity.",
+    city: "Mexico City",
+    relatedCity: "mexicocity",
+    category: 'fan-reactions',
+    duration: '12:48',
+    views: '4.5M views',
+    tags: ['Mexico City', 'América', 'Chivas', 'Clásico']
+  },
+  {
+    id: 'mex-food',
+    youtubeId: 'RTFZQhNvqO0',
+    title: "Mexico City Street Food Tour - Tacos & Tortas",
+    description: "Eat your way through CDMX from street tacos to tortas to tamales. Visit the markets and taquerías where América and Pumas fans gather. This is authentic Mexican food culture.",
+    city: "Mexico City",
+    relatedCity: "mexicocity",
+    category: 'food-drink',
+    duration: '22:15',
+    views: '3.9M views',
+    tags: ['Mexico City', 'Tacos', 'Street Food', 'Mexican Cuisine']
+  },
+
+  // PORTLAND
+  {
+    id: 'por-timbers',
+    youtubeId: 'PAJJzAdT_P4',
+    title: "Portland Timbers - Chainsaw and Timber Joey",
+    description: "Experience Providence Park where Timber Joey cuts a log slice after every goal. See the Timbers Army - 5,000+ standing supporters creating MLS's most unique atmosphere. Keep Portland Weird extends to soccer.",
+    city: "Portland",
+    relatedCity: "portland",
+    category: 'culture',
+    duration: '11:27',
+    views: '850K views',
+    tags: ['Portland', 'Timbers', 'MLS', 'Timber Joey']
+  },
+  {
+    id: 'por-food-carts',
+    youtubeId: 'ZGvzWLXZ0zc',
+    title: "Portland Food Cart Tour - Foodie Paradise",
+    description: "Tour Portland's famous food cart pods from Vietnamese pho to Korean BBQ to vegan donuts. See why Portland is America's indie food capital and where Timbers fans fuel up.",
+    city: "Portland",
+    relatedCity: "portland",
+    category: 'food-drink',
+    duration: '18:50',
+    views: '1.9M views',
+    tags: ['Portland', 'Food Carts', 'Street Food', 'Foodie']
+  },
+  {
+    id: 'por-city',
+    youtubeId: 'X5GcVPUQ_Sg',
+    title: "Portland City Guide - Keep It Weird",
+    description: "Explore Portland's Powell's Books, craft breweries, and quirky culture. From Voodoo Doughnuts to Forest Park, see why Portland is the hipster capital and how that extends to sports fandom.",
+    city: "Portland",
+    relatedCity: "portland",
+    category: 'city-guides',
+    duration: '20:35',
+    views: '2.3M views',
+    tags: ['Portland', 'City Guide', 'Hipster', 'Culture']
+  },
+
+  // MELBOURNE
+  {
+    id: 'mel-mcg',
+    youtubeId: 'rXSb2EAc2tY',
+    title: "MCG Tour - Melbourne Cricket Ground",
+    description: "Tour the legendary Melbourne Cricket Ground (MCG) - the world's greatest stadium. See where 100,000 fans pack in for AFL Grand Finals and cricket Ashes matches. This is Australian sports culture.",
+    city: "Melbourne",
+    relatedCity: "melbourne",
+    category: 'stadium-tours',
+    duration: '15:42',
+    views: '1.6M views',
+    tags: ['Melbourne', 'MCG', 'Cricket', 'AFL']
+  },
+  {
+    id: 'mel-afl',
+    youtubeId: 'XMZYZcoAcU0',
+    title: "AFL Grand Final Atmosphere - Melbourne Goes Mad",
+    description: "Experience the AFL Grand Final at the MCG with 100,000 screaming fans. This is Australia's Super Bowl - meat pies, tinnies, and the most passionate sports crowd in the Southern Hemisphere.",
+    city: "Melbourne",
+    relatedCity: "melbourne",
+    category: 'atmosphere',
+    duration: '13:18',
+    views: '2.7M views',
+    tags: ['Melbourne', 'AFL', 'Grand Final', 'Sports']
+  },
+  {
+    id: 'mel-coffee',
+    youtubeId: 'aAFkPB9cgck',
+    title: "Melbourne Coffee Culture & Laneways Tour",
+    description: "Explore Melbourne's legendary coffee scene and hidden laneways. Visit the cafes and bars where AFL fans argue over their teams. This is Melbourne's cafe culture and why it's Australia's cultural capital.",
+    city: "Melbourne",
+    relatedCity: "melbourne",
+    category: 'food-drink',
+    duration: '17:25',
+    views: '2.1M views',
+    tags: ['Melbourne', 'Coffee', 'Cafes', 'Culture']
+  },
+
+  // ATHENS
+  {
+    id: 'ath-derby',
+    youtubeId: 'hUMkS05qZqE',
+    title: "Athens Derby - Olympiacos vs Panathinaikos",
+    description: "The Derby of the Eternal Enemies splits Athens in half. Red vs Green, working class vs elite, 90 minutes of Greek passion with flares, drums, and ancient hatred. This is Greek football.",
+    city: "Athens",
+    relatedCity: "athens",
+    category: 'atmosphere',
+    duration: '11:45',
+    views: '3.4M views',
+    tags: ['Athens', 'Derby', 'Olympiacos', 'Panathinaikos']
+  },
+  {
+    id: 'ath-gate-7',
+    youtubeId: 'fR8o1L77kfs',
+    title: "Olympiacos Gate 7 - Greece's Most Fanatical Fans",
+    description: "Inside Gate 7 - Olympiacos's ultra group and one of Europe's most intense fan sections. See the choreography, the passion, and why Greek football fans are among the world's most fanatical.",
+    city: "Athens",
+    relatedCity: "athens",
+    category: 'culture',
+    duration: '14:30',
+    views: '1.2M views',
+    tags: ['Athens', 'Gate 7', 'Ultras', 'Olympiacos']
+  },
+  {
+    id: 'ath-acropolis',
+    youtubeId: 'Lq5dB0zT0PE',
+    title: "Athens City Guide - Ancient & Modern",
+    description: "Tour Athens from the Acropolis to Plaka to modern neighborhoods. Visit the tavernas where football fans gather before derbies. This is where ancient history meets modern Greek passion.",
+    city: "Athens",
+    relatedCity: "athens",
+    category: 'city-guides',
+    duration: '19:50',
+    views: '2.9M views',
+    tags: ['Athens', 'Acropolis', 'Greece', 'History']
+  },
+
+  // CAIRO
+  {
+    id: 'cai-ahly-zamalek',
+    youtubeId: 'N-XPsz7fLj0',
+    title: "Cairo Derby - Al Ahly vs Zamalek",
+    description: "The Cairo Derby is Africa's fiercest rivalry. Red vs White, working class vs elite, 75,000 fans creating noise that echoes across the Nile. This is Egyptian football passion at its most intense.",
+    city: "Cairo",
+    relatedCity: "cairo",
+    category: 'atmosphere',
+    duration: '12:25',
+    views: '4.8M views',
+    tags: ['Cairo', 'Al Ahly', 'Zamalek', 'Derby']
+  },
+  {
+    id: 'cai-ultras',
+    youtubeId: 'jLhpKT8sECc',
+    title: "Egyptian Ultras - Revolution & Football",
+    description: "How Egyptian ultras helped spark the Arab Spring revolution. See the Ahlawy and White Knights - fan groups that are political movements, social organizations, and football fanatics combined.",
+    city: "Cairo",
+    relatedCity: "cairo",
+    category: 'culture',
+    duration: '16:40',
+    views: '2.3M views',
+    tags: ['Cairo', 'Ultras', 'Politics', 'Revolution']
+  },
+  {
+    id: 'cai-pyramids',
+    youtubeId: 'a5RSo5kHDwI',
+    title: "Cairo City Guide - Pyramids to Khan el-Khalili",
+    description: "Experience Cairo from the Pyramids of Giza to the chaos of Khan el-Khalili bazaar. Visit the cafes where Al Ahly and Zamalek fans debate over shisha. This is Egypt's beating heart.",
+    city: "Cairo",
+    relatedCity: "cairo",
+    category: 'city-guides',
+    duration: '23:15',
+    views: '5.2M views',
+    tags: ['Cairo', 'Pyramids', 'Egypt', 'History']
   }
 ];
 
