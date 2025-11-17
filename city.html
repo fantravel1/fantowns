@@ -612,6 +612,17 @@
 
             // Apply theme
             applyTheme(data.theme);
+
+            // Set hero background image
+            const heroSection = document.querySelector('.hero-city');
+            if (heroSection) {
+                heroSection.style.backgroundImage = `
+                    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                    url('images/heroes/${cityName}-hero.jpg')
+                `;
+                heroSection.style.backgroundSize = 'cover';
+                heroSection.style.backgroundPosition = 'center';
+            }
         }
 
         // Initialize page
