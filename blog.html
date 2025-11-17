@@ -351,7 +351,12 @@
                 blogCard.onclick = () => window.location.href = `blog-post.html?id=${post.id}`;
 
                 blogCard.innerHTML = `
-                    <div class="blog-image">${post.emoji}</div>
+                    <div class="blog-image">
+                        ${post.headerImage ?
+                            `<img src="${post.headerImage}" alt="${post.title}" style="width: 100%; height: 100%; object-fit: cover;">` :
+                            post.emoji
+                        }
+                    </div>
                     <div class="blog-content">
                         ${isFeatured ? '<span class="featured-badge">⭐ Featured Story</span>' : ''}
                         <div class="blog-meta">

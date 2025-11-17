@@ -7,7 +7,10 @@ function renderHeader(activePage = '') {
   header.className = 'fantowns-header';
   header.innerHTML = `
     <div class="header-container">
-      <a href="index.html" class="header-logo">🏙️ FANTOWNS</a>
+      <a href="index.html" class="header-logo">
+        <img src="images/icons/logo.jpg" alt="FANTOWNS Logo" style="height: 35px; width: auto; vertical-align: middle; border-radius: 6px; margin-right: 8px;">
+        FANTOWNS
+      </a>
 
       <!-- Desktop Navigation -->
       <nav class="header-nav desktop-nav" aria-label="Main navigation">
