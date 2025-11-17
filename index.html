@@ -480,6 +480,335 @@
         .category-football .city-category { background: #dcfce7; color: #166534; }
         .category-music .city-category { background: #fef3c7; color: #92400e; }
         .category-anime .city-category { background: #fee2e2; color: #dc2626; }
+
+        /* Quiz Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            overflow-y: auto;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            max-width: 600px;
+            width: 100%;
+            padding: 3rem;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #64748b;
+            transition: color 0.3s;
+        }
+
+        .modal-close:hover {
+            color: #1e293b;
+        }
+
+        .quiz-question {
+            display: none;
+        }
+
+        .quiz-question.active {
+            display: block;
+        }
+
+        .quiz-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-progress {
+            height: 6px;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .quiz-progress-bar {
+            height: 100%;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            transition: width 0.3s ease;
+        }
+
+        .quiz-option {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .quiz-option:hover {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            transform: translateX(5px);
+        }
+
+        .quiz-result {
+            text-align: center;
+        }
+
+        .result-city-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin: 1rem 0;
+        }
+
+        .result-description {
+            font-size: 1.1rem;
+            color: #475569;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .result-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .result-button {
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .result-button.primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+        }
+
+        .result-button.secondary {
+            background: white;
+            color: #3b82f6;
+            border: 2px solid #3b82f6;
+        }
+
+        .result-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Bucket List Tracker */
+        .bucket-list-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+            z-index: 999;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .bucket-list-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.5);
+        }
+
+        .bucket-list-badge {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .bucket-list-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100%;
+            background: white;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
+            z-index: 1001;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .bucket-list-panel.active {
+            right: 0;
+        }
+
+        .achievement-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0.25rem;
+        }
+
+        .achievement-badge.locked {
+            background: #e2e8f0;
+            color: #94a3b8;
+        }
+
+        .city-checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .city-checklist-item:hover {
+            background: #eff6ff;
+        }
+
+        .city-checklist-item.checked {
+            background: #dcfce7;
+        }
+
+        .city-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #cbd5e0;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .city-checklist-item.checked .city-checkbox {
+            background: #10b981;
+            border-color: #10b981;
+        }
+
+        .city-checkbox::after {
+            content: '✓';
+            color: white;
+            font-weight: bold;
+            display: none;
+        }
+
+        .city-checklist-item.checked .city-checkbox::after {
+            display: block;
+        }
+
+        /* Social Proof */
+        .social-proof {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 998;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            animation: fadeInUp 0.5s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .social-proof-pulse {
+            width: 12px;
+            height: 12px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .social-proof-text {
+            font-size: 0.9rem;
+            color: #475569;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .bucket-list-panel {
+                width: 100%;
+                right: -100%;
+            }
+
+            .bucket-list-btn {
+                bottom: 1rem;
+                right: 1rem;
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .social-proof {
+                left: 1rem;
+                bottom: 5rem;
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -489,7 +818,10 @@
         <p class="subtitle">
             Experience legendary fan cultures from Liverpool's Anfield to Tokyo's Comiket madness. Find the best hotels, restaurants, and insider tips to immerse yourself in the world's most electrifying sports, music, and pop culture destinations.
         </p>
-        <button class="cta-button" onclick="scrollToSection('cities')">Explore Fan Cities</button>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem;">
+            <button class="cta-button" onclick="openQuiz()">🎯 Find Your Perfect Fan City</button>
+            <button class="cta-button" onclick="scrollToSection('cities')" style="background: rgba(255, 255, 255, 0.1); border: 2px solid white;">Explore All Cities</button>
+        </div>
         
         <div class="stats">
             <div class="stat">
@@ -524,6 +856,44 @@
         
         <div class="cities-grid" id="cities-grid">
             <div class="loading">Loading amazing fan cities...</div>
+        </div>
+    </section>
+
+    <section style="padding: 5rem 2rem; background: #0f172a; color: white;">
+        <h2 class="section-title" style="color: white;">Feel the Atmosphere</h2>
+        <p class="section-subtitle" style="color: #cbd5e0; max-width: 700px; margin: 0 auto 3rem;">Experience the chills, the roars, and the pure passion that makes these cities legendary.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+            <!-- Liverpool -->
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1.5rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: #60a5fa;">⚽ You'll Never Walk Alone</h3>
+                <p style="color: #cbd5e0; margin-bottom: 1rem; font-size: 0.9rem;">54,000 Liverpool fans at Anfield singing in perfect unison. Seismologists recorded tremors.</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/Go-jJlGd1so" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Dortmund -->
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1.5rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: #fbbf24;">🟡 The Yellow Wall</h3>
+                <p style="color: #cbd5e0; margin-bottom: 1rem; font-size: 0.9rem;">25,000 standing fans bouncing as one organism. The stadium literally sways.</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/ZLoyFdBIVJw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Buenos Aires -->
+            <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 1.5rem; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);">
+                <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: #f59e0b;">🇦🇷 La Bombonera Shakes</h3>
+                <p style="color: #cbd5e0; margin-bottom: 1rem; font-size: 0.9rem;">When Boca scores, the stadium actually moves. Flares, drums, and pure madness.</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/xRBZGd73SkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <button class="cta-button" onclick="scrollToSection('cities')">Choose Your Adventure</button>
         </div>
     </section>
 
@@ -577,6 +947,58 @@
         </div>
     </footer>
 
+    <!-- Quiz Modal -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeQuiz()">×</button>
+            <div id="quizContent">
+                <div class="quiz-progress">
+                    <div id="quizProgressBar" class="quiz-progress-bar" style="width: 0%"></div>
+                </div>
+                <div id="quizQuestions"></div>
+                <div id="quizResult" class="quiz-result hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bucket List Tracker Button -->
+    <button class="bucket-list-btn" onclick="toggleBucketList()">
+        <span>🏆</span>
+        <span>My Bucket List</span>
+        <span id="bucketListBadge" class="bucket-list-badge">0/11</span>
+    </button>
+
+    <!-- Bucket List Panel -->
+    <div id="bucketListPanel" class="bucket-list-panel">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">🏆 Your Fan City Journey</h2>
+        <div id="bucketListProgress" style="margin-bottom: 2rem;">
+            <div style="background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden;">
+                <div id="progressBar" style="background: linear-gradient(90deg, #10b981, #059669); height: 100%; width: 0%; transition: width 0.5s ease;"></div>
+            </div>
+            <p style="margin-top: 0.5rem; color: #64748b; font-size: 0.9rem;">
+                <span id="progressText">0 of 11 cities visited</span>
+            </p>
+        </div>
+
+        <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">🎖️ Achievements</h3>
+        <div id="achievements" style="margin-bottom: 2rem;"></div>
+
+        <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Cities Checklist</h3>
+        <div id="cityChecklist"></div>
+
+        <button onclick="shareBucketList()" style="width: 100%; margin-top: 2rem; padding: 1rem; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">
+            📱 Share My Journey
+        </button>
+    </div>
+
+    <!-- Social Proof -->
+    <div id="socialProof" class="social-proof">
+        <div class="social-proof-pulse"></div>
+        <div class="social-proof-text">
+            <strong id="socialProofMessage">Loading...</strong>
+        </div>
+    </div>
+
     <!-- City Data File -->
     <script src="city-data.js"></script>
     
@@ -601,67 +1023,67 @@
             liverpool: {
                 name: "Liverpool",
                 country: "England 🇬🇧",
-                description: "Home to the legendary \"You'll Never Walk Alone\" anthem, Liverpool's Anfield stadium creates an atmosphere that literally moves the earth. The Kop end delivers pure magic on match days.",
+                description: "Picture this: 54,000 voices rising as one, singing \"You'll Never Walk Alone\" so powerfully that seismologists have recorded tremors. At Anfield, the Kop doesn't just cheer—it roars, it weeps, it makes grown players cry. This is where Bill Shankly built a religion, where legends are born on European nights under the floodlights, and where the spirit of 1977, 1984, 2005, and 2019 still echoes through every brick. The pubs around Anfield aren't just drinking spots—they're temples where fans have gathered for 130 years, singing the same songs their great-grandfathers sang.",
                 highlights: ["Anfield Stadium", "The Cavern Club", "Albert Dock"]
             },
             greenbay: {
-                name: "Green Bay", 
+                name: "Green Bay",
                 country: "Wisconsin, USA 🇺🇸",
-                description: "The frozen tundra of Lambeau Field hosts the NFL's most devoted fanbase. Cheeseheads brave subzero temperatures and create an atmosphere of pure Wisconsin pride and tradition.",
+                description: "When it's -20°F and your breath freezes in the air, that's when you know you're in Titletown. This isn't just a team—it's community-owned destiny. 360,000 shareholders, most who'll never see a dividend, but own a piece of immortality. The Lambeau Leap isn't a celebration; it's a covenant between players and fans who've waited in sub-zero parking lots since dawn, grilling brats in blizzards. Vince Lombardi's ghost still walks these sidelines. The Ice Bowl. The frozen tundra. Bart Starr's sneak. This is where legends are forged in ice and crowned in cheese. On Sunday, the entire city shuts down—church happens at noon, kickoff is the sermon.",
                 highlights: ["Lambeau Field", "Titletown District", "Local Breweries"]
             },
             buenosaires: {
                 name: "Buenos Aires",
-                country: "Argentina 🇦🇷", 
-                description: "La Bombonera stadium and the eternal Boca vs River rivalry create the most intense football atmosphere on Earth. This city lives and breathes football passion every single day.",
+                country: "Argentina 🇦🇷",
+                description: "La Bombonera—The Chocolate Box—literally shakes when Boca scores. Seismographs don't lie. The stadium was built in a cramped neighborhood on purpose: to trap the sound, to amplify the rage, the joy, the desperation. When Boca plays River in El Superclásico, the city divides into blue-and-gold and red-and-white, families stop speaking, marriages are tested. Diego Maradona's spirit still dances in La Boca's streets where tango was born from the same immigrant passion that created this football religion. Here, defeat isn't just a loss—it's a tragedy. Victory isn't just winning—it's vindication. The smell of choripán grilling, the sound of drums that never stop, the sight of flags so large they cover entire stadium sections—this is football as war, as art, as life itself.",
                 highlights: ["La Bombonera", "El Superclásico", "San Telmo"]
             },
             dortmund: {
                 name: "Dortmund",
                 country: "Germany 🇩🇪",
-                description: "The Yellow Wall at Signal Iduna Park is the largest standing terrace in European football. 25,000 fans create a wall of pure sonic energy that reverberates across the continent.",
+                description: "The Südtribüne—the Yellow Wall—is 25,000 people standing as one organism. No seats. Just pure, concentrated passion rising four stories into the Ruhr Valley sky. When they bounce in unison, the stadium sways. When they sing, Champions League opponents visibly shrink. This is Germany's working-class heart beating in black and yellow, born from coal mines and steel mills that forged both the city and its unbreakable spirit. Watch the choreographed displays: thousands of fans holding cards to create massive images in perfect synchronization, like a living, breathing organism. The beer flows, the currywurst sizzles, and \"Heja BVB\" thunders through streets where football isn't entertainment—it's identity. This is where Klopp built his dynasty on heavy metal football and infectious energy.",
                 highlights: ["Yellow Wall", "Phoenix Lake", "Industrial Culture"]
             },
             istanbul: {
                 name: "Istanbul",
                 country: "Turkey 🇹🇷",
-                description: "Three massive clubs - Galatasaray, Fenerbahçe, and Beşiktaş - create the most passionate football rivalries. The entire city transforms on derby days into a sea of colors and chants.",
+                description: "Welcome to Hell—that's what opponents call Türk Telekom Stadium, where Galatasaray's ultras create an inferno of sound and fury. But this is a city divided three ways: Galatasaray's red-and-gold aristocracy, Fenerbahçe's yellow-and-blue working class, Beşiktaş's black-and-white rebels. On derby day, the Bosphorus itself seems to split. Ferries carrying fans to stadiums rock with synchronized chants. Fishermen pause mid-catch to debate tactics. The call to prayer competes with stadium roars. Flares paint the night sky in team colors. This is where East meets West, where ancient Constantinople's passion for chariot racing evolved into modern football fanaticism. Raki flows, kebabs char over open flames, and the drums—the çifteli drums—never, ever stop. UEFA calls it intimidating. Locals call it home.",
                 highlights: ["Türk Telekom Stadium", "Bosphorus", "Historic Quarter"]
             },
             nashville: {
                 name: "Nashville",
                 country: "Tennessee, USA 🇺🇸",
-                description: "Music City lives and breathes country music like no other place on Earth. From the Grand Ole Opry to Broadway's honky-tonks, Nashville fans are music's most devoted followers.",
+                description: "At 9 PM on Broadway, every single bar has live music pouring onto neon-lit streets. Every. Single. One. This isn't background music—these are artists who moved here with a dream, playing 4-hour sets for tips and trying to be discovered like Garth Brooks at The Bluebird Cafe. The Grand Ole Opry isn't just a venue; it's the Mother Church, where a 6-foot circle of wood from the Ryman stage holds more history than most museums. Johnny Cash, Patsy Cline, Dolly Parton—they all stood in that circle. Walk down Music Row and you're stepping over songs that made millionaires. The Hot Chicken will burn your mouth, the pedal taverns will embarrass you, and someone will absolutely ask you to sing karaoke to 'Friends in Low Places.' This is where country music isn't a genre—it's a living, breathing religion with whiskey sacrament.",
                 highlights: ["Grand Ole Opry", "Broadway District", "Music Row"]
             },
             barcelona: {
                 name: "Barcelona",
                 country: "Spain 🇪🇸",
-                description: "Més que un club - More than a club. Camp Nou hosts the beautiful game where Catalan pride meets football artistry. Every match is a masterpiece of passion and skill.",
+                description: "\"Més que un club\"—More than a club—isn't marketing; it's truth carved in Catalan stone. When Franco banned their language, Camp Nou became the only place 99,000 people could speak Catalan freely, making every match an act of defiance. Watch the stadium transform at minute 17:14 (1714, the year Catalonia fell) when fans hold up signs demanding independence. This is where Cruyff turned football into art, where Messi painted masterpieces with a ball, where tiki-taka became philosophy. The pre-match atmosphere at La Rambla's fan bars mixes paella, cava, and political passion. Tourists come for Gaudí; pilgrims come for Barça. The club motto rings true: you don't just support FC Barcelona—you join a nation within a nation, where football is identity, resistance, and pure joy distilled into 90 minutes of beautiful football.",
                 highlights: ["Camp Nou", "Las Ramblas", "Sagrada Família"]
             },
             manchester: {
-                name: "Manchester", 
+                name: "Manchester",
                 country: "England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-                description: "Red vs Blue - where the world's most intense city rivalry divides families. Old Trafford and the Etihad create atmospheres that define English football passion.",
+                description: "Red or Blue. There is no in-between in this rain-soaked city where the Industrial Revolution birthed both football and fierce loyalty. United's Old Trafford—The Theatre of Dreams—where the Busby Babes died young and became immortal, where '99 was magical, where Fergie built an empire on bloody-minded determination. Across town, City's Etihad represents new money challenging old power, noisy neighbors who grew up to become champions. The derby isn't just a match—it's bragging rights for a year, family dinners in silence, workplaces divided. Walk through Northern Quarter pubs and you'll see grandfathers in red teaching grandsons songs about '68. In Ancoats, you'll see kids in sky blue dreaming of Aguerooooo's title-winning goal. Both sides united only in their love of chip barms and hatred of Liverpool. This is Manchester: rainy, gritty, passionate, and utterly obsessed.",
                 highlights: ["Old Trafford", "Etihad Stadium", "Manchester Derby"]
             },
             glasgow: {
                 name: "Glasgow",
-                country: "Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿", 
-                description: "Green vs Blue - the Old Firm Derby between Celtic and Rangers is the most historic rivalry in football. 130+ years of passion define this Scottish city's soul.",
+                country: "Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+                description: "Green and White versus Blue. Catholic versus Protestant. 1888 versus 1872. This isn't just football—it's centuries of history, immigration, religion, and identity compressed into 90 brutal, beautiful minutes. The Old Firm Derby has seen riots, violence, and passion so intense it defies rational explanation. Celtic Park on European nights becomes 'Paradise' where Irish immigrant descendants sing songs of defiance. Ibrox Stadium echoes with loyalist anthems and unionist pride. Walk Glasgow on derby day and every pub is either green or blue, never mixed. Workplaces split, friendships tested, families fractured. Over 400 matches played. The intensity never diminishes. This rivalry makes El Clásico look friendly. Add in Tennent's lager, haggis suppers, and Glasgow's sharp wit, and you have football's most complex, controversial, and utterly consuming derby.",
                 highlights: ["Celtic Park", "Ibrox Stadium", "Old Firm Derby"]
             },
             saopaulo: {
                 name: "São Paulo",
                 country: "Brazil 🇧🇷",
-                description: "Where 30 million people live and breathe football like nowhere else on Earth. Four massive clubs create the most passionate football culture on the planet.",
+                description: "Twenty-two million people. Four massive clubs. Infinite passion. This isn't a city—it's a football laboratory where the beautiful game reaches its purest, most intense form. Corinthians' Fiel (The Faithful) fill stadiums even in relegation seasons because loyalty here isn't conditional. Palmeiras' recent dominance creates green celebrations that shut down entire neighborhoods. São Paulo FC carries aristocratic history while Santos honors Pelé's eternal legacy. Every weekend, the Pacaembu valley echoes with samba drums, fireworks, and chants that make European ultras look tame. The churrasqueiras smoke, caipirinhas flow, and street football never stops—kids playing on favela streets dream of Morumbi just like Ronaldo did. This is where Sócrates turned football into poetry and politics, where every match carries the weight of Brazilian soul, where defeat brings tears and victory brings delirium.",
                 highlights: ["Arena Corinthians", "Allianz Parque", "Football Museum"]
             },
             tokyo: {
                 name: "Tokyo",
                 country: "Japan 🇯🇵",
-                description: "Anime convention capital where 750,000 otaku create beautiful chaos at Comiket. From Akihabara's electronics to cosplay culture, this is where anime obsession reaches peak intensity.",
+                description: "Twice a year, 750,000 otaku descend on Tokyo Big Sight for Comiket—the world's largest self-published comic convention where passion becomes organized chaos. People line up at 4 AM in summer heat or winter cold, clutching numbered tickets like golden passes to paradise. Akihabara's Electric Town isn't just shopping—it's pilgrimage. Eight-story buildings dedicated entirely to figurines, maid cafes on every corner, vending machines selling trading cards. Cosplayers transform public spaces into living anime scenes with obsessive attention to detail that costs thousands of dollars and hundreds of hours. Walk Nakano Broadway's narrow aisles and find treasures dating back to Astro Boy. Visit Animate's flagship store and witness teenage girls screaming over limited-edition merchandise. This isn't casual fandom—this is devotion refined to art, where collecting becomes culture, and anime defines identity for millions.",
                 highlights: ["Comiket", "Akihabara", "Anime Culture"]
             }
         };
@@ -786,6 +1208,333 @@
                 });
             }, 100);
         });
+
+        // ========== QUIZ FUNCTIONALITY ==========
+        const quizQuestions = [
+            {
+                question: "How do you celebrate victory?",
+                options: [
+                    { text: "Singing anthems with thousands of strangers", scores: { liverpool: 3, dortmund: 3, buenosaires: 2 } },
+                    { text: "BBQ tailgate party in the parking lot", scores: { greenbay: 3, nashville: 2 } },
+                    { text: "Dancing in the streets until sunrise", scores: { buenosaires: 3, istanbul: 2, saopaulo: 3 } },
+                    { text: "Collecting limited edition merchandise", scores: { tokyo: 3, barcelona: 1 } }
+                ]
+            },
+            {
+                question: "What's your ideal fan atmosphere?",
+                options: [
+                    { text: "Historic tradition with legendary stories", scores: { liverpool: 3, barcelona: 2, manchester: 2 } },
+                    { text: "Intense, intimidating, and loud", scores: { istanbul: 3, buenosaires: 3, dortmund: 2 } },
+                    { text: "Family-friendly community spirit", scores: { greenbay: 3, nashville: 2 } },
+                    { text: "Organized chaos with creative displays", scores: { tokyo: 3, saopaulo: 2 } }
+                ]
+            },
+            {
+                question: "How do you handle rivalry?",
+                options: [
+                    { text: "It's war - lifelong feuds passed through generations", scores: { glasgow: 3, buenosaires: 2, istanbul: 2 } },
+                    { text: "Friendly banter with mutual respect", scores: { greenbay: 2, nashville: 2, tokyo: 1 } },
+                    { text: "City-defining - it splits communities", scores: { manchester: 3, glasgow: 2, buenosaires: 2 } },
+                    { text: "Political and cultural identity", scores: { barcelona: 3, istanbul: 2 } }
+                ]
+            },
+            {
+                question: "What's your preferred temperature?",
+                options: [
+                    { text: "Freezing cold - the colder the better", scores: { greenbay: 3, dortmund: 1 } },
+                    { text: "Mild European weather", scores: { liverpool: 2, manchester: 2, barcelona: 2, dortmund: 2 } },
+                    { text: "Hot and passionate", scores: { buenosaires: 2, saopaulo: 3, istanbul: 2 } },
+                    { text: "Anything with AC and indoor venues", scores: { tokyo: 3, nashville: 1 } }
+                ]
+            },
+            {
+                question: "What's your drink of choice?",
+                options: [
+                    { text: "Beer - lots of it", scores: { liverpool: 3, dortmund: 3, greenbay: 2, manchester: 2 } },
+                    { text: "Wine or sangria", scores: { barcelona: 3, buenosaires: 1 } },
+                    { text: "Whiskey or bourbon", scores: { nashville: 3, glasgow: 2 } },
+                    { text: "Sake or unique cocktails", scores: { tokyo: 3 } }
+                ]
+            },
+            {
+                question: "How important is history and tradition?",
+                options: [
+                    { text: "Everything - I want to walk where legends walked", scores: { liverpool: 3, barcelona: 2, manchester: 2 } },
+                    { text: "Important, but I'm here for current energy", scores: { dortmund: 2, istanbul: 2, saopaulo: 2 } },
+                    { text: "Tradition is nice, but innovation is better", scores: { tokyo: 3, greenbay: 1 } },
+                    { text: "I live in the moment - now is what matters", scores: { nashville: 2, buenosaires: 2 } }
+                ]
+            },
+            {
+                question: "What food experience excites you most?",
+                options: [
+                    { text: "Authentic local working-class food", scores: { liverpool: 3, dortmund: 2, greenbay: 2 } },
+                    { text: "Street food and BBQ", scores: { buenosaires: 3, saopaulo: 3, nashville: 2 } },
+                    { text: "Unique cultural cuisine", scores: { tokyo: 3, istanbul: 3, barcelona: 2 } },
+                    { text: "Hearty traditional comfort food", scores: { glasgow: 2, manchester: 2 } }
+                ]
+            },
+            {
+                question: "How do you want to stand out?",
+                options: [
+                    { text: "I don't - I want to blend in with locals", scores: { liverpool: 2, glasgow: 2, manchester: 2 } },
+                    { text: "Extreme cosplay or team gear", scores: { tokyo: 3, greenbay: 2 } },
+                    { text: "Face paint, flares, and passion", scores: { buenosaires: 3, istanbul: 3, saopaulo: 2 } },
+                    { text: "Classic scarf and respectful support", scores: { barcelona: 2, dortmund: 2 } }
+                ]
+            }
+        ];
+
+        let currentQuestion = 0;
+        let quizScores = {};
+
+        function openQuiz() {
+            const modal = document.getElementById('quizModal');
+            modal.classList.add('active');
+            currentQuestion = 0;
+            quizScores = {};
+            renderQuestion();
+        }
+
+        function closeQuiz() {
+            const modal = document.getElementById('quizModal');
+            modal.classList.remove('active');
+        }
+
+        function renderQuestion() {
+            const container = document.getElementById('quizQuestions');
+            const resultDiv = document.getElementById('quizResult');
+            const progressBar = document.getElementById('quizProgressBar');
+
+            if (currentQuestion >= quizQuestions.length) {
+                showResult();
+                return;
+            }
+
+            const q = quizQuestions[currentQuestion];
+            const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
+            progressBar.style.width = progress + '%';
+
+            resultDiv.classList.add('hidden');
+            container.innerHTML = `
+                <h2 class="quiz-title">Question ${currentQuestion + 1} of ${quizQuestions.length}</h2>
+                <p style="font-size: 1.2rem; color: #475569; margin-bottom: 2rem;">${q.question}</p>
+                ${q.options.map((opt, i) => `
+                    <div class="quiz-option" onclick="selectAnswer(${i})">
+                        ${opt.text}
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        function selectAnswer(optionIndex) {
+            const q = quizQuestions[currentQuestion];
+            const scores = q.options[optionIndex].scores;
+
+            // Add scores
+            for (let city in scores) {
+                quizScores[city] = (quizScores[city] || 0) + scores[city];
+            }
+
+            currentQuestion++;
+            renderQuestion();
+        }
+
+        function showResult() {
+            const container = document.getElementById('quizQuestions');
+            const resultDiv = document.getElementById('quizResult');
+
+            // Find top city
+            let topCity = null;
+            let topScore = 0;
+            for (let city in quizScores) {
+                if (quizScores[city] > topScore) {
+                    topScore = quizScores[city];
+                    topCity = city;
+                }
+            }
+
+            const cityData = cityDisplayData[topCity];
+
+            container.innerHTML = '';
+            resultDiv.classList.remove('hidden');
+            resultDiv.innerHTML = `
+                <h2 style="font-size: 1.3rem; color: #64748b; margin-bottom: 0.5rem;">Your Perfect Fan City Is...</h2>
+                <div class="result-city-name">${cityData.name} ${cityData.country}</div>
+                <p class="result-description">${cityData.description}</p>
+                <div style="margin-bottom: 2rem;">
+                    ${cityData.highlights.map(h => `<span class="highlight-tag">${h}</span>`).join('')}
+                </div>
+                <div class="result-actions">
+                    <button class="result-button primary" onclick="window.location.href='city.html?city=${topCity}'">
+                        Explore ${cityData.name}
+                    </button>
+                    <button class="result-button secondary" onclick="shareQuizResult('${topCity}')">
+                        📱 Share Result
+                    </button>
+                    <button class="result-button secondary" onclick="openQuiz()">
+                        🔄 Retake Quiz
+                    </button>
+                </div>
+            `;
+        }
+
+        function shareQuizResult(city) {
+            const cityData = cityDisplayData[city];
+            const text = `🏙️ My perfect fan city is ${cityData.name}! Find yours at FANTOWNS.com`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'My Perfect Fan City',
+                    text: text,
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(text + ' - ' + window.location.href);
+                alert('Result copied to clipboard! Share it with your friends!');
+            }
+        }
+
+        // ========== BUCKET LIST FUNCTIONALITY ==========
+        function toggleBucketList() {
+            const panel = document.getElementById('bucketListPanel');
+            panel.classList.toggle('active');
+        }
+
+        function loadBucketList() {
+            const visited = JSON.parse(localStorage.getItem('visitedCities') || '[]');
+            return visited;
+        }
+
+        function saveBucketList(visited) {
+            localStorage.setItem('visitedCities', JSON.stringify(visited));
+            updateBucketListUI();
+        }
+
+        function toggleCity(cityKey) {
+            const visited = loadBucketList();
+            const index = visited.indexOf(cityKey);
+
+            if (index > -1) {
+                visited.splice(index, 1);
+            } else {
+                visited.push(cityKey);
+                // Show achievement animation
+                checkAchievements(visited.length);
+            }
+
+            saveBucketList(visited);
+        }
+
+        function checkAchievements(count) {
+            const achievements = {
+                1: "🎯 First Steps",
+                3: "🌟 Explorer",
+                5: "🏆 Globetrotter",
+                8: "👑 Legend",
+                11: "💎 Ultimate Fan"
+            };
+
+            if (achievements[count]) {
+                setTimeout(() => {
+                    alert(`🎉 Achievement Unlocked: ${achievements[count]}!`);
+                }, 300);
+            }
+        }
+
+        function updateBucketListUI() {
+            const visited = loadBucketList();
+            const totalCities = Object.keys(cityDisplayData).length;
+            const percentage = (visited.length / totalCities) * 100;
+
+            // Update badge
+            document.getElementById('bucketListBadge').textContent = `${visited.length}/${totalCities}`;
+
+            // Update progress bar
+            document.getElementById('progressBar').style.width = percentage + '%';
+            document.getElementById('progressText').textContent = `${visited.length} of ${totalCities} cities visited`;
+
+            // Update achievements
+            const achievementsHTML = [
+                { count: 1, icon: '🎯', name: 'First Steps', locked: visited.length < 1 },
+                { count: 3, icon: '🌟', name: 'Explorer', locked: visited.length < 3 },
+                { count: 5, icon: '🏆', name: 'Globetrotter', locked: visited.length < 5 },
+                { count: 8, icon: '👑', name: 'Legend', locked: visited.length < 8 },
+                { count: 11, icon: '💎', name: 'Ultimate Fan', locked: visited.length < 11 }
+            ].map(a => `
+                <span class="achievement-badge ${a.locked ? 'locked' : ''}">
+                    ${a.icon} ${a.name}
+                </span>
+            `).join('');
+
+            document.getElementById('achievements').innerHTML = achievementsHTML;
+
+            // Update checklist
+            const checklistHTML = Object.keys(cityDisplayData).map(cityKey => {
+                const city = cityDisplayData[cityKey];
+                const isChecked = visited.includes(cityKey);
+                return `
+                    <div class="city-checklist-item ${isChecked ? 'checked' : ''}" onclick="toggleCity('${cityKey}')">
+                        <div class="city-checkbox"></div>
+                        <div>
+                            <div style="font-weight: 600; color: #1e293b;">${city.name}</div>
+                            <div style="font-size: 0.85rem; color: #64748b;">${city.country}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('cityChecklist').innerHTML = checklistHTML;
+        }
+
+        function shareBucketList() {
+            const visited = loadBucketList();
+            const total = Object.keys(cityDisplayData).length;
+            const cityNames = visited.map(key => cityDisplayData[key].name).join(', ');
+
+            const text = `🏆 I've explored ${visited.length}/${total} fan cities on FANTOWNS!\n${visited.length > 0 ? `Cities: ${cityNames}` : 'Just getting started!'}`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'My Fan City Journey',
+                    text: text,
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(text + '\n' + window.location.href);
+                alert('Bucket list copied to clipboard!');
+            }
+        }
+
+        // ========== SOCIAL PROOF ==========
+        const socialProofMessages = [
+            { city: 'Liverpool', message: '87 fans exploring Liverpool right now' },
+            { city: 'Buenos Aires', message: 'Sarah from Australia just checked into La Bombonera' },
+            { city: 'Green Bay', message: 'Green Bay trending in Wisconsin 🔥' },
+            { city: 'Tokyo', message: '156 people viewing Tokyo this hour' },
+            { city: 'Dortmund', message: 'Mike from USA just added Dortmund to bucket list' },
+            { city: 'Nashville', message: 'Nashville searches up 230% this week' },
+            { city: 'Istanbul', message: 'Emma from UK just booked tickets to Istanbul' },
+            { city: 'Barcelona', message: '203 fans exploring Barcelona right now' },
+            { city: 'Manchester', message: 'James from Ireland visited Manchester yesterday' },
+            { city: 'Glasgow', message: 'Old Firm Derby searches spiking 🔥' },
+            { city: 'São Paulo', message: 'Carlos from Brazil shared his São Paulo story' }
+        ];
+
+        let socialProofIndex = 0;
+
+        function updateSocialProof() {
+            const message = socialProofMessages[socialProofIndex];
+            document.getElementById('socialProofMessage').textContent = message.message;
+            socialProofIndex = (socialProofIndex + 1) % socialProofMessages.length;
+        }
+
+        // Initialize social proof
+        updateSocialProof();
+        setInterval(updateSocialProof, 5000); // Change every 5 seconds
+
+        // Initialize bucket list on page load
+        updateBucketListUI();
     </script>
 </body>
 </html>

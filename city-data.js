@@ -31,7 +31,7 @@ const CITY_DATA = {
             name: "The Shankly Hotel",
             type: "Luxury",
             location: "City Center",
-            description: "Named after legendary manager Bill Shankly, this boutique hotel is a shrine to Liverpool FC. Every room features club memorabilia and the bar hosts pre-match gatherings.",
+            description: "Step into the lobby and you're greeted by Bill Shankly's life-sized bronze statue, his famous quote carved in stone: 'Some people think football is a matter of life and death. I assure you, it's much more serious than that.' Every room is named after a Liverpool legend—sleep in The Paisley Suite or The Dalglish Room surrounded by match-worn shirts and signed photos. The Bastion Bar downstairs fills with Red supporters 3 hours before kickoff, the walls lined with Champions League medals behind glass. On European nights, former players drop by for a pint. The hotel manager, a lifelong Red, can tell you stories about every artifact. Breakfast includes scouse (Liverpool stew) alongside your full English. This isn't just accommodation—it's a pilgrimage.",
             tags: ["LFC Themed", "City Center", "Bar & Restaurant"],
             rating: "4.8",
             distance: "15 min to Anfield",
@@ -41,7 +41,7 @@ const CITY_DATA = {
             name: "Hotel Anfield",
             type: "Budget-Friendly",
             location: "Anfield",
-            description: "Right in the heart of Anfield, this family-run hotel is where away fans and locals mix. Basic rooms but unbeatable location and atmosphere on match days.",
+            description: "This unassuming brick building on Anfield Road has been hosting match-goers since 1976. The wallpaper hasn't changed much since then, and that's part of the charm. Mrs. O'Brien, who runs the place with her son, remembers when Kenny Dalglish would occasionally pop in after training. The rooms are small, the bathrooms shared, but on match day you'll have breakfast with fans from Norway, Australia, and down the street—all sharing the same nervous excitement. The windows rattle when 'You'll Never Walk Alone' echoes from the Kop just 200 meters away. Leave your bags, grab a scarf, and you're at the turnstiles in 90 seconds. Real fans, real stories, real Liverpool. Book months in advance for big matches.",
             tags: ["Walking Distance", "Budget", "Local Atmosphere"],
             rating: "4.3",
             distance: "2 min walk to Anfield",
@@ -51,7 +51,7 @@ const CITY_DATA = {
             name: "Titanic Hotel Liverpool",
             type: "Historic",
             location: "Stanley Dock",
-            description: "Converted from a historic warehouse, this unique hotel offers stunning views and is popular with players' families. The rum warehouse bar is legendary.",
+            description: "Built in 1854 as Liverpool's grand rum warehouse, this converted heritage building oozes Victorian industrial grandeur. Exposed brick walls three feet thick, original cast-iron columns, and views across Stanley Dock where the Titanic was registered before its fateful voyage. The Rum Warehouse bar features vaulted ceilings and over 100 rums from Liverpool's trading past. Players' families stay here for the privacy and elegance—you might spot a recognizable face at breakfast. The rooftop terrace offers sunset views of the Liverpool skyline with the Liver Building's copper birds watching over. It's a 20-minute Uber to Anfield, but the Stanley Dock Tobacco Warehouse (the world's largest brick building) next door makes it worth the journey. Liverpool's maritime history lives in every room.",
             tags: ["Historic", "Unique Architecture", "Riverside"],
             rating: "4.6",
             distance: "20 min to Anfield",
@@ -66,7 +66,7 @@ const CITY_DATA = {
             name: "The Sandon",
             type: "Historic",
             location: "Anfield",
-            description: "The birthplace of Liverpool FC in 1892. This historic pub is where it all began. On match days, it's packed with singing Reds and the atmosphere is electric.",
+            description: "March 15, 1892—right here, in this very pub, John Houlding and his business associates founded Liverpool Football Club after a dispute with Everton. The original meeting room upstairs is preserved like a shrine. The pub's Victorian facade hasn't changed; the same stained glass, the same wooden bar where Shankly once drank. On match days, arrive early to claim a spot in the beer garden where the Kop choir practices their chants. The walls display original founding documents, sepia photographs, and a timeline of every trophy. Order a pint of local Cain's ale and feel the weight of 130+ years. After the match, victorious fans pour back in, songs echoing until closing. The landlord, a fourth-generation Red, knows every regular by name. This isn't just a pub—it's hallowed ground.",
             tags: ["Historic Birthplace", "Match Day Central", "Authentic Atmosphere"],
             rating: "4.9",
             distance: "5 min walk to Anfield",
@@ -76,7 +76,7 @@ const CITY_DATA = {
             name: "The Arkles",
             type: "Traditional",
             location: "Anfield Road",
-            description: "Named after the famous racehorse, this is where the pre-match atmosphere reaches fever pitch. Arrive 2 hours early on big match days.",
+            description: "Named after the legendary 1960s racehorse, The Arkles sits directly across from Anfield's away end, so close you can see the stadium floodlights from the doorway. Two hours before kickoff, it's already standing room only—fans pressed shoulder to shoulder, scarves hanging from the ceiling like prayer flags. The chants start here: 'Allez Allez Allez,' 'Bobby Firmino,' and the spine-tingling 'Fields of Anfield Road.' Old timers nurse pints of bitter and tell stories about the Miracle of Istanbul; young lads down Jägerbombs and film TikToks. The chips are cheap, the curry sauce legendary, and the toilets a nightmare. But when everyone files out in a river of red heading to the turnstiles, singing as one organism, you understand what 'atmosphere' really means. Get there by noon for 3 PM kickoffs.",
             tags: ["Pre-Match Hub", "Traditional Pub", "Local Crowd"],
             rating: "4.7",
             distance: "3 min walk to Anfield",
@@ -86,7 +86,7 @@ const CITY_DATA = {
             name: "The Cavern Club",
             type: "Music Legend",
             location: "Mathew Street",
-            description: "Where The Beatles started. While not football-specific, it's essential Liverpool culture. Many players visit, and it's where music and football passion merge.",
+            description: "Down brick steps into the cellar where The Beatles played 292 times between 1961 and 1963, where Brian Epstein first saw them and changed music forever. The arched brick tunnels sweat with humidity and history. Live bands play from noon until midnight, seven days a week—sometimes covers of 'Twist and Shout,' sometimes local indie hopefuls. The walls are covered in signatures from every musician who's performed here: Adele, Oasis, the Arctic Monkeys. Not football-related? Tell that to the Liverpool players who've been spotted here on nights out, or the fans who come here after matches to celebrate with Beatles songs and Guinness. The street outside is pedestrianized cobblestone lined with Beatles statues and buskers. This is Liverpool culture in its purest form—working-class kids from nowhere becoming legends. Football and music, indistinguishable passion.",
             tags: ["Beatles History", "Live Music", "Cultural Icon"],
             rating: "4.8",
             distance: "City Center",
@@ -101,7 +101,7 @@ const CITY_DATA = {
             name: "The Boot Room Sports Cafe",
             type: "Sports Dining",
             location: "Anfield",
-            description: "Named after Liverpool's famous boot room, this restaurant inside Anfield serves match day meals and is decorated with club history from floor to ceiling.",
+            description: "The Boot Room—where Shankly, Paisley, Fagan, and Dalglish plotted dynasty over tea and tactics—no longer exists in its original form, but this restaurant inside Anfield Stadium preserves its spirit. Walk past glass cases displaying every European Cup won, photographs of the famous 'This Is Anfield' sign touching ritual, and the names of Kop heroes etched in light. Match day lunch here includes views of the pitch as groundskeepers prepare the turf. The menu features 'Shankly's Steak Pie' and 'Dalglish Burger' with local ingredients. Between courses, study the timeline of Liverpool's evolution from Second Division club to six-time European champions. The acoustics carry the echo of pre-match buildup. Book ahead for European nights—it fills with former players doing corporate hospitality who'll happily share war stories.",
             tags: ["Inside Anfield", "Match Day Dining", "Club History"],
             rating: "4.5",
             distance: "Inside Stadium",
@@ -111,7 +111,7 @@ const CITY_DATA = {
             name: "Maggie May's",
             type: "Traditional Scouse",
             location: "Bold Street",
-            description: "Authentic scouse (Liverpool's traditional stew) served since 1986. A local institution where fans fuel up before matches and celebrate after victories.",
+            description: "Since 1986, Maggie May's has served authentic scouse—the lamb and potato stew that defines Liverpool cuisine, born from Irish immigrant cooking and dock workers' poverty meals. The recipe hasn't changed: slow-cooked for six hours until the meat falls apart, served with pickled red cabbage and crusty bread for soaking up the gravy. The cafe is no-frills formica tables and checkered floors, photos of old Liverpool on the walls, and staff who call everyone 'love.' Match days see it packed with three generations of families—grandad teaching his grandson to eat scouse properly (bread first to soak the gravy). At £6.95, it's the best value in Liverpool. The full English breakfast could feed two. Cash only. No reservations. Queue out the door on Saturdays. This is real Liverpool, before gentrification, before tourism—just good food and honest people.",
             tags: ["Traditional Scouse", "Local Institution", "Affordable"],
             rating: "4.6",
             distance: "City Center",
@@ -121,7 +121,7 @@ const CITY_DATA = {
             name: "Panoramic 34",
             type: "Fine Dining",
             location: "West Tower",
-            description: "Liverpool's premier fine dining restaurant where players celebrate big wins. 34th floor views over the city make victory dinners unforgettable.",
+            description: "On the 34th floor of Liverpool's West Tower, Panoramic offers 360-degree views from the Mersey to the Liver Building to the distant Welsh hills. This is where Liverpool players bring their families after Champions League victories, where Klopp celebrated winning the Premier League title, where you might spot club legends at the next table ordering the £85 tasting menu. Floor-to-ceiling windows frame sunset over the city as waiters in crisp whites serve Pan-Asian fusion cuisine with British influences. The wine list spans 500 bottles. Sommelier recommendations pair perfectly with Wirral lamb or Irish Sea bass. Book the window tables months ahead for post-match celebrations. Smart casual dress code strictly enforced. When Liverpool wins silverware, champagne corks pop and players' kids run between tables while photographers snap victory photos against the glittering cityscape. This is how success tastes.",
             tags: ["Fine Dining", "Player Favorite", "City Views"],
             rating: "4.8",
             distance: "City Center",
@@ -170,32 +170,32 @@ const CITY_DATA = {
           {
             icon: "🎵",
             title: "Learn the Songs",
-            content: "Master \"You'll Never Walk Alone,\" \"Allez Allez Allez,\" and \"Fields of Anfield Road.\" The Kop won't sing along if you don't know the words. Download the LFC Songs app to practice."
+            content: "\"You'll Never Walk Alone\" isn't just a song—it's a spiritual experience that will give you genuine chills. Learn every word, especially the quiet part at the beginning before the crescendo. \"Allez Allez Allez\" became anthem during the 2018 Champions League run. \"Poor Scouser Tommy\" tells the story of a Liverpool fan's journey from birth to death. \"Fields of Anfield Road\" references the club's greatest moments. The Kop can spot tourists who don't know the words. Watch YouTube videos of away fans teaching the songs on coach rides. When 54,000 people sing in perfect unison, you'll understand why players call it the 12th man."
           },
           {
             icon: "🕐",
             title: "Arrive Early",
-            content: "Get to pubs 3 hours before kickoff for big matches. The best atmosphere builds slowly, and you'll want to soak in every moment of the pre-match ritual."
+            content: "For Champions League nights or big derbies, The Sandon and The Arkles reach capacity by 11 AM for 3 PM kickoffs. No joke. By 1 PM, you're standing room only, pressed against strangers who'll become friends by the final whistle. The atmosphere doesn't just appear—it's built pint by pint, song by song, story by story. Old-timers share tales of the 2005 Istanbul miracle. Recent converts show off their tattoos. Someone always starts a chant, someone always buys a round for strangers. Miss this buildup and you miss half the experience. European nights under the lights? Get there at dawn."
           },
           {
             icon: "🧣",
             title: "Bring a Scarf",
-            content: "Always carry a Liverpool scarf. During \"You'll Never Walk Alone,\" hold it high above your head. It's not just tradition - it's sacred to the Kop faithful."
+            content: "As \"You'll Never Walk Alone\" starts, the entire Kop raises scarves overhead in perfect synchronization. From above, it looks like a sea of red waves. This isn't spontaneous—it's ritual passed down through generations. Your scarf doesn't need to be expensive; a £10 street vendor scarf carries the same weight as a vintage 1977 European Cup edition. The movement is specific: both arms extended, scarf taut, swaying side to side in rhythm. Don't film it on your phone (locals hate that)—just participate. Feel 50,000 people moving as one. When opposing players later say this moment scared them, you'll understand. The scarf ritual began in the 1960s and remains football's most powerful pre-match tradition."
           },
           {
             icon: "🗣️",
             title: "Local Lingo",
-            content: "\"Boss\" means great, \"Sound\" means good, \"La\" is how you address anyone. Say \"Alright la?\" as a greeting. Never call it \"soccer\" - it's football, always."
+            content: "The Scouse accent is thick, musical, and utterly unique. \"Boss\" (pronounced 'bozz') means excellent: \"That goal was boss.\" \"Sound\" means good/okay: \"Yeah, sound la.\" \"La\" or \"lad\" addresses everyone regardless of age or gender—it's affection, not gender-specific. \"Made up\" means happy: \"I'm made up we won.\" \"Devoed\" means devastated. \"Bevvies\" are drinks. \"Scran\" is food. Call it 'soccer' and you'll be corrected immediately—it's football, always football. Scousers have thick skin and sharp wit; banter is affectionate insult. Learn to give it back with a smile. The accent evolved from Irish, Welsh, and Lancashire mixing in the docks. Embrace it, don't mock it."
           },
           {
             icon: "🚇",
             title: "Transport Tips",
-            content: "Take the 917 bus from city center to Anfield - it's packed with singing fans. After matches, walk to Kirkdale station (15 mins) to avoid crowds at Anfield station."
+            content: "The 917 bus from Queen Square in city center to Anfield becomes a mobile party on match days. Upper deck fills first with singing supporters draped in scarves and flags. £2.40 gets you the full experience—better than any tour bus. Post-match, Anfield station gets dangerously crowded (5,000+ people funneling through tiny barriers). Smart locals walk 15 minutes northeast to Kirkdale station or south to Lime Street via Everton Valley. The walk passes through residential streets where locals sit on stoops watching the exodus, occasionally applauding good wins. Black cabs charge £15-20 to city center post-match. Uber surge pricing is criminal. Walk, sing, decompress—it's part of the ritual."
           },
           {
             icon: "🏆",
             title: "Respect the History",
-            content: "Know about Hillsborough, Heysel, and the 96. Show respect at memorials. Understanding Liverpool's tragedy and triumph makes you a real supporter, not just a tourist."
+            content: "April 15, 1989. Ninety-six Liverpool fans went to a football match and never came home. The Hillsborough memorial outside Anfield lists every name, every age, every unfulfilled life. Visit it. Read the names. Understand that \"Justice for the 96\" wasn't achieved until 2016—27 years of families fighting lies and slander. The Eternal Flame burns perpetually. At the 96th minute of every match, Anfield applauds—join in silence after. Never make Hillsborough jokes; locals will physically remove you. Also acknowledge Heysel (1985, 39 Juventus fans died) where Liverpool fans share responsibility. This history isn't entertainment—it's sacred grief that shaped the club's identity. Understanding this tragedy is what separates tourists from supporters. \"You'll Never Walk Alone\" takes on profound meaning when you know the context."
           }
         ]
       }
@@ -443,7 +443,7 @@ const CITY_DATA = {
             name: "Hotel Madero Buenos Aires",
             type: "Luxury",
             location: "Puerto Madero",
-            description: "Ultra-modern luxury hotel where visiting players stay. River views and easy access to both La Bombonera and El Monumental. Concierge can arrange derby tickets.",
+            description: "This gleaming glass tower on the revitalized waterfront is where Barcelona, Real Madrid, and European giants stay when they face Argentine opposition in international friendlies. The concierge, Hernán, has connections that can secure El Superclásico tickets—for a price that makes your mortgage payment look reasonable. Floor-to-ceiling windows overlook the Río de la Plata where Eva Perón's ashes were once scattered. The rooftop pool becomes party central when River wins championships, champagne flowing as the sunset turns the city gold and blue. Modern luxury meets old Buenos Aires passion. The restaurant serves the best bife de chorizo in Puerto Madero. On derby days, you'll see rival fans in separate elevators, glaring through closing doors—the war starts here.",
             tags: ["Player Hotel", "River Views", "Ticket Concierge"],
             rating: "4.8",
             distance: "15 min to La Boca",
@@ -453,7 +453,7 @@ const CITY_DATA = {
             name: "La Boca Hostel",
             type: "Budget Football",
             location: "La Boca",
-            description: "In the heart of Boca territory, this colorful hostel is covered in Boca Juniors memorabilia. Fellow guests are football obsessed from around the world.",
+            description: "Walk through the blue and yellow door into a shrine to Boca Juniors. Every wall covered in scarves, flags, signed jerseys dating back to the 1960s. The owner, Diego (yes, named after that Diego), lost his voice permanently from screaming at La Bombonera for 40 years. He'll teach you the chants, tell you which streets to avoid after River wins, and cook you choripán at 2 AM when you stumble back from victory celebrations. The beds are basic, the showers temperamental, but you'll share mate tea with Brazilian, Japanese, and German fans all united in blue and gold. On Superclásico morning, Diego leads everyone the five blocks to the stadium, flags flying, drums pounding. This isn't accommodation—it's baptism by football fire. Book months ahead.",
             tags: ["La Boca Location", "Football Themed", "International Fans"],
             rating: "4.4",
             distance: "5 min walk to La Bombonera",
@@ -463,7 +463,7 @@ const CITY_DATA = {
             name: "Casa Sur Palermo",
             type: "Boutique",
             location: "Palermo",
-            description: "Stylish boutique hotel in trendy Palermo. Many players and football journalists stay here. The rooftop bar overlooks the city where football dreams are born.",
+            description: "This converted 1920s mansion in Palermo Soho mixes European elegance with Argentine soul. The 11 suites feature original moldings, modern art, and balconies overlooking jacaranda-lined streets. Football journalists covering El Superclásico fill the rooftop bar after matches, debating controversial calls over Malbec and fernet. The breakfast spread includes medialunas (Argentine croissants), dulce de leche, and strong coffee. Staff can arrange private asado (BBQ) experiences and tickets through their media contacts. Young Argentine players from smaller clubs sometimes celebrate here after transfer signings, cork-popping visible from the street. The neighborhood buzzes with polo-shirted porteños, vintage shops, and underground tango halls. It's Buenos Aires without the tourist traps, football without the violence.",
             tags: ["Trendy Palermo", "Rooftop Bar", "Football Media"],
             rating: "4.6",
             distance: "20 min to stadiums",
@@ -478,7 +478,7 @@ const CITY_DATA = {
             name: "El Obrero",
             type: "Boca Institution",
             location: "La Boca",
-            description: "Traditional parrilla where Boca legends like Maradona ate. Walls covered in Boca history. On derby days, the entire neighborhood gathers here before marching to La Bombonera.",
+            description: "Since 1954, this tin-roofed workers' canteen has fed dock laborers, tango dancers, and football gods. Maradona's corner table remains empty by unspoken agreement—a shrine with his photo, flowers, and a lit candle. The walls are archaeological layers of Boca history: faded newspaper clippings of 1977's Copa Libertadores victory, Riquelme's jersey, autographed photos spanning seven decades. The parrillero, Carlitos, has worked the grill for 40 years. His bife de chorizo is two inches thick, charred outside, bleeding inside, served with chimichurri so garlicky you taste it for days. On Superclásico days, arrive at 10 AM or don't bother—the entire barrio packs in, singing war chants, drinking Quilmes, preparing for battle. When Boca scores at La Bombonera two blocks away, the roar reaches here before the TV broadcast. This isn't tourism. This is holy ground.",
             tags: ["Maradona's Spot", "Parrilla", "Pre-Match Central"],
             rating: "4.9",
             distance: "2 blocks from La Bombonera",
