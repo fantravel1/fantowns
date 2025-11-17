@@ -34,6 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Shared Components Styles -->
+    <link rel="stylesheet" href="components.css">
 
     <style>
         * {
@@ -312,16 +314,11 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <a href="index.html" class="logo">🏙️ FANTOWNS</a>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="blog.html" style="color: #667eea;">Blog</a>
-                <a href="index.html#cities">Cities</a>
-            </nav>
-        </div>
-    </header>
+    <!-- Unified Header (rendered by components.js) -->
+    <div id="header-mount"></div>
+
+    <!-- Breadcrumbs -->
+    <div id="breadcrumbs-mount"></div>
 
     <div class="hero-blog">
         <h1>📖 Fan Travel Stories</h1>
@@ -379,6 +376,25 @@
         }
 
         renderBlogPosts();
+    </script>
+
+    <!-- Footer (rendered by components.js) -->
+    <div id="footer-mount"></div>
+
+    <!-- Back to Top Button (rendered by components.js) -->
+    <div id="back-to-top-mount"></div>
+
+    <!-- Shared Components Script -->
+    <script src="components.js"></script>
+    <script>
+        // Render header, footer, breadcrumbs, and back-to-top button
+        document.getElementById('header-mount').appendChild(renderHeader('blog'));
+        document.getElementById('breadcrumbs-mount').appendChild(renderBreadcrumbs([
+            { name: 'Home', url: 'index.html' },
+            { name: 'Blog', url: null }
+        ]));
+        document.getElementById('footer-mount').appendChild(renderFooter());
+        document.getElementById('back-to-top-mount').appendChild(renderBackToTop());
     </script>
 </body>
 </html>

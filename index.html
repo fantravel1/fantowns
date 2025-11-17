@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Shared Components Styles -->
+    <link rel="stylesheet" href="components.css">
     <!-- Favicon and App Icons -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏙️</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏙️</text></svg>">
@@ -965,20 +967,8 @@
     </style>
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header style="background: rgba(15, 20, 25, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; position: sticky; top: 0; z-index: 10000; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
-        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-            <div style="font-size: 1.3rem; font-weight: 800; color: white;">🏙️ FANTOWNS</div>
-            <nav style="display: flex; gap: 2rem; align-items: center;">
-                <a href="index.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='white'">Home</a>
-                <a href="blog.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='white'">📖 Blog</a>
-                <a href="#cities" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='white'">Cities</a>
-                <button onclick="openBucketList()" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border: none; padding: 0.5rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
-                    Bucket List (<span id="bucket-count-nav">0</span>)
-                </button>
-            </nav>
-        </div>
-    </header>
+    <!-- Unified Header (rendered by components.js) -->
+    <div id="header-mount"></div>
 
     <section class="hero">
         <h1 class="logo">FANTOWNS</h1>
@@ -1783,6 +1773,24 @@
 
         // Initialize bucket list on page load
         updateBucketListUI();
+    </script>
+
+    <!-- Footer (rendered by components.js) -->
+    <div id="footer-mount"></div>
+
+    <!-- Back to Top Button (rendered by components.js) -->
+    <div id="back-to-top-mount"></div>
+
+    <!-- Shared Components Script -->
+    <script src="components.js"></script>
+    <script>
+        // Render header, footer, and back-to-top button
+        document.getElementById('header-mount').appendChild(renderHeader('home'));
+        document.getElementById('footer-mount').appendChild(renderFooter());
+        document.getElementById('back-to-top-mount').appendChild(renderBackToTop());
+
+        // Make openBucketList available globally for components.js
+        window.openBucketListModal = openBucketList;
     </script>
 </body>
 </html>

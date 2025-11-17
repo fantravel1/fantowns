@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANTOWNS Video Library - Stadium Tours, Fan Reactions & Travel Guides</title>
+    <meta name="description" content="Watch epic fan experiences from around the world. Stadium tours, match atmospheres, travel guides, and authentic fan reactions from Liverpool, Tokyo, Dortmund, and 18 more passionate cities.">
+    <meta name="keywords" content="fan videos, stadium tours, football atmosphere, anime convention videos, fan reactions, travel video guides, sports tourism videos">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FANTOWNS Video Library - Epic Fan Experiences">
+    <meta property="og:description" content="Watch authentic fan experiences from the world's most passionate cities.">
+    <meta property="og:type" content="video.other">
+    <meta property="og:url" content="https://www.fantowns.com/videos.html">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.fantowns.com/videos.html">
+
+    <!-- Structured Data - Video Collection Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "FANTOWNS Fan Experience Video Library",
+      "description": "Curated collection of fan travel videos from the world's most passionate cities - stadium tours, match atmospheres, fan reactions, and city guides",
+      "url": "https://www.fantowns.com/videos.html",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.fantowns.com/"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Videos"
+        }]
+      }
+    }
+    </script>
+
+    <!-- Individual Video Objects for SEO -->
+    <script type="application/ld+json" id="video-objects-schema"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        }
+
+        .header {
+            background: rgba(15, 20, 25, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #60a5fa;
+        }
+
+        .hero-video {
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-video h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .hero-video p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+
+        .stat-label {
+            color: #cbd5e0;
+            font-size: 0.9rem;
+        }
+
+        .filter-bar {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            margin: 0 2rem 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #60a5fa;
+            border-color: #60a5fa;
+            transform: translateY(-2px);
+        }
+
+        .video-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .video-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .video-thumbnail {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            background: #000;
+            overflow: hidden;
+        }
+
+        .video-thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .video-card:hover .video-thumbnail img {
+            transform: scale(1.1);
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            transition: all 0.3s;
+        }
+
+        .video-card:hover .play-button {
+            background: #60a5fa;
+            color: white;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-duration {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0.5rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .video-info {
+            padding: 1.5rem;
+            color: white;
+        }
+
+        .video-category {
+            display: inline-block;
+            background: rgba(96, 165, 250, 0.2);
+            color: #60a5fa;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+
+        .video-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .video-description {
+            color: #cbd5e0;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .video-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .video-city {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        /* Video Modal */
+        .video-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .video-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            max-width: 1200px;
+            width: 100%;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -3rem;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 10001;
+        }
+
+        .modal-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .modal-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        .modal-info {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            margin-top: 1.5rem;
+            border-radius: 12px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero-video h1 {
+                font-size: 2rem;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .filter-buttons {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">🏙️ FANTOWNS</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">📖 Blog</a>
+                <a href="videos.html" style="color: #60a5fa;">🎥 Videos</a>
+                <a href="index.html#cities">Cities</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-video">
+        <h1>🎥 Fan Experience Videos</h1>
+        <p>Watch authentic stadium tours, match atmospheres, and fan reactions from the world's most passionate cities. Every video is a window into epic fan culture.</p>
+
+        <div class="video-stats">
+            <div class="stat-box">
+                <div class="stat-number" id="total-videos">0</div>
+                <div class="stat-label">Epic Videos</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">21</div>
+                <div class="stat-label">Cities Covered</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Categories</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Videos</button>
+            <button class="filter-btn" data-filter="stadium-tours">🏟️ Stadium Tours</button>
+            <button class="filter-btn" data-filter="atmosphere">🔥 Match Atmosphere</button>
+            <button class="filter-btn" data-filter="fan-reactions">😱 Fan Reactions</button>
+            <button class="filter-btn" data-filter="city-guides">🗺️ City Guides</button>
+            <button class="filter-btn" data-filter="chants">🎵 Chants & Songs</button>
+            <button class="filter-btn" data-filter="food-drink">🍺 Food & Drink</button>
+            <button class="filter-btn" data-filter="culture">🎭 Fan Culture</button>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="video-grid" id="videoGrid">
+            <!-- Videos will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeVideoModal()">✕</button>
+            <div class="modal-video" id="modalVideoContainer"></div>
+            <div class="modal-info" id="modalInfo"></div>
+        </div>
+    </div>
+
+    <script src="video-data.js"></script>
+    <script>
+        let currentFilter = 'all';
+
+        // Generate VideoObject structured data for SEO
+        function generateVideoSchema() {
+            const videoObjects = VIDEOS.map(video => ({
+                "@type": "VideoObject",
+                "name": video.title,
+                "description": video.description,
+                "thumbnailUrl": `https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`,
+                "embedUrl": `https://www.youtube.com/embed/${video.youtubeId}`,
+                "uploadDate": "2024-01-15",  // Placeholder - update with actual dates if available
+                "duration": `PT${video.duration.replace(/\s*min\s*/i, 'M').replace(/:/g, 'M').replace(/\s*sec\s*/i, '')}S`,
+                "contentUrl": `https://www.youtube.com/watch?v=${video.youtubeId}`,
+                "genre": getCategoryLabel(video.category),
+                "keywords": video.tags ? video.tags.join(', ') : video.city,
+                "regionsAllowed": "US,GB,CA,AU,NZ,EU"
+            }));
+
+            const itemList = {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "itemListElement": videoObjects.map((video, index) => ({
+                    "@type": "ListItem",
+                    "position": index + 1,
+                    "item": video
+                }))
+            };
+
+            document.getElementById('video-objects-schema').textContent = JSON.stringify(itemList);
+        }
+
+        // Render videos
+        function renderVideos(filter = 'all') {
+            const videoGrid = document.getElementById('videoGrid');
+            const filteredVideos = filter === 'all'
+                ? VIDEOS
+                : VIDEOS.filter(video => video.category === filter);
+
+            document.getElementById('total-videos').textContent = VIDEOS.length;
+
+            videoGrid.innerHTML = filteredVideos.map(video => `
+                <div class="video-card" onclick="openVideoModal('${video.id}')">
+                    <div class="video-thumbnail">
+                        <img src="https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg"
+                             alt="${video.title}"
+                             loading="lazy">
+                        <div class="play-button">▶</div>
+                        <div class="video-duration">${video.duration}</div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-category">${getCategoryLabel(video.category)}</span>
+                        <h3 class="video-title">${video.title}</h3>
+                        <p class="video-description">${video.description}</p>
+                        <div class="video-meta">
+                            <span class="video-city">📍 ${video.city}</span>
+                            <span>${video.views}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function getCategoryLabel(category) {
+            const labels = {
+                'stadium-tours': '🏟️ Stadium Tour',
+                'atmosphere': '🔥 Match Atmosphere',
+                'fan-reactions': '😱 Fan Reaction',
+                'city-guides': '🗺️ City Guide',
+                'chants': '🎵 Chants & Songs',
+                'food-drink': '🍺 Food & Drink',
+                'culture': '🎭 Fan Culture',
+                'highlights': '⚡ Highlights'
+            };
+            return labels[category] || category;
+        }
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                renderVideos(filter);
+            });
+        });
+
+        // Video modal
+        function openVideoModal(videoId) {
+            const video = VIDEOS.find(v => v.id === videoId);
+            if (!video) return;
+
+            const modal = document.getElementById('videoModal');
+            const videoContainer = document.getElementById('modalVideoContainer');
+            const infoContainer = document.getElementById('modalInfo');
+
+            videoContainer.innerHTML = `
+                <iframe
+                    src="https://www.youtube.com/embed/${video.youtubeId}?autoplay=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    title="${video.title}">
+                </iframe>
+            `;
+
+            infoContainer.innerHTML = `
+                <span class="video-category">${getCategoryLabel(video.category)}</span>
+                <h2 style="font-size: 2rem; margin: 0.5rem 0 1rem;">${video.title}</h2>
+                <p style="color: #cbd5e0; line-height: 1.8; margin-bottom: 1.5rem;">${video.description}</p>
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                    <div><strong>City:</strong> ${video.city}</div>
+                    <div><strong>Duration:</strong> ${video.duration}</div>
+                    <div><strong>Views:</strong> ${video.views}</div>
+                </div>
+                ${video.relatedCity ? `
+                    <a href="city.html?city=${video.relatedCity}"
+                       style="display: inline-block; margin-top: 1.5rem; background: #60a5fa; color: white; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
+                        Explore ${video.city} Guide →
+                    </a>
+                ` : ''}
+            `;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const videoContainer = document.getElementById('modalVideoContainer');
+            videoContainer.innerHTML = '';
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeVideoModal();
+        });
+
+        // Close modal on background click
+        document.getElementById('videoModal').addEventListener('click', (e) => {
+            if (e.target.id === 'videoModal') closeVideoModal();
+        });
+
+        // Initial render
+        generateVideoSchema();
+        renderVideos();
+    </script>
+</body>
+</html>
