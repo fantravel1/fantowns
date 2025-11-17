@@ -965,6 +965,21 @@
     </style>
 </head>
 <body>
+    <!-- Navigation Header -->
+    <header style="background: rgba(15, 20, 25, 0.95); backdrop-filter: blur(10px); padding: 1rem 2rem; position: sticky; top: 0; z-index: 10000; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 1.3rem; font-weight: 800; color: white;">🏙️ FANTOWNS</div>
+            <nav style="display: flex; gap: 2rem; align-items: center;">
+                <a href="index.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='white'">Home</a>
+                <a href="blog.html" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='white'">📖 Blog</a>
+                <a href="#cities" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='white'">Cities</a>
+                <button onclick="openBucketList()" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; border: none; padding: 0.5rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                    Bucket List (<span id="bucket-count-nav">0</span>)
+                </button>
+            </nav>
+        </div>
+    </header>
+
     <section class="hero">
         <h1 class="logo">FANTOWNS</h1>
         <p class="tagline">Discover the World's Most Passionate Fan Cities</p>

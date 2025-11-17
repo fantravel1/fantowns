@@ -6,6 +6,11 @@
     <title id="page-title">City Guide | FANTOWNS</title>
     <meta name="description" id="page-description" content="">
     <meta name="keywords" id="page-keywords" content="">
+
+    <!-- Review Schema - Will be populated dynamically -->
+    <script type="application/ld+json" id="review-schema">
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -453,6 +458,31 @@
         </div>
     </section>
 
+    <!-- Reviews Section -->
+    <section id="reviews-section" style="display: none; padding: 4rem 2rem; background: #f8fafc;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Fan Reviews</h2>
+                <p style="color: #64748b; font-size: 1.1rem;">Real experiences from travelers who've been there</p>
+                <div id="aggregate-rating" style="margin-top: 1rem; font-size: 1.2rem;"></div>
+            </div>
+
+            <!-- Review Stats -->
+            <div id="review-stats" style="margin-bottom: 3rem;"></div>
+
+            <!-- Reviews Grid -->
+            <div id="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;"></div>
+
+            <!-- No Reviews Message -->
+            <div id="no-reviews" style="display: none; text-align: center; padding: 3rem; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">📝</div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Be the First to Review!</h3>
+                <p style="color: #64748b; margin-bottom: 1.5rem;">Share your experience and help fellow fans discover this amazing city.</p>
+                <a href="mailto:reviews@fantowns.com?subject=Review for [City Name]" style="display: inline-block; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600;">Submit Your Review</a>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <div class="container">
             <h2 style="font-size: 2rem; margin-bottom: 1rem;" id="cta-title"></h2>
@@ -463,6 +493,7 @@
 
     <!-- City Data Files -->
     <script src="city-data.js"></script>
+    <script src="review-data.js"></script>
     
     <script>
         // Get city from URL parameter or default to liverpool
@@ -646,6 +677,148 @@
         }
 
         window.addEventListener('scroll', updateActiveNav);
+
+        // ========== REVIEWS SYSTEM ==========
+        function loadReviews() {
+            const reviews = getCityReviews(cityName);
+
+            if (reviews.length === 0) {
+                // Show "no reviews" message
+                document.getElementById('no-reviews').style.display = 'block';
+                document.getElementById('reviews-section').style.display = 'block';
+                return;
+            }
+
+            // Show reviews section
+            document.getElementById('reviews-section').style.display = 'block';
+
+            // Calculate and display aggregate rating
+            const aggregateRating = getAggregateRating(reviews);
+            if (aggregateRating) {
+                document.getElementById('aggregate-rating').innerHTML = `
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: white; padding: 0.8rem 1.5rem; border-radius: 50px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <span style="font-size: 2rem; font-weight: 700; color: #fbbf24;">${aggregateRating.ratingValue}</span>
+                        <div>
+                            <div style="color: #f59e0b;">${'⭐'.repeat(Math.round(aggregateRating.ratingValue))}</div>
+                            <div style="font-size: 0.85rem; color: #64748b;">${aggregateRating.reviewCount} reviews</div>
+                        </div>
+                    </div>
+                `;
+
+                // Generate Review Schema for SEO
+                generateReviewSchema(reviews, aggregateRating);
+            }
+
+            // Display review stats
+            displayReviewStats(reviews);
+
+            // Display reviews
+            const reviewsGrid = document.getElementById('reviews-grid');
+            reviewsGrid.innerHTML = reviews.map(review => `
+                <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative;">
+                    ${review.verified ? '<div style="position: absolute; top: 1rem; right: 1rem; background: #10b981; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">✓ VERIFIED</div>' : ''}
+
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <div>
+                            <div style="font-weight: 700; color: #1e293b;">${review.author}</div>
+                            <div style="font-size: 0.85rem; color: #64748b;">${review.location} • Visited ${review.visitDate}</div>
+                        </div>
+                        <div style="color: #f59e0b; font-size: 1.2rem;">${'⭐'.repeat(review.rating)}</div>
+                    </div>
+
+                    <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; color: #1e293b;">${review.title}</h3>
+                    <p style="color: #475569; line-height: 1.7; margin-bottom: 1rem;">${review.content}</p>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+                        <div style="font-size: 0.85rem; color: #64748b;">${new Date(review.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</div>
+                        <button onclick="markHelpful('${review.id}')" style="background: none; border: 1px solid #e2e8f0; padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.85rem; color: #64748b; transition: all 0.2s;">
+                            👍 Helpful (${review.helpful})
+                        </button>
+                    </div>
+
+                    ${review.response ? `
+                        <div style="margin-top: 1rem; padding: 1rem; background: #f8fafc; border-left: 3px solid var(--primary-color); border-radius: 6px;">
+                            <div style="font-size: 0.85rem; font-weight: 600; color: #1e293b; margin-bottom: 0.3rem;">FANTOWNS Response:</div>
+                            <div style="font-size: 0.9rem; color: #475569;">${review.response}</div>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function displayReviewStats(reviews) {
+            const stats = {
+                5: reviews.filter(r => r.rating === 5).length,
+                4: reviews.filter(r => r.rating === 4).length,
+                3: reviews.filter(r => r.rating === 3).length,
+                2: reviews.filter(r => r.rating === 2).length,
+                1: reviews.filter(r => r.rating === 1).length
+            };
+
+            const total = reviews.length;
+            const statsHTML = Object.entries(stats).reverse().map(([rating, count]) => {
+                const percentage = (count / total * 100).toFixed(0);
+                return `
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+                        <div style="width: 60px; text-align: right; color: #64748b;">${rating} ⭐</div>
+                        <div style="flex: 1; background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="width: ${percentage}%; background: linear-gradient(135deg, #fbbf24, #f59e0b); height: 100%; border-radius: 4px;"></div>
+                        </div>
+                        <div style="width: 60px; color: #64748b; font-size: 0.9rem;">${percentage}% (${count})</div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('review-stats').innerHTML = `
+                <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: #1e293b;">Rating Distribution</h3>
+                    ${statsHTML}
+                </div>
+            `;
+        }
+
+        function generateReviewSchema(reviews, aggregateRating) {
+            const schema = {
+                "@context": "https://schema.org",
+                "@type": "TouristDestination",
+                "name": cityData.hero.title,
+                "description": cityData.meta.description,
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": aggregateRating.ratingValue,
+                    "reviewCount": aggregateRating.reviewCount,
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "review": reviews.filter(r => r.verified).slice(0, 10).map(review => ({
+                    "@type": "Review",
+                    "author": {
+                        "@type": "Person",
+                        "name": review.author
+                    },
+                    "datePublished": review.date,
+                    "reviewBody": review.content,
+                    "name": review.title,
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": review.rating,
+                        "bestRating": "5",
+                        "worstRating": "1"
+                    }
+                }))
+            };
+
+            document.getElementById('review-schema').textContent = JSON.stringify(schema);
+        }
+
+        function markHelpful(reviewId) {
+            // In production, this would call an API to increment the count
+            console.log(`Marked review ${reviewId} as helpful`);
+            alert('Thanks for your feedback! This helps other fans find useful reviews.');
+        }
+
+        // Load reviews after city data is loaded
+        loadReviews();
     </script>
 </body>
 </html>

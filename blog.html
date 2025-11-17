@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANTOWNS Blog - Epic Fan Travel Stories & Guides | Real Experiences</title>
+    <meta name="description" content="Read authentic fan travel stories from around the world. From Liverpool's Anfield to Tokyo's Comiket - real experiences, insider tips, and unforgettable moments from passionate fans.">
+    <meta name="keywords" content="fan travel blog, sports tourism stories, football fan experiences, anime travel guides, music city stories, fan culture blog">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FANTOWNS Blog - Epic Fan Travel Stories">
+    <meta property="og:description" content="Real fan travel experiences from around the world's most passionate cities.">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://www.fantowns.com/blog.html">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.fantowns.com/blog.html">
+
+    <!-- Structured Data - Blog Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "FANTOWNS Fan Travel Blog",
+      "description": "Authentic stories from fans who've experienced the world's most passionate cities",
+      "url": "https://www.fantowns.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "FANTOWNS"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero-blog {
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-blog h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+        }
+
+        .hero-blog p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .blog-tag {
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .blog-date {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: #1e293b;
+        }
+
+        .blog-excerpt {
+            color: #475569;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .blog-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-name {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .author-bio {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .read-time {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+
+        .featured-post {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .featured-post .blog-image {
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .featured-badge {
+            background: #fbbf24;
+            color: #92400e;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .cta-section p {
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .hero-blog h1 {
+                font-size: 2rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-post {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">🏙️ FANTOWNS</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html" style="color: #667eea;">Blog</a>
+                <a href="index.html#cities">Cities</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-blog">
+        <h1>📖 Fan Travel Stories</h1>
+        <p>Real experiences from fans who've made the pilgrimage. Epic moments, insider tips, and unforgettable adventures from the world's most passionate cities.</p>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog-grid" id="blogGrid">
+            <!-- Blog posts will be loaded here -->
+        </div>
+
+        <div class="cta-section">
+            <h2>Have Your Own Fan Travel Story?</h2>
+            <p>Share your epic experience and help fellow fans discover the magic of passionate cities worldwide.</p>
+            <a href="mailto:stories@fantowns.com?subject=My Fan Travel Story" class="cta-button">Submit Your Story</a>
+        </div>
+    </div>
+
+    <script src="blog-data.js"></script>
+    <script>
+        // Render blog posts
+        function renderBlogPosts() {
+            const blogGrid = document.getElementById('blogGrid');
+
+            BLOG_POSTS.forEach((post, index) => {
+                const isFeatured = index === 0;
+
+                const blogCard = document.createElement('div');
+                blogCard.className = isFeatured ? 'blog-card featured-post' : 'blog-card';
+                blogCard.onclick = () => window.location.href = `blog-post.html?id=${post.id}`;
+
+                blogCard.innerHTML = `
+                    <div class="blog-image">${post.emoji}</div>
+                    <div class="blog-content">
+                        ${isFeatured ? '<span class="featured-badge">⭐ Featured Story</span>' : ''}
+                        <div class="blog-meta">
+                            <span class="blog-tag">${post.category}</span>
+                            <span class="blog-date">📅 ${post.date}</span>
+                            <span class="read-time">⏱️ ${post.readTime}</span>
+                        </div>
+                        <h2 class="blog-title">${post.title}</h2>
+                        <p class="blog-excerpt">${post.excerpt}</p>
+                        <div class="blog-author">
+                            <div class="author-avatar">${post.author.charAt(0)}</div>
+                            <div class="author-info">
+                                <div class="author-name">${post.author}</div>
+                                <div class="author-bio">${post.authorBio}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                blogGrid.appendChild(blogCard);
+            });
+        }
+
+        renderBlogPosts();
+    </script>
+</body>
+</html>
