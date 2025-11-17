@@ -2265,6 +2265,206 @@ const CITY_DATA = {
       subtitle: "Join 750,000 otaku in the ultimate test of anime fan dedication and endurance.",
       buttonText: "Plan Your Otaku Pilgrimage"
     }
+  },
+
+  seattle: {
+    meta: {
+      title: "Seattle Seahawks 12th Man Fan Guide - Hotels, Bars & Experience | FANTOWNS",
+      description: "Ultimate Seattle Seahawks fan travel guide. Experience the 12th Man at Lumen Field, discover fan hotels, legendary bars, and insider tips for the loudest stadium in sports.",
+      keywords: "Seattle Seahawks travel, Lumen Field, 12th Man, Seattle fan bars, Beast Quake, NFL tourism, Seahawks experience"
+    },
+    theme: {
+      primary: "#002244",
+      secondary: "#69BE28",
+      tagBg: "#e6f4ea",
+      tagColor: "#1e7e34",
+      heroBg: "linear-gradient(rgba(0, 34, 68, 0.9), rgba(0, 34, 68, 0.9)), url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 600\"><rect fill=\"%23002244\" width=\"1200\" height=\"600\"/></svg>')"
+    },
+    hero: {
+      title: "Seattle 🇺🇸",
+      subtitle: "Where the 12th Man Causes Earthquakes",
+      stats: [
+        { number: "137.6 dB", label: "Record Noise" },
+        { number: "69,000", label: "Lumen Capacity" },
+        { number: "2011", label: "Beast Quake" }
+      ]
+    },
+    sections: {
+      hotels: {
+        description: "Stay near Lumen Field where the 12th Man energy pulses through Seattle's SoDo district.",
+        items: [
+          {
+            name: "Hotel Interurban",
+            type: "Modern Boutique",
+            location: "SoDo District",
+            description: "Opened 2021, this Hilton Tapestry hotel sits one block from Lumen Field. Rooftop bar overlooks the stadium. Filled with Seahawks fans pre-game. Modern Pacific Northwest design with local craft beers on tap.",
+            tags: ["Walking Distance", "Rooftop Bar", "Modern"],
+            rating: "4.6",
+            distance: "2 min walk to Lumen",
+            icon: "🏨"
+          },
+          {
+            name: "Silver Cloud Hotel Stadium",
+            type: "Fan Favorite",
+            location: "Stadium District",
+            description: "The unofficial Seahawks fan headquarters. Parking lot tailgates start 6 hours before kickoff. Complimentary shuttle to stadium. Rooms book out months ahead for big games. This is where visiting fans stay to experience real 12th Man culture.",
+            tags: ["Fan Central", "Tailgate Parking", "Shuttle"],
+            rating: "4.4",
+            distance: "5 min to Lumen",
+            icon: "🏨"
+          },
+          {
+            name: "The Edgewater Hotel",
+            type: "Luxury Waterfront",
+            location: "Downtown Seattle",
+            description: "Pike Place Market hotel where The Beatles stayed in 1964. Rooms over Elliott Bay with views of ferries and mountains. Seahawks players' families stay here. Premium dining and Seattle sophistication 15 minutes from stadium chaos.",
+            tags: ["Historic", "Waterfront", "Luxury"],
+            rating: "4.7",
+            distance: "15 min to Lumen",
+            icon: "🏨"
+          }
+        ]
+      },
+      pubs: {
+        description: "Experience Seattle's football culture in bars where the 12th Man was born.",
+        items: [
+          {
+            name: "Pyramid Alehouse",
+            type: "Brewery",
+            location: "SoDo",
+            description: "Two blocks from Lumen Field, this massive brewery becomes Seahawks central on game days. The beer garden holds 1,000+ fans in navy and green, chanting and drinking local IPAs. The pale ale flows, wings disappear, and by kickoff the march to the stadium is a roaring river of 12s.",
+            tags: ["Brewery", "Beer Garden", "Pre-Game Hub"],
+            rating: "4.5",
+            distance: "2 blocks from Lumen",
+            icon: "🍺"
+          },
+          {
+            name: "Fuel Sports Eats & Beats",
+            type: "Sports Bar",
+            location: "SoDo",
+            description: "The official 12th Man pre-game bar. Opened specifically to serve Seahawks fans. DJs, dancers, 100+ TVs, and energy that builds to fever pitch by kickoff. This is where the noise starts before it moves to the stadium.",
+            tags: ["Official Spot", "DJ & Dancing", "High Energy"],
+            rating: "4.6",
+            distance: "3 blocks from Lumen",
+            icon: "🍺"
+          },
+          {
+            name: "Flatstick Pub Pioneer Square",
+            type: "Unique Bar",
+            location: "Pioneer Square",
+            description: "Mini-golf bar that transforms into Seahawks headquarters on game days. Indoor mini-golf + craft beer + football creates uniquely Seattle experience. Players occasionally visit off-season. The PNW in bar form.",
+            tags: ["Mini Golf", "Craft Beer", "Unique"],
+            rating: "4.7",
+            distance: "Downtown",
+            icon: "🍺"
+          }
+        ]
+      },
+      restaurants: {
+        description: "From seafood to craft coffee, fuel your 12th Man experience with Seattle's legendary food scene.",
+        items: [
+          {
+            name: "Ivar's Acres of Clams",
+            type: "Seattle Institution",
+            location: "Waterfront",
+            description: "Since 1938, this waterfront institution serves the city's best clam chowder and fish & chips. Seahawks players post-victory photos here. The bread bowl chowder is Washington State comfort in edible form. Order at the window, eat by the water, watch ferries, discuss the game.",
+            tags: ["Seafood", "Historic", "Waterfront"],
+            rating: "4.5",
+            distance: "Downtown",
+            icon: "🍽️"
+          },
+          {
+            name: "Elysian Brewing",
+            type: "Brewery Restaurant",
+            location: "Capitol Hill",
+            description: "Seattle's beloved craft brewery serves exceptional beer and elevated pub food. Their seasonal Seahawks IPA sells out in hours. The pumpkin ale is fall tradition. Capitol Hill location fills with younger fans, Capitol Hill becomes a party after victories.",
+            tags: ["Craft Beer", "Burgers", "Local Favorite"],
+            rating: "4.6",
+            distance: "Capitol Hill",
+            icon: "🍽️"
+          },
+          {
+            name: "Pike Place Chowder",
+            type: "Award-Winning",
+            location: "Pike Place Market",
+            description: "Voted America's best clam chowder multiple times. The New England and Seafood chowders are rich, creamy perfection. Lines wrap around the Market, but move fast. This is required eating before afternoon games. Pure Seattle in a sourdough bowl.",
+            tags: ["Award-Winning", "Pike Place", "Chowder"],
+            rating: "4.8",
+            distance: "Downtown",
+            icon: "🍽️"
+          }
+        ]
+      },
+      attractions: {
+        description: "Experience Seattle's 12th Man culture and Pacific Northwest beauty beyond the stadium.",
+        items: [
+          {
+            name: "Lumen Field Tour",
+            type: "Stadium Experience",
+            description: "Walk the sidelines where Beast Quake happened. Touch the 12th Man flag. See the visiting locker room that intimidates opponents. Stand where Russell Wilson led the Legion of Boom. The tour guides are die-hard 12s with incredible stories.",
+            tags: ["Stadium Tour", "Must-Do", "12th Man History"],
+            rating: "4.9",
+            icon: "🏟️"
+          },
+          {
+            name: "Museum of Pop Culture (MoPOP)",
+            type: "Seattle Culture",
+            description: "Frank Gehry-designed museum celebrating Pacific Northwest music and culture. Nirvana, Jimi Hendrix, Pearl Jam exhibits. Also features sci-fi and horror displays. This is Seattle's creative spirit on display. Next to Space Needle.",
+            tags: ["Music History", "Architecture", "Culture"],
+            rating: "4.6",
+            icon: "🎸"
+          },
+          {
+            name: "Pike Place Market",
+            type: "Historic Market",
+            description: "Since 1907, this waterfront market pulses with fish-throwers, flower vendors, and the original Starbucks. On game days, the market empties as everyone heads to Lumen. But morning before kickoff, grab coffee and flowers, soak in old Seattle before new Seattle screams.",
+            tags: ["Historic", "Food", "Coffee"],
+            rating: "4.7",
+            icon: "🌸"
+          }
+        ]
+      },
+      tips: {
+        description: "Master these Seattle fan customs and you'll earn respect from the loudest fans in football.",
+        items: [
+          {
+            icon: "🔊",
+            title: "Bring Earplugs (Seriously)",
+            content: "Lumen Field hit 137.6 decibels—louder than a jet engine. The stadium was designed to trap and amplify noise. Your ears will ring for days without protection. But don't use them—the 12th Man noise is the point."
+          },
+          {
+            icon: "💚",
+            title: "Wear Navy or Action Green",
+            content: "Navy blue is traditional. Action green (neon) is modern 12s. Wolf grey is acceptable. White is rare. Never red (49ers) or green-and-gold (Packers). Violations get beer thrown at you. Probably."
+          },
+          {
+            icon: "🌧️",
+            title: "Embrace the Rain",
+            content: "Seattle rain is constant but gentle. Locals don't use umbrellas—that's tourist behavior. Wear a jacket, embrace the wetness, and never complain. The 12th Man doesn't let weather determine attitude."
+          },
+          {
+            icon: "🚆",
+            title: "Link Light Rail to Stadium",
+            content: "Take the Light Rail to Stadium Station—exits right at Lumen Field. Driving and parking is nightmare fuel. The train fills with singing fans, becoming mobile party. $3.25 beats $40 parking and traffic hell."
+          },
+          {
+            icon: "☕",
+            title: "Coffee is Religion",
+            content: "Seattle coffee culture is serious. Order a pour-over at Stumptown or Espresso Vivace. Saying 'Starbucks is fine' marks you as outsider. The city runs on caffeine and football. Usually in that order."
+          },
+          {
+            icon: "🏔️",
+            title: "Respect the Pacific Northwest",
+            content: "Seahawks fans are also hikers, kayakers, and outdoor enthusiasts. Post-game conversations cover Mount Rainier conditions as much as game stats. This is football in the most beautiful place on Earth."
+          }
+        ]
+      }
+    },
+    cta: {
+      title: "Ready to Join the 12th Man and Cause an Earthquake?",
+      subtitle: "Experience the loudest stadium in sports and Pacific Northwest football passion.",
+      buttonText: "Plan Your Seattle Journey"
+    }
   }
 };
 
