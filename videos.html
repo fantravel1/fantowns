@@ -444,13 +444,34 @@
     <div class="filter-bar">
         <div class="filter-buttons">
             <button class="filter-btn active" data-filter="all">All Videos</button>
-            <button class="filter-btn" data-filter="stadium-tours">🏟️ Stadium Tours</button>
-            <button class="filter-btn" data-filter="atmosphere">🔥 Match Atmosphere</button>
-            <button class="filter-btn" data-filter="fan-reactions">😱 Fan Reactions</button>
-            <button class="filter-btn" data-filter="city-guides">🗺️ City Guides</button>
-            <button class="filter-btn" data-filter="chants">🎵 Chants & Songs</button>
-            <button class="filter-btn" data-filter="food-drink">🍺 Food & Drink</button>
-            <button class="filter-btn" data-filter="culture">🎭 Fan Culture</button>
+            <button class="filter-btn" data-filter="stadium-tours">
+                <img src="images/icons/category-stadium.jpg" alt="" style="height: 20px; width: 20px; border-radius: 4px; vertical-align: middle; margin-right: 6px;">
+                Stadium Tours
+            </button>
+            <button class="filter-btn" data-filter="atmosphere">
+                <img src="images/icons/category-atmosphere.jpg" alt="" style="height: 20px; width: 20px; border-radius: 4px; vertical-align: middle; margin-right: 6px;">
+                Match Atmosphere
+            </button>
+            <button class="filter-btn" data-filter="fan-reactions">
+                <img src="images/icons/category-reactions.jpg" alt="" style="height: 20px; width: 20px; border-radius: 4px; vertical-align: middle; margin-right: 6px;">
+                Fan Reactions
+            </button>
+            <button class="filter-btn" data-filter="city-guides">
+                <img src="images/icons/category-guides.jpg" alt="" style="height: 20px; width: 20px; border-radius: 4px; vertical-align: middle; margin-right: 6px;">
+                City Guides
+            </button>
+            <button class="filter-btn" data-filter="chants">
+                <img src="images/icons/category-chants.jpg" alt="" style="height: 20px; width: 20px; border-radius: 4px; vertical-align: middle; margin-right: 6px;">
+                Chants & Songs
+            </button>
+            <button class="filter-btn" data-filter="food-drink">
+                <img src="images/icons/category-food.jpg" alt="" style="height: 20px; width: 20px; border-radius: 4px; vertical-align: middle; margin-right: 6px;">
+                Food & Drink
+            </button>
+            <button class="filter-btn" data-filter="culture">
+                <img src="images/icons/category-culture.jpg" alt="" style="height: 20px; width: 20px; border-radius: 4px; vertical-align: middle; margin-right: 6px;">
+                Fan Culture
+            </button>
         </div>
     </div>
 
@@ -534,17 +555,22 @@
         }
 
         function getCategoryLabel(category) {
-            const labels = {
-                'stadium-tours': '🏟️ Stadium Tour',
-                'atmosphere': '🔥 Match Atmosphere',
-                'fan-reactions': '😱 Fan Reaction',
-                'city-guides': '🗺️ City Guide',
-                'chants': '🎵 Chants & Songs',
-                'food-drink': '🍺 Food & Drink',
-                'culture': '🎭 Fan Culture',
-                'highlights': '⚡ Highlights'
+            const categoryConfig = {
+                'stadium-tours': { icon: 'category-stadium.jpg', label: 'Stadium Tour' },
+                'atmosphere': { icon: 'category-atmosphere.jpg', label: 'Match Atmosphere' },
+                'fan-reactions': { icon: 'category-reactions.jpg', label: 'Fan Reaction' },
+                'city-guides': { icon: 'category-guides.jpg', label: 'City Guide' },
+                'chants': { icon: 'category-chants.jpg', label: 'Chants & Songs' },
+                'food-drink': { icon: 'category-food.jpg', label: 'Food & Drink' },
+                'culture': { icon: 'category-culture.jpg', label: 'Fan Culture' },
+                'highlights': { icon: 'category-highlights.jpg', label: 'Highlights' }
             };
-            return labels[category] || category;
+
+            const config = categoryConfig[category];
+            if (config) {
+                return `<img src="images/icons/${config.icon}" alt="" style="height: 16px; width: 16px; border-radius: 3px; vertical-align: middle; margin-right: 4px;">${config.label}`;
+            }
+            return category;
         }
 
         // Filter functionality

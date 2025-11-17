@@ -72,6 +72,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     readTime: "8 min read",
     category: "Football",
     emoji: "⚽",
+    headerImage: "images/blog/anfield-pilgrimage.jpg",
     city: "liverpool",
     tags: ["Liverpool", "Anfield", "Champions League", "You'll Never Walk Alone", "Fan Culture"],
     featured: true
@@ -88,6 +89,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     readTime: "10 min read",
     category: "Football",
     emoji: "🟡",
+    headerImage: "images/blog/yellow-wall.jpg",
     city: "dortmund",
     tags: ["Dortmund", "Yellow Wall", "Bundesliga", "Süd Tribune", "BVB"],
     featured: false
@@ -104,6 +106,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     readTime: "12 min read",
     category: "Anime",
     emoji: "🎌",
+    headerImage: "images/blog/tokyo-comiket.jpg",
     city: "tokyo",
     tags: ["Tokyo", "Comiket", "Anime", "Akihabara", "Otaku Culture"],
     featured: false
@@ -120,6 +123,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     readTime: "7 min read",
     category: "Football (American)",
     emoji: "🏈",
+    headerImage: "images/blog/frozen-tundra.jpg",
     city: "greenbay",
     tags: ["Green Bay", "Lambeau Field", "NFL", "Frozen Tundra", "Packers"],
     featured: false
@@ -136,6 +140,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     readTime: "9 min read",
     category: "Football",
     emoji: "🇦🇷",
+    headerImage: "images/blog/la-bombonera.jpg",
     city: "buenosaires",
     tags: ["Buenos Aires", "Boca Juniors", "La Bombonera", "Superclásico", "River Plate"],
     featured: false
@@ -152,6 +157,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     readTime: "11 min read",
     category: "Music",
     emoji: "🎸",
+    headerImage: "images/blog/nashville-honky-tonks.jpg",
     city: "nashville",
     tags: ["Nashville", "Broadway", "Honky Tonks", "Country Music", "Live Music"],
     featured: false
@@ -166,6 +172,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     authorBio: "Seahawks season ticket holder since 2012",
     date: "September 28, 2023",
     readTime: "6 min read",
+    headerImage: "images/blog/seattle-12th-man.jpg",
     category: "Football (American)",
     emoji: "🏈",
     city: "seattle",
@@ -184,6 +191,7 @@ You'll never walk alone. And at Anfield, surrounded by 54,000 people singing tha
     readTime: "10 min read",
     category: "Football",
     emoji: "🇬🇷",
+    headerImage: "images/blog/athens-gate7.jpg",
     city: "athens",
     tags: ["Athens", "Olympiacos", "Gate 7", "Ultras", "Greek Football"],
     featured: false
